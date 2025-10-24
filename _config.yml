@@ -1,0 +1,15 @@
+# ------------------------------------------------------------------
+# 1. Site Metadata (Crucial for SEO and professional appearance)
+# ------------------------------------------------------------------
+title: Sarayu Sivakumar Dhaya| AI & ML Portfolio
+email: sarayusd31@gmail.com
+description: "Building and deploying production-ready Machine Learning and Data Science solutions."
+baseurl: "" # Do not change this for a user site (username.github.io)
+github_username: sarayusd
+
+# ------------------------------------------------------------------
+# 2. Theme Selection (The easiest way to get a professional look)
+# ------------------------------------------------------------------
+remote_theme: pages-themes/minimal # A clean, simple Jekyll theme
+plugins:
+  - jekyll-remote-theme
