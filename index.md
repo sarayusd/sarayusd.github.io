@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Featured AI/ML Projects
+title: My Portfolio
 ---
 
 #  Welcome to my Portfolio
