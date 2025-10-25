@@ -20,21 +20,23 @@ I specialize in **Deep Learning, Reinforcement Learning, and Computer Vision**, 
 
 ---
 
-# Sustainable Energy Management in Smart Homes with Reinforcement Learning  
-**[🔗 View Source Code]( https://github.com/sarayusd/Sustainable-Energy-Management-with-Reinforcement-Learning.git)**
+# Sustainable Energy Management in Smart Homes with Reinforcement Learning
+**[🔗 View Source Code](https:/sarayusd/github.com/YourUsername/Sustainable-Energy-Management-with-Reinforcement-Learning)**
 
 - Explored intelligent battery storage control in **CityLearn** environment to minimize energy cost and carbon emissions.  
 - Implemented and compared **Rule Based Control**, **PPO**, and **SAC** agents.  
 - SAC achieved **best energy efficiency** and lowest peak demand.  
 - **Tech:** PyTorch · CityLearn · RL · Python
+
 ---
 
-#  Scene Recognition with Deep CNNs (MIT Indoor67)  
-**[🔗 View Source Code]( https://github.com/sarayusd/Scene-Recognition-with-Deep-CNNs.git)**
+# Scene Recognition with Deep CNNs (MIT Indoor67)
+**[🔗 View Source Code](https:/sarayusd/github.com/YourUsername/Scene-Recognition-with-Deep-CNNs)**
 
 - Built a **DenseNet-like CNN** from scratch and applied **Knowledge Distillation** + **Ensemble Learning** on MIT Indoor67 dataset.  
 - Achieved **62.1% test accuracy** and **0.80 macro F1** with weighted ensemble.  
 - **Tech:** PyTorch · CNN · SE Blocks · Distillation · Computer Vision
+
 
 ---
 
