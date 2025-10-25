@@ -3,10 +3,10 @@ layout: default
 title: Featured AI/ML Projects
 ---
 
-#  Welcome to My AI/ML Portfolio
+#  Welcome to Portfolio
 
 I’m a **Master’s student in Artificial Intelligence at the University at Buffalo** with 5+ years of software engineering experience.  
-I specialize in **Deep Learning, Reinforcement Learning, and Computer Vision**, and I enjoy building **end-to-end AI solutions** with real-world impact.
+I have experience building applied ML solutions in **Deep Learning, Reinforcement Learning and Computer Vision** for  real-world impact.
 
 ---
 
