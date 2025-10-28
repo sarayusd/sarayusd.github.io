@@ -5,8 +5,8 @@ title: My Portfolio
 
 #  Welcome to my Portfolio
 
-I’m a **Master’s student in Artificial Intelligence at the University at Buffalo** with 5+ years of software engineering experience.  
-I have experience building applied ML solutions in **Deep Learning, Reinforcement Learning and Computer Vision** for  real-world impact.
+I’m a Master’s student in Artificial Intelligence at the University at Buffalo with 5+ years of software engineering experience.  
+I have experience building applied ML solutions in **Deep Learning, Reinforcement Learning and Computer Vision** for  real world impact.
 
 ---
 
@@ -20,21 +20,21 @@ I have experience building applied ML solutions in **Deep Learning, Reinforcemen
 
 ---
 
-# Sustainable Energy Management in Smart Homes with Reinforcement Learning.
+# Sustainable Energy Management in Smart Homes with Reinforcement Learning
 **[🔗 View Source Code](https://github.com/sarayusd/Sustainable-Energy-Management-with-Reinforcement-Learning.git)**
 
-- Explored intelligent battery storage control in **CityLearn** environment to minimize energy cost and carbon emissions.  
+- Explored intelligent battery storage control in CityLearn environment to minimize energy cost and carbon emissions.  
 - Implemented and compared **Rule Based Control**, **PPO**, and **SAC** agents.  
-- SAC achieved **best energy efficiency** and lowest peak demand.  
+- SAC achieved best energy efficiency and lowest peak demand.  
 - **Tech:** PyTorch · CityLearn · RL · Python
 
 
 ---
 
-# Scene Recognition with Deep CNNs (MIT Indoor67).
+# Scene Recognition with Deep CNNs (MIT Indoor67)
 **[🔗 View Source Code](https://github.com/sarayusd/Scene-Recognition-with-Deep-CNNs)**
 
-- Built a **DenseNet-like CNN** from scratch and applied **Knowledge Distillation** + **Ensemble Learning** on MIT Indoor67 dataset.  
+- Built a DenseNet like CNN from scratch and applied **Knowledge Distillation** + **Ensemble Learning** on MIT Indoor67 dataset.  
 - Achieved **62.1% test accuracy** and **0.80 macro F1** with weighted ensemble.  
 - **Tech:** PyTorch · CNN · SE Blocks · Distillation · Computer Vision
 
