@@ -36,7 +36,25 @@ I have experience building applied ML solutions in **Deep Learning, Reinforcemen
 
 - Built a DenseNet like CNN from scratch and applied **Knowledge Distillation** + **Ensemble Learning** on MIT Indoor67 dataset.  
 - Achieved **62.1% test accuracy** and **0.80 macro F1** with weighted ensemble.  
-- **Tech:** PyTorch · CNN · SE Blocks · Distillation · Computer Vision
+
+> **Tech:** PyTorch, CNN , SE blocks, knowledge distillation, ensemble voting
+
+### 1. Dense like Teacher (Strong Backbone)
+- Implemented a custom DenseNet-like architecture from the scratch.
+- Achieved strong single-model performance on indoor 67 dataset.
+- Used SE (Squeeze and Excitation)* in bottleneck blocks to improve channelwise attention.
+- 
+
+### 2. Hybrid CNN + SE (Student) with Knowledge Distillation
+- Built a lighter Hybrid CNN with SE blocks for faster inference.
+- Distilled soft targets from the Dense like teacher so that student learned richer class boundaries than from hard labels alone.
+
+### 3. Ensemble Learning
+- Final predictions were ensembled across all trained models:
+  - Dense like teacher
+  - Distilled Hybrid CNN + SE
+  - Other experimental CNN variants (Mini / Efficient-style)
+- Achieved a project high 76% F1-score and enhanced robustness by combining multiple models using soft and weighted ensemble voting.
 
 
 ---
