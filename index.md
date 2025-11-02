@@ -4,7 +4,6 @@ title: Sarayu Sivakumar Dhaya
 
 
 ---
-Hello !
 
 I’m a Master’s student in Artificial Intelligence at the University at Buffalo with 5+ years of software engineering experience.  
 I have experience building applied ML solutions in **Deep Learning, Reinforcement Learning and Computer Vision** for  real world impact.
