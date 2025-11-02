@@ -1,10 +1,9 @@
 ---
 layout: default
-title: Portfolio
+title: Sarayu Sivakumar Dhaya
 ---
 
-### Sarayu Sivakumar Dhaya
-AI Graduate Student | Deep Learning · Reinforcement Learning · Computer Vision
+### AI Graduate Student | Deep Learning · Reinforcement Learning · Computer Vision
 
 ---
 Welcome to my Portfolio
