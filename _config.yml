@@ -1,27 +1,15 @@
 # ------------------------------------------------------------------
-# 1. Site Metadata (For SEO and professional presentation)
+# 1. Site Metadata (Crucial for SEO and professional appearance)
 # ------------------------------------------------------------------
-title: "Sarayu Sivakumar Dhaya"
-email: "sarayusd31@gmail.com"
-description: "AI Graduate Student | Deep Learning · Reinforcement Learning · Computer Vision"
-baseurl: "" # Leave empty for user site (abc.github.io)
-url: "https://sarayusd.github.io"
-github_username: "sarayusd"
+title: Sarayu Sivakumar Dhaya
+email: sarayusd31@gmail.com
+description: "AI Graduate Student | Deep Learning . Reinforcement Learning · Computer Vision"
+baseurl: "" # Do not change this for a user site (username.github.io)
+github_username: sarayusd
 
 # ------------------------------------------------------------------
-# 2. Theme (Minimal, clean look)
+# 2. Theme Selection (The easiest way to get a professional look)
 # ------------------------------------------------------------------
-remote_theme: pages-themes/minimal@v0.2.0
-
-# ------------------------------------------------------------------
-# 3. Plugins (For GitHub Pages)
-# ------------------------------------------------------------------
+remote_theme: pages-themes/cayman@v0.2.0
 plugins:
-  - jekyll-remote-theme
-
-# ------------------------------------------------------------------
-# 4. Optional customization
-# ------------------------------------------------------------------
-logo: "/assets/profile.jpg" # Add a profile image in /assets/
-show_downloads: false
-google_analytics: # (optional) Add your GA ID here
+  - jekyll-remote-theme give me nice git ppages creation
