@@ -34,16 +34,16 @@ I have experience building applied ML solutions in **Deep Learning, Reinforcemen
 # Scene Recognition with Deep CNNs (MIT Indoor67)
 **[🔗 View Source Code](https://github.com/sarayusd/Scene-Recognition-with-Deep-CNNs)**
 
- 1. Dense like Teacher (Strong Backbone)
+ **1. Dense like Teacher (Strong Backbone)**
 - Implemented a custom DenseNet-like architecture from the scratch.
 - Achieved strong single-model performance on indoor 67 dataset.
 - Used SE (Squeeze and Excitation)* in bottleneck blocks to improve channelwise attention.
 
- 2. Hybrid CNN + SE (Student) with Knowledge Distillation
+ **2. Hybrid CNN + SE (Student) with Knowledge Distillation**
 - Built a lighter Hybrid CNN with SE blocks for faster inference.
 - Distilled soft targets from the Dense like teacher so that student learned richer class boundaries than from hard labels alone.
 
- 3. Ensemble Learning
+ **3. Ensemble Learning**
 - Final predictions were ensembled across all trained models:
   - Dense like teacher
   - Distilled Hybrid CNN + SE
