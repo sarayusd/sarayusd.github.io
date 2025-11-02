@@ -38,7 +38,6 @@ I have experience building applied ML solutions in **Deep Learning, Reinforcemen
 - Implemented a custom DenseNet-like architecture from the scratch.
 - Achieved strong single-model performance on indoor 67 dataset.
 - Used SE (Squeeze and Excitation)* in bottleneck blocks to improve channelwise attention.
-- 
 
 # 2. Hybrid CNN + SE (Student) with Knowledge Distillation
 - Built a lighter Hybrid CNN with SE blocks for faster inference.
