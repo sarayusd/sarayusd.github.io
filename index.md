@@ -34,11 +34,6 @@ I have experience building applied ML solutions in **Deep Learning, Reinforcemen
 # Scene Recognition with Deep CNNs (MIT Indoor67)
 **[🔗 View Source Code](https://github.com/sarayusd/Scene-Recognition-with-Deep-CNNs)**
 
-- Built a DenseNet like CNN from scratch and applied **Knowledge Distillation** + **Ensemble Learning** on MIT Indoor67 dataset.  
-- Achieved **62.1% test accuracy** and **0.80 macro F1** with weighted ensemble.  
-
-> **Tech:** PyTorch, CNN , SE blocks, knowledge distillation, ensemble voting
-
 ### 1. Dense like Teacher (Strong Backbone)
 - Implemented a custom DenseNet-like architecture from the scratch.
 - Achieved strong single-model performance on indoor 67 dataset.
@@ -55,7 +50,7 @@ I have experience building applied ML solutions in **Deep Learning, Reinforcemen
   - Distilled Hybrid CNN + SE
   - Other experimental CNN variants (Mini / Efficient-style)
 - Achieved a project high 76% F1-score and enhanced robustness by combining multiple models using soft and weighted ensemble voting.
-
+ **Tech:** PyTorch, CNN , SE blocks, knowledge distillation, ensemble voting
 
 ---
 
