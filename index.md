@@ -20,7 +20,7 @@ I have experience building applied ML solutions in **Deep Learning, Reinforcemen
 
 ---
 ## Project Experience
-# Sustainable Energy Management in Smart Homes with Reinforcement Learning  
+## Sustainable Energy Management in Smart Homes with Reinforcement Learning  
 **[🔗 View Source Code](https://github.com/sarayusd/Sustainable-Energy-Management-with-Reinforcement-Learning.git)**
 
 - Explored intelligent battery storage control in CityLearn environment to minimize energy cost and carbon emissions.  
@@ -30,7 +30,7 @@ I have experience building applied ML solutions in **Deep Learning, Reinforcemen
 
 ---
 
-# Scene Recognition with Deep CNNs (MIT Indoor67)  
+## Scene Recognition with Deep CNNs (MIT Indoor67)  
 **[🔗 View Source Code](https://github.com/sarayusd/Scene-Recognition-with-Deep-CNNs)**
 
 **1. Dense like Teacher (Strong Backbone)**  
