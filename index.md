@@ -20,6 +20,7 @@ I have experience building applied ML solutions in **Deep Learning, Reinforcemen
 
 ---
 ## Project Experience
+
 ### Sustainable Energy Management in Smart Homes with Reinforcement Learning  
 **[🔗 View Source Code](https://github.com/sarayusd/Sustainable-Energy-Management-with-Reinforcement-Learning.git)**
 
