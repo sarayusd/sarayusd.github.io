@@ -49,7 +49,9 @@ I have experience building applied ML solutions in **Deep Learning, Reinforcemen
   - Other experimental CNN variants (Mini / Efficient-style)  
 - Achieved a project-high **76% F1-score** and enhanced robustness by combining multiple models using soft and weighted ensemble voting.  
 
-- **Tech:** PyTorch · CNN · SE blocks · Knowledge distillation · Ensemble voting  
+- **Tech:** PyTorch · CNN · SE blocks · Knowledge distillation · Ensemble voting
+  
+--
 
 ##  Professional Experience
 
