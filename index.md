@@ -16,43 +16,40 @@ I have experience building applied ML solutions in **Deep Learning, Reinforcemen
 - **ML & Data Frameworks:** PyTorch, Scikit-learn, Pandas, NumPy, OpenCV, Gymnasium, PySpark, Hadoop  
 - **Visualization:** Matplotlib, Seaborn  
 - **Databases:** MySQL, Oracle  
-- **Tools:** Git, Bitbucket, Maven, MATLAB, Jupyter Notebook
+- **Tools:** Git, Bitbucket, Maven, MATLAB, Jupyter Notebook  
 
 ---
-
-# Sustainable Energy Management in Smart Homes with Reinforcement Learning
+## Project Experience
+# Sustainable Energy Management in Smart Homes with Reinforcement Learning  
 **[🔗 View Source Code](https://github.com/sarayusd/Sustainable-Energy-Management-with-Reinforcement-Learning.git)**
 
 - Explored intelligent battery storage control in CityLearn environment to minimize energy cost and carbon emissions.  
 - Implemented and compared **Rule Based Control**, **PPO**, and **SAC** agents.  
-- SAC achieved best energy efficiency and lowest peak demand.  
-- **Tech:** PyTorch · CityLearn · RL · Python
-
+- **SAC** achieved best energy efficiency and lowest peak demand.  
+- **Tech:** PyTorch · CityLearn · RL · Python  
 
 ---
 
-# Scene Recognition with Deep CNNs (MIT Indoor67)
+# Scene Recognition with Deep CNNs (MIT Indoor67)  
 **[🔗 View Source Code](https://github.com/sarayusd/Scene-Recognition-with-Deep-CNNs)**
 
- **1. Dense like Teacher (Strong Backbone)**
-- Implemented a custom DenseNet-like architecture from the scratch.
-- Achieved strong single-model performance on indoor 67 dataset.
-- Used SE (Squeeze and Excitation)* in bottleneck blocks to improve channelwise attention.
+**1. Dense like Teacher (Strong Backbone)**  
+- Implemented a custom DenseNet-like architecture from scratch.  
+- Achieved strong single-model performance on indoor 67 dataset.  
+- Used **SE (Squeeze and Excitation)** in bottleneck blocks to improve channelwise attention.  
 
- **2. Hybrid CNN + SE (Student) with Knowledge Distillation**
-- Built a lighter Hybrid CNN with SE blocks for faster inference.
-- Distilled soft targets from the Dense like teacher so that student learned richer class boundaries than from hard labels alone.
+**2. Hybrid CNN + SE (Student) with Knowledge Distillation**  
+- Built a lighter Hybrid CNN with SE blocks for faster inference.  
+- Distilled soft targets from the Dense-like teacher so that the student learned richer class boundaries than from hard labels alone.  
 
- **3. Ensemble Learning**
-- Final predictions were ensembled across all trained models:
-  - Dense like teacher
-  - Distilled Hybrid CNN + SE
-  - Other experimental CNN variants (Mini / Efficient-style)
-- Achieved a project high 76% F1-score and enhanced robustness by combining multiple models using soft and weighted ensemble voting.
-  
- -**Tech:** PyTorch, CNN , SE blocks, knowledge distillation, ensemble voting
+**3. Ensemble Learning**  
+- Final predictions were ensembled across all trained models:  
+  - Dense-like teacher  
+  - Distilled Hybrid CNN + SE  
+  - Other experimental CNN variants (Mini / Efficient-style)  
+- Achieved a project-high **76% F1-score** and enhanced robustness by combining multiple models using soft and weighted ensemble voting.  
 
----
+- **Tech:** PyTorch · CNN · SE blocks · Knowledge distillation · Ensemble voting  
 
 ##  Professional Experience
 
