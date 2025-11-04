@@ -36,7 +36,6 @@ I have experience building applied ML solutions in **Deep Learning, Reinforcemen
 
 **1. Dense like Teacher (Strong Backbone)**  
 - Implemented a custom DenseNet-like architecture from scratch.  
-- Achieved strong single-model performance on indoor 67 dataset.  
 - Used **SE (Squeeze and Excitation)** in bottleneck blocks to improve channelwise attention.  
 
 **2. Hybrid CNN + SE (Student) with Knowledge Distillation**  
@@ -52,7 +51,7 @@ I have experience building applied ML solutions in **Deep Learning, Reinforcemen
 
 - **Tech:** PyTorch · CNN · SE blocks · Knowledge distillation · Ensemble voting
   
---
+---
 
 ##  Professional Experience
 
