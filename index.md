@@ -40,7 +40,6 @@ Docker · Kubernetes · CI/CD · GPU-based Training & Inference · CUDA
 ---
 ## Project Experience
 
-
 ## Deep Learning-Based Predictive Maintenance of Rotating Machinery  
 *(University - Industry Collaboration)*  
 
@@ -54,6 +53,7 @@ Docker · Kubernetes · CI/CD · GPU-based Training & Inference · CUDA
 ---
 
 ## Agentic Multimodal RAG with Hybrid Retrieval  
+**[🔗 View Source Code](https://github.com/sarayusd/Agentic-Multimodal-RAG-with-Hybrid-Retrieval.git)**
 
 - Built an **agentic multimodal Retrieval-Augmented Generation system** using OpenCLIP, LangChain, ChromaDB, and OpenAI API, indexing **8K+ image-text pairs**.  
 - Achieved **84.5% Recall@5 and 0.81 MRR** in text-to-image retrieval evaluation.  
