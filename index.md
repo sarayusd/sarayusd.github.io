@@ -38,17 +38,19 @@ Docker · Kubernetes · CI/CD · GPU-based Training & Inference · CUDA
 
 
 ---
-## Project Experience
 
-## Deep Learning-Based Predictive Maintenance of Rotating Machinery  
-*(University - Industry Collaboration)*  
+# <span style="color:#9333ea;">Project Experience</span>
+
+---
+
+##  <span style="color:#16a34a;">Deep Learning-Based Predictive Maintenance of Rotating Machinery(University - Industry Collaboration </span>
 
 - Engineered a triaxial vibration data acquisition pipeline on a custom rotor test rig, generating **100K+ vibration signals** across multiple fault conditions.  
 - Developed a custom **dual-encoder 1D CNN** combining time-domain waveforms with FFT-based frequency features using channel-wise attention mechanisms.  
 - Implemented multi-window signal processing to capture fault progression trends and reduce sensitivity to transient noise.  
 - Applied **contrastive self-supervised pretraining**, achieving **91% downstream classification accuracy** while reducing labeled data dependence.  
 
-**Tech:** PyTorch · Signal Processing · Self-Supervised Learning · CNN Architectures · Attention  
+<em> PyTorch · Signal Processing · Self-Supervised Learning · CNN Architectures · Attention </em>
 
 ---
 
