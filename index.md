@@ -5,20 +5,64 @@ title: Sarayu Sivakumar Dhaya
 
 ---
 
-I’m a Master’s student in Artificial Intelligence at the University at Buffalo with 5+ years of software engineering experience. I have experience building applied ML solutions in **Deep Learning, Reinforcement Learning and Computer Vision** for  real world impact.
+# Dipin Ko  
+### MS in Artificial Intelligence (Dec 2025) | 5+ Years Software Engineering Experience  
+
+AI/ML Engineer building **Deep Learning and Generative AI systems**, with expertise in Reinforcement Learning, Multimodal Retrieval (RAG), and end-to-end AI model development.
+
+---
+
+## About Me
+
+I am a Master’s graduate in Artificial Intelligence at the University at Buffalo with 5+ years of professional software engineering experience across backend systems and distributed architectures.
+
+My focus is on building **applied AI systems** using Deep Learning architectures, Reinforcement Learning, and Large Language Models (LLMs). I specialize in developing scalable ML pipelines, multimodal retrieval systems, and production-ready AI solutions for real-world impact.
 
 ---
 
 ## Technical Skills
 
-- **Programming Languages:** Python, Java, SQL  
-- **ML & Data Frameworks:** PyTorch, Scikit-learn, Pandas, NumPy, OpenCV, Gymnasium, PySpark, Hadoop  
-- **Visualization:** Matplotlib, Seaborn  
-- **Databases:** MySQL, Oracle  
-- **Tools:** Git, Bitbucket, Maven, MATLAB, Jupyter Notebook  
+**Programming:** Python · Java · SQL  
+
+**Deep Learning & AI:**  
+PyTorch · TensorFlow · Scikit-learn · Self-Supervised Learning · Reinforcement Learning (PPO, SAC, A2C) · Computer Vision · NLP · Pydantic
+
+**LLMs & Generative AI:**  
+RAG · ReAct Agents · Prompt Engineering · OpenCLIP · ChromaDB · LangChain · OpenAI API  
+
+**Data & Systems:**  
+Pandas · NumPy · OpenCV · Gymnasium · PySpark · Hadoop  
+
+**Systems & Deployment:**  
+Docker · Kubernetes · CI/CD · GPU-based Training & Inference · CUDA  
+
 
 ---
 ## Project Experience
+
+
+## Deep Learning-Based Predictive Maintenance of Rotating Machinery  
+*(University - Industry Collaboration)*  
+
+- Engineered a triaxial vibration data acquisition pipeline on a custom rotor test rig, generating **100K+ vibration signals** across multiple fault conditions.  
+- Developed a custom **dual-encoder 1D CNN** combining time-domain waveforms with FFT-based frequency features using channel-wise attention mechanisms.  
+- Implemented multi-window signal processing to capture fault progression trends and reduce sensitivity to transient noise.  
+- Applied **contrastive self-supervised pretraining**, achieving **91% downstream classification accuracy** while reducing labeled data dependence.  
+
+**Tech:** PyTorch · Signal Processing · Self-Supervised Learning · CNN Architectures · Attention  
+
+---
+
+## Agentic Multimodal RAG with Hybrid Retrieval  
+
+- Built an **agentic multimodal Retrieval-Augmented Generation system** using OpenCLIP, LangChain, ChromaDB, and OpenAI API, indexing **8K+ image-text pairs**.  
+- Achieved **84.5% Recall@5 and 0.81 MRR** in text-to-image retrieval evaluation.  
+- Architected a ReAct-based LLM agent with tool-driven retrieval and grounded reasoning, achieving **9.06/10 faithfulness** and 3.3% refusal rate.  
+- Designed a hybrid ranking pipeline combining dense embeddings with lexical re-scoring to reduce semantic drift and improve grounding robustness.  
+
+**Tech:** OpenCLIP · LangChain · ChromaDB · LLM Agents · Hybrid Retrieval  
+
+---
 
 ### Sustainable Energy Management in Smart Homes with Reinforcement Learning  
 **[🔗 View Source Code](https://github.com/sarayusd/Sustainable-Energy-Management-with-Reinforcement-Learning.git)**
