@@ -89,8 +89,7 @@ a:hover {
 <div class="section hero">
 
 <div class="hero-left">
-<h1>Sarayu Sivakumar Dhaya</h1>
-<p>MS in Artificial Intelligence | 5+ Years Software Engineering</p>
+<h1>Summary</h1>
 
 <p>
 I am a Master’s graduate in Artificial Intelligence at the University at Buffalo with 5+ years of professional software engineering experience across backend systems and distributed architectures. My industry background shaped how I approach systems — with a focus on reliability, scalability, and thoughtful design.
