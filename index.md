@@ -7,10 +7,10 @@ title: Sarayu Sivakumar Dhaya
 :root{
   --bg0:#0b1120;
   --bg1:#0f172a;
-  --card: rgba(30, 41, 59, 0.55);
+  --panel: rgba(30, 41, 59, 0.55);
   --border: rgba(148, 163, 184, 0.16);
-  --muted:#94a3b8;
   --text:#e2e8f0;
+  --muted:#94a3b8;
   --accent1:#38bdf8;
   --accent2:#818cf8;
   --accent3:#22c55e;
@@ -19,230 +19,244 @@ title: Sarayu Sivakumar Dhaya
 body{
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background:
-    radial-gradient(900px 600px at 10% 10%, rgba(56,189,248,0.18), transparent 55%),
-    radial-gradient(800px 520px at 90% 20%, rgba(129,140,248,0.16), transparent 60%),
-    radial-gradient(700px 520px at 80% 95%, rgba(34,197,94,0.10), transparent 55%),
+    radial-gradient(900px 600px at 10% 10%, rgba(56,189,248,0.14), transparent 55%),
+    radial-gradient(800px 520px at 90% 20%, rgba(129,140,248,0.12), transparent 60%),
+    radial-gradient(700px 520px at 80% 95%, rgba(34,197,94,0.08), transparent 55%),
     linear-gradient(180deg, var(--bg1) 0%, var(--bg0) 100%);
   color: var(--text);
-  margin: 0;
 }
 
-/* Layout wrapper with reserved space for fixed right panel */
-.page{
-  padding: 86px 12%;
-  padding-right: calc(12% + 360px); /* reserve space for Core Focus panel */
+/* Centered container that prevents the "left aligned strip" problem */
+.container{
+  width: min(1180px, 92vw);
+  margin: 0 auto;
+  padding: 56px 0 84px 0;
 }
 
-.section{
-  margin: 70px 0;
-}
-
-.hero{
-  margin-top: 10px;
-  padding-bottom: 48px;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.14);
-}
-
-h1{
-  font-size: 54px;
-  line-height: 1.08;
-  margin: 0 0 12px 0;
-  font-weight: 760;
-  letter-spacing: -0.02em;
-  background: linear-gradient(90deg, var(--accent1), var(--accent2));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.subtitle{
-  font-size: 18px;
-  color: var(--muted);
-  margin: 0 0 18px 0;
-}
-
-.divider{
-  width: 72px;
-  height: 3px;
-  border-radius: 3px;
-  background: linear-gradient(90deg, var(--accent1), var(--accent2));
-  margin: 18px 0 30px 0;
-}
+/* Section rhythm */
+.section{ margin: 70px 0; }
+.section:first-child{ margin-top: 28px; }
 
 h2{
   font-size: 30px;
-  margin: 0 0 22px 0;
+  margin: 0 0 18px 0;
   font-weight: 720;
   letter-spacing: -0.01em;
-  color: rgba(226,232,240,0.98);
+}
+.kicker{
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(148,163,184,0.9);
+  margin-bottom: 10px;
 }
 
-p{
+/* Subtle gradient divider */
+.divider{
+  width: 84px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent1), var(--accent2));
+  margin: 18px 0 24px 0;
+  opacity: 0.95;
+}
+
+/* Summary layout */
+.summary-grid{
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 34px;
+  align-items: start;
+}
+
+.summary p{
   font-size: 16.8px;
   line-height: 1.85;
   color: rgba(226,232,240,0.92);
   margin: 0 0 16px 0;
 }
 
-/* Cards */
+/* Core Focus block: not floating, not fixed, looks premium */
+.core{
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px 22px;
+  box-shadow: 0 16px 55px rgba(0,0,0,0.22);
+}
+.core .title{
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(148,163,184,0.9);
+  margin-bottom: 14px;
+}
+.core .item{
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(148,163,184,0.14);
+  font-size: 16px;
+  color: rgba(226,232,240,0.92);
+}
+.core .item:last-child{ border-bottom: none; }
+
+/* Modern cards */
 .card{
-  background: var(--card);
+  background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 26px 26px;
   box-shadow: 0 14px 44px rgba(0,0,0,0.18);
-  margin: 18px 0;
 }
-
+.card + .card{ margin-top: 18px; }
 .card h3{
-  margin: 0 0 12px 0;
+  margin: 0 0 10px 0;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 720;
   letter-spacing: -0.01em;
-  color: rgba(226,232,240,0.98);
 }
-
-.card .meta{
+.meta{
   color: var(--muted);
   font-size: 14px;
-  margin: -4px 0 14px 0;
+  margin: -2px 0 14px 0;
 }
 
-/* Lists inside cards */
-.card ul{
-  margin: 12px 0 0 18px;
-  padding: 0;
-}
+/* Lists inside detailed cards */
+.card ul{ margin: 12px 0 0 18px; padding: 0; }
 .card li{
   margin: 10px 0;
   line-height: 1.7;
   color: rgba(226,232,240,0.92);
 }
 
-/* Tech line */
+/* Skills layout */
+.skills-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.skill-title{
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.chips{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.chip{
+  font-size: 13.5px;
+  color: rgba(226,232,240,0.92);
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(148,163,184,0.14);
+  padding: 8px 10px;
+  border-radius: 999px;
+}
+
+/* Tech line under projects */
 .techline{
   margin-top: 14px;
   font-size: 14px;
   color: var(--muted);
 }
 
-/* Two-column grids for skills + some sections */
-.grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-}
-
-/* Fixed Core Focus panel (STATIC) */
-.core-focus{
-  position: fixed;
-  right: 12%;
-  top: 110px;
-  width: 320px;
-  padding: 26px 24px;
-  border-radius: 18px;
-  background: rgba(15, 23, 42, 0.55);
-  border: 1px solid rgba(148,163,184,0.16);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 18px 60px rgba(0,0,0,0.25);
-}
-
-.core-focus .label{
-  font-size: 12px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(148,163,184,0.92);
-  margin-bottom: 14px;
-}
-
-.core-focus .item{
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(148,163,184,0.14);
-  color: rgba(226,232,240,0.94);
-  font-size: 16px;
-}
-.core-focus .item:last-child{ border-bottom: none; }
-
+/* Links */
 a{ color: rgba(129,140,248,0.95); text-decoration: none; }
 a:hover{ text-decoration: underline; }
 
-/* Responsive: remove fixed panel and return to normal flow */
-@media (max-width: 1100px){
-  .page{ padding: 70px 8%; padding-right: 8%; }
-  .core-focus{
-    position: static;
-    width: auto;
-    margin: 24px 0 0 0;
-  }
-  h1{ font-size: 44px; }
-  .grid{ grid-template-columns: 1fr; }
+/* Responsive */
+@media (max-width: 980px){
+  .summary-grid{ grid-template-columns: 1fr; }
+  .skills-grid{ grid-template-columns: 1fr; }
 }
 </style>
 
-<!-- Fixed (static) right panel -->
-<div class="core-focus">
-  <div class="label">Core Focus</div>
-  <div class="item">Deep Learning</div>
-  <div class="item">Large Language Models</div>
-  <div class="item">Generative AI</div>
-  <div class="item">RAG & Agents</div>
-</div>
-
-<div class="page">
+<div class="container">
 
   <!-- SUMMARY -->
-  <div class="section hero">
-    <h1>Summary</h1>
-    <div class="subtitle">MS in Artificial Intelligence | 5+ Years Software Engineering</div>
+  <div class="section summary">
+    <div class="kicker">Summary</div>
+    <h2>Applied AI · Deep Learning · LLM Systems</h2>
     <div class="divider"></div>
 
-    <p>
-      I am a Master’s graduate in Artificial Intelligence at the University at Buffalo with 5+ years of professional software engineering experience across backend systems and distributed architectures. My industry background shaped how I approach systems — with a focus on reliability, scalability, and thoughtful design.
-    </p>
+    <div class="summary-grid">
 
-    <p>
-      During my graduate studies, I collaborated with Machinery Monitoring Systems LLC on a predictive maintenance project involving real motor hardware, vibration data collection, and iterative deep learning model refinement under real-world constraints.
-    </p>
+      <div>
+        <p>
+          I am a Master’s graduate in Artificial Intelligence at the University at Buffalo with 5+ years of professional software engineering experience across backend systems and distributed architectures. My industry background shaped how I approach systems — with a focus on reliability, scalability, and thoughtful design.
+        </p>
 
-    <p>
-      Through coursework and personal projects, I built LLM-powered systems including a Retrieval-Augmented Generation (RAG) conversational assistant and an agentic multimodal retrieval system combining vector embeddings, hybrid retrieval, and agent-based reasoning.
-    </p>
+        <p>
+          During my graduate studies, I collaborated with Machinery Monitoring Systems LLC on a predictive maintenance project involving real motor hardware, vibration data collection, and iterative deep learning model refinement under real-world constraints.
+        </p>
 
-    <p>
-      I am focused on building practical deep learning and LLM-based systems, particularly in Generative AI, RAG, and agent architectures designed for real-world deployment.
-    </p>
+        <p>
+          Through coursework and personal projects, I built LLM-powered systems including a Retrieval-Augmented Generation (RAG) conversational assistant and an agentic multimodal retrieval system combining vector embeddings, hybrid retrieval, and agent-based reasoning.
+        </p>
+
+        <p>
+          I am focused on building practical deep learning and LLM-based systems, particularly in Generative AI, RAG, and agent architectures designed for real-world deployment.
+        </p>
+      </div>
+
+      <!-- Keep this block OR delete it entirely if you don't want Core Focus -->
+      <div class="core">
+        <div class="title">Core Focus</div>
+        <div class="item">Deep Learning</div>
+        <div class="item">Large Language Models</div>
+        <div class="item">Generative AI</div>
+        <div class="item">RAG & Agents</div>
+      </div>
+
+    </div>
   </div>
 
   <!-- TECHNICAL SKILLS -->
   <div class="section">
-    <h2>Technical Skills</h2>
+    <div class="kicker">Technical Skills</div>
+    <h2>Tooling and frameworks I work with</h2>
+    <div class="divider"></div>
 
-    <div class="grid">
+    <div class="skills-grid">
+
       <div class="card">
-        <h3>Programming</h3>
-        <div class="meta">Python · Java · SQL</div>
+        <div class="skill-title">Programming</div>
+        <div class="chips">
+          <span class="chip">Python</span><span class="chip">Java</span><span class="chip">SQL</span>
+        </div>
       </div>
 
       <div class="card">
-        <h3>Deep Learning & AI</h3>
-        <div class="meta">PyTorch · TensorFlow · Scikit-learn · Computer Vision · NLP</div>
+        <div class="skill-title">Deep Learning & AI</div>
+        <div class="chips">
+          <span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">Scikit-learn</span>
+          <span class="chip">Computer Vision</span><span class="chip">NLP</span>
+        </div>
       </div>
 
       <div class="card">
-        <h3>LLMs & Generative AI</h3>
-        <div class="meta">RAG · ReAct Agents · OpenCLIP · LangChain · ChromaDB · OpenAI API</div>
+        <div class="skill-title">LLMs & Generative AI</div>
+        <div class="chips">
+          <span class="chip">RAG</span><span class="chip">ReAct Agents</span><span class="chip">OpenCLIP</span>
+          <span class="chip">LangChain</span><span class="chip">ChromaDB</span><span class="chip">OpenAI API</span>
+        </div>
       </div>
 
       <div class="card">
-        <h3>Systems & Deployment</h3>
-        <div class="meta">Docker · Kubernetes · CI/CD · CUDA · GPU Training</div>
+        <div class="skill-title">Systems & Deployment</div>
+        <div class="chips">
+          <span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">CI/CD</span>
+          <span class="chip">CUDA</span><span class="chip">GPU Training</span>
+        </div>
       </div>
+
     </div>
   </div>
 
-  <!-- PROJECT EXPERIENCE (DETAILED IN CARDS) -->
+  <!-- PROJECT EXPERIENCE  -->
   <div class="section">
-    <h2>Project Experience</h2>
+    <div class="kicker">Project Experience</div>
+    <h2>Selected work</h2>
+    <div class="divider"></div>
 
     <div class="card">
       <h3>Deep Learning-Based Predictive Maintenance of Rotating Machinery</h3>
@@ -273,8 +287,8 @@ a:hover{ text-decoration: underline; }
       <div class="meta"><a href="https://github.com/abc/Sustainable-Energy-Management-with-Reinforcement-Learning.git" target="_blank">View Source Code</a></div>
       <ul>
         <li>Explored intelligent battery storage control in CityLearn environment to minimize energy cost and carbon emissions.</li>
-        <li>Implemented and compared Rule Based Control, PPO, and SAC agents.</li>
-        <li>SAC achieved best energy efficiency and lowest peak demand.</li>
+        <li>Implemented and compared <strong>Rule Based Control</strong>, <strong>PPO</strong>, and <strong>SAC</strong> agents.</li>
+        <li><strong>SAC</strong> achieved best energy efficiency and lowest peak demand.</li>
       </ul>
       <div class="techline"><strong>Tech:</strong> PyTorch · CityLearn · RL · Python</div>
     </div>
@@ -286,7 +300,7 @@ a:hover{ text-decoration: underline; }
       <p><strong>1. Dense like Teacher (Strong Backbone)</strong></p>
       <ul>
         <li>Implemented a custom DenseNet-like architecture from scratch.</li>
-        <li>Used SE (Squeeze and Excitation) in bottleneck blocks to improve channelwise attention.</li>
+        <li>Used <strong>SE (Squeeze and Excitation)</strong> in bottleneck blocks to improve channelwise attention.</li>
       </ul>
 
       <p><strong>2. Hybrid CNN + SE (Student) with Knowledge Distillation</strong></p>
@@ -297,7 +311,7 @@ a:hover{ text-decoration: underline; }
 
       <p><strong>3. Ensemble Learning</strong></p>
       <ul>
-        <li>Final predictions were ensembled across all trained models (teacher, distilled student, and other CNN variants).</li>
+        <li>Final predictions were ensembled across all trained models: Dense-like teacher, distilled Hybrid CNN + SE, and other experimental CNN variants.</li>
         <li>Achieved a project-high <strong>76% F1-score</strong> using soft and weighted ensemble voting.</li>
       </ul>
 
@@ -305,21 +319,23 @@ a:hover{ text-decoration: underline; }
     </div>
   </div>
 
-  <!-- PROFESSIONAL EXPERIENCE (DETAILED IN CARDS) -->
+  <!-- PROFESSIONAL EXPERIENCE -->
   <div class="section">
-    <h2>Professional Experience</h2>
+    <div class="kicker">Professional Experience</div>
+    <h2>Industry background</h2>
+    <div class="divider"></div>
 
     <div class="card">
-      <h3>Tata Consultancy Services | IT Analyst</h3>
+      <h3>Tata Consultancy Services, India | IT Analyst</h3>
       <div class="meta">Apr 2018 – Dec 2019</div>
       <ul>
-        <li>Developed and maintained Java-based backend systems supporting trade management, settlement workflows, and optimized SQL queries and stored procedures for large relational databases, improving execution efficiency and reliability in production environments.</li>
+        <li>Developed and maintained Java-based backend systems supporting trade management, settlement workflows and optimized SQL queries and stored procedures for large relational databases, improving execution efficiency and reliability in production environments.</li>
         <li>Collaborated in an Agile environment to meet project objectives and deliver results within tight deadlines.</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>Capgemini | Associate Consultant</h3>
+      <h3>Capgemini, India | Associate Consultant</h3>
       <div class="meta">Nov 2013 – Mar 2018</div>
       <ul>
         <li>Designed and implemented RESTful Java microservices for operational dashboards and support workflows.</li>
@@ -327,9 +343,7 @@ a:hover{ text-decoration: underline; }
       </ul>
     </div>
   </div>
-
 </div>
-
 <div class="section">
 
 <h2>Contact</h2>
