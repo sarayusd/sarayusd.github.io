@@ -12,7 +12,7 @@ I am a Master’s graduate in Artificial Intelligence at the University at Buffa
 
 During my coursework I led an industry partnered project with Machinery Monitoring Systems LLC involving real motor hardware, including fault simulation, vibration data collection, data pipelinedevelopment and iterative model refinement for robustness under real-world noise and constraints.
 
-Through coursework, I gained hands-on experience in deep learning, computer vision, and machine learning system design — implementing models, designing structured experiments, benchmarking performance, and refining systems based on measurable results.In parallel, I built personal projects, including a Retrieval-Augmented Generation (RAG) conversational assistant and an agentic multimodal retrieval system. These projects involved semantic search, vector embeddings, hybrid retrieval pipelines, and agent-based reasoning to produce grounded and reliable responses.
+Through coursework, I gained hands-on experience in deep learning, computer vision, and machine learning system design, implementing models, designing structured experiments, benchmarking performance, and refining systems based on measurable results.In parallel, I built personal projects, including a Retrieval-Augmented Generation (RAG) conversational assistant and an agentic multimodal retrieval system. These projects involved semantic search, vector embeddings, hybrid retrieval pipelines, and agent-based reasoning to produce grounded and reliable responses.
 
 Overall, I’m focused on developing practical deep learning and LLM-based systems, with an emphasis on RAG and agent architectures for real-world applications.
 
