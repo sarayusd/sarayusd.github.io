@@ -1,120 +1,225 @@
 ---
 layout: default
-title: Sarayu Sivakumar Dhaya
-
-
+title: abc
 ---
 
+<style>
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  margin: 0;
+}
 
-## About Me
+.section {
+  padding: 80px 10%;
+}
 
-I am a Master’s graduate in Artificial Intelligence at the University at Buffalo with 5+ years of professional software engineering experience across backend systems and distributed architectures.My industry background shaped how I approach systems, with a focus on reliability, scalability and thoughtful design.
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 90vh;
+  border-bottom: 1px solid #1e293b;
+}
 
-During my coursework I led an industry partnered project with Machinery Monitoring Systems LLC involving real motor hardware, including fault simulation, vibration data collection, data pipelinedevelopment and iterative model refinement for robustness under real-world noise and constraints.
+.hero-left {
+  max-width: 55%;
+}
 
-Through coursework, I gained hands-on experience in deep learning, computer vision, and machine learning system design, implementing models, designing structured experiments, benchmarking performance, and refining systems based on measurable results.In parallel, I built personal projects, including a Retrieval-Augmented Generation (RAG) conversational assistant and an agentic multimodal retrieval system. These projects involved semantic search, vector embeddings, hybrid retrieval pipelines, and agent-based reasoning to produce grounded and reliable responses.
+.hero-right {
+  text-align: right;
+  color: #94a3b8;
+}
 
-Overall, I’m focused on developing practical deep learning and LLM-based systems, with an emphasis on RAG and agent architectures for real-world applications.
+h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
----
+h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #38bdf8;
+}
 
-## Technical Skills
+p {
+  line-height: 1.7;
+  color: #cbd5e1;
+}
 
-**Programming:** Python · Java · SQL  
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
 
-**Deep Learning & AI:**  
-PyTorch · TensorFlow · Scikit-learn · Self-Supervised Learning · Reinforcement Learning (PPO, SAC, A2C) · Computer Vision · NLP · Pydantic
+.card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid #334155;
+}
 
-**LLMs & Generative AI:**  
-RAG · ReAct Agents · Prompt Engineering · OpenCLIP · ChromaDB · LangChain · OpenAI API  
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+}
 
-**Data & Systems:**  
-Pandas · NumPy · OpenCV · Gymnasium · PySpark · Hadoop  
+.tech {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-top: 15px;
+}
 
-**Systems & Deployment:**  
-Docker · Kubernetes · CI/CD · GPU-based Training & Inference · CUDA  
+a {
+  color: #818cf8;
+  text-decoration: none;
+}
 
+a:hover {
+  text-decoration: underline;
+}
+</style>
 
----
+<div class="section hero">
 
+<div class="hero-left">
+<h1>Sarayu Sivakumar Dhaya</h1>
+<p>MS in Artificial Intelligence | 5+ Years Software Engineering</p>
 
-## Project Experience
+<p>
+I am a Master’s graduate in Artificial Intelligence at the University at Buffalo with 5+ years of professional software engineering experience across backend systems and distributed architectures. My industry background shaped how I approach systems — with a focus on reliability, scalability, and thoughtful design.
+</p>
 
-## Deep Learning-Based Predictive Maintenance of Rotating Machinery  
-*(University - Industry Collaboration)*  
+<p>
+During my graduate studies, I collaborated with Machinery Monitoring Systems LLC on a predictive maintenance project involving real motor hardware, vibration data collection, and iterative deep learning model refinement under real-world constraints.
+</p>
 
-- Engineered a triaxial vibration data acquisition pipeline on a custom rotor test rig, generating **100K+ vibration signals** across multiple fault conditions.  
-- Developed a custom **dual-encoder 1D CNN** combining time-domain waveforms with FFT-based frequency features using channel-wise attention mechanisms.  
-- Implemented multi-window signal processing to capture fault progression trends and reduce sensitivity to transient noise.  
-- Applied **contrastive self-supervised pretraining**, achieving **91% downstream classification accuracy** while reducing labeled data dependence.  
+<p>
+Through coursework and personal projects, I built LLM-powered systems including a Retrieval-Augmented Generation (RAG) conversational assistant and an agentic multimodal retrieval system combining vector embeddings, hybrid retrieval, and agent-based reasoning.
+</p>
 
-**Tech:** PyTorch · Signal Processing · Self-Supervised Learning · CNN Architectures · Attention  
+<p>
+I am focused on building practical deep learning and LLM-based systems, particularly in Generative AI, RAG, and agent architectures designed for real-world deployment.
+</p>
 
----
+</div>
 
-## Agentic Multimodal RAG with Hybrid Retrieval  
-**[🔗 View Source Code](https://github.com/sarayusd/Agentic-Multimodal-RAG-with-Hybrid-Retrieval.git)**
+<div class="hero-right">
+<p><strong>Core Focus</strong></p>
+<p>Deep Learning</p>
+<p>Large Language Models</p>
+<p>Generative AI</p>
+<p>RAG & Agents</p>
+</div>
 
-- Built an **agentic multimodal Retrieval-Augmented Generation system** using OpenCLIP, LangChain, ChromaDB, and OpenAI API, indexing **8K+ image-text pairs**.  
-- Achieved **84.5% Recall@5 and 0.81 MRR** in text-to-image retrieval evaluation.  
-- Architected a ReAct-based LLM agent with tool-driven retrieval and grounded reasoning, achieving **9.06/10 faithfulness** and 3.3% refusal rate.  
-- Designed a hybrid ranking pipeline combining dense embeddings with lexical re-scoring to reduce semantic drift and improve grounding robustness.  
+</div>
 
-**Tech:** OpenCLIP · LangChain · ChromaDB · LLM Agents · Hybrid Retrieval  
+<div class="section">
 
----
+<h2>Technical Skills</h2>
 
-### Sustainable Energy Management in Smart Homes with Reinforcement Learning  
-**[🔗 View Source Code](https://github.com/sarayusd/Sustainable-Energy-Management-with-Reinforcement-Learning.git)**
+<div class="grid">
 
-- Explored intelligent battery storage control in CityLearn environment to minimize energy cost and carbon emissions.  
-- Implemented and compared **Rule Based Control**, **PPO**, and **SAC** agents.  
-- **SAC** achieved best energy efficiency and lowest peak demand.  
-- **Tech:** PyTorch · CityLearn · RL · Python  
+<div class="card">
+<strong>Programming</strong>
+<p>Python · Java · SQL</p>
+</div>
 
----
+<div class="card">
+<strong>Deep Learning & AI</strong>
+<p>PyTorch · TensorFlow · Scikit-learn · Computer Vision · NLP</p>
+</div>
 
-### Scene Recognition with Deep CNNs (MIT Indoor67)  
-**[🔗 View Source Code](https://github.com/sarayusd/Scene-Recognition-with-Deep-CNNs)**
+<div class="card">
+<strong>LLMs & Generative AI</strong>
+<p>RAG · ReAct Agents · OpenCLIP · LangChain · ChromaDB · OpenAI API</p>
+</div>
 
-**1. Dense like Teacher (Strong Backbone)**  
-- Implemented a custom DenseNet-like architecture from scratch.  
-- Used **SE (Squeeze and Excitation)** in bottleneck blocks to improve channelwise attention.  
+<div class="card">
+<strong>Systems & Deployment</strong>
+<p>Docker · Kubernetes · CI/CD · CUDA · GPU Training</p>
+</div>
 
-**2. Hybrid CNN + SE (Student) with Knowledge Distillation**  
-- Built a lighter Hybrid CNN with SE blocks for faster inference.  
-- Distilled soft targets from the Dense-like teacher so that the student learned richer class boundaries than from hard labels alone.  
+</div>
 
-**3. Ensemble Learning**  
-- Final predictions were ensembled across all trained models:  
-  - Dense-like teacher  
-  - Distilled Hybrid CNN + SE  
-  - Other experimental CNN variants (Mini / Efficient-style)  
-- Achieved a project-high **76% F1-score** and enhanced robustness by combining multiple models using soft and weighted ensemble voting.  
+</div>
 
-- **Tech:** PyTorch · CNN · SE blocks · Knowledge distillation · Ensemble voting
-  
----
+<div class="section">
 
-##  Professional Experience
+<h2>Project Experience</h2>
 
-### Tata Consultancy Services | IT Analyst *(Apr 2018 – Dec 2019)*  
-- Developed **Java modules** for trade, location movement, and settlement.  
-- Designed SQL queries and stored procedures for high-volume data processing.  
-- Collaborated in Agile environment to deliver reliable modules under tight deadlines.
+<div class="grid">
 
-### Capgemini | Associate Consultant *(Nov 2013 – Mar 2018)*  
-- Built **RESTful Java services** and microservices for turbine outage data.  
-- Delivered production support ensuring smooth operations.  
-- Adhered to coding standards, improved maintainability.
+<div class="card">
+<strong>Deep Learning-Based Predictive Maintenance</strong>
+<p>
+Engineered a vibration data pipeline generating 100K+ signals and built a dual-encoder 1D CNN with FFT features and attention mechanisms. Applied contrastive self-supervised pretraining achieving 91% accuracy.
+</p>
+<div class="tech">PyTorch · Signal Processing · Self-Supervised Learning</div>
+</div>
 
----
+<div class="card">
+<strong>Agentic Multimodal RAG</strong>
+<p>
+Built an agentic RAG system indexing 8K+ image-text pairs. Achieved 84.5% Recall@5 and 0.81 MRR. Designed hybrid retrieval and evaluation frameworks for grounded LLM reasoning.
+</p>
+<div class="tech">OpenCLIP · LangChain · ChromaDB · LLM Agents</div>
+</div>
 
-##  Contact & Profiles
+<div class="card">
+<strong>Sustainable Energy Management</strong>
+<p>
+Implemented and benchmarked PPO and SAC agents in CityLearn for cost and carbon optimization. SAC achieved highest energy efficiency.
+</p>
+<div class="tech">PyTorch · RL · Python</div>
+</div>
 
-- **GitHub:** [https://github.com/sarayusd]( https://github.com/sarayusd)  
-- **LinkedIn:** [https://www.linkedin.com/in/sarayusd/](https://www.linkedin.com/in/sarayusd/)  
-- **Email:** sarayusd31@gmail.com  
+<div class="card">
+<strong>Scene Recognition (MIT Indoor67)</strong>
+<p>
+Built custom CNN architectures with knowledge distillation and ensemble learning, achieving 76% F1-score.
+</p>
+<div class="tech">PyTorch · CNN · SE Blocks · Ensemble Learning</div>
+</div>
 
----
+</div>
 
+</div>
+
+<div class="section">
+
+<h2>Professional Experience</h2>
+
+<div class="grid">
+
+<div class="card">
+<strong>Tata Consultancy Services | IT Analyst</strong>
+<p>Java backend systems, SQL optimization, high-volume trade workflows, Agile delivery.</p>
+</div>
+
+<div class="card">
+<strong>Capgemini | Associate Consultant</strong>
+<p>RESTful Java microservices, production support, distributed systems debugging.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Contact</h2>
+<p>
+GitHub: <a href="https://github.com/sarayusd"> https://github.com/sarayusd"> </a><br>
+LinkedIn: <a href=" https://www.linkedin.com/in/sarayusd/">https://www.linkedin.com/in/sarayusd/</a><br>
+Email: sarayusd31@gmail.com
+</p>
+
+</div>
+<img width="468" height="649" alt="image" src="https://github.com/user-attachments/assets/306352a9-b914-455e-942b-2731045c3126" />
