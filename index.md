@@ -30,7 +30,7 @@ html, body{
   overflow-x:hidden;
 }
 
-/* Remove GitHub container constraints */
+/* Remove GitHub constraints */
 .main-content,
 .container,
 .container-lg,
@@ -49,13 +49,13 @@ footer,
 }
 
 .wrapper{
-  width:min(1200px, calc(100vw - 80px));
+  width:min(1150px, calc(100vw - 80px));
   margin:0 auto;
   padding:80px 0;
 }
 
 .section{
-  margin:100px 0;
+  margin:120px 0;
 }
 
 .section-title{
@@ -63,14 +63,13 @@ footer,
   letter-spacing:.2em;
   text-transform:uppercase;
   color:rgba(255,255,255,.6);
-  margin-bottom:12px;
+  margin-bottom:10px;
 }
 
 h1{
   font-size:56px;
   font-weight:800;
-  letter-spacing:-.02em;
-  margin:0 0 10px 0;
+  margin:0 0 15px 0;
 }
 
 h2{
@@ -86,52 +85,57 @@ h2{
 .rule{
   width:80px;
   height:3px;
-  border-radius:999px;
   background:linear-gradient(90deg,var(--accent2),var(--accent));
-  margin:20px 0 30px 0;
+  border-radius:999px;
+  margin:20px 0 35px 0;
 }
 
 p{
   font-size:19px;
   line-height:1.9;
   color:var(--muted);
-  margin-bottom:20px;
+  margin-bottom:22px;
 }
 
 .card{
   background:linear-gradient(180deg,rgba(17,26,47,.95),rgba(15,23,42,.9));
   border:1px solid var(--border);
   border-radius:18px;
-  padding:40px;
-  margin-bottom:30px;
-  box-shadow:0 15px 50px rgba(0,0,0,.35);
+  padding:45px;
+  margin-bottom:40px;
+  box-shadow:0 20px 60px rgba(0,0,0,.35);
 }
 
 .card h3{
-  margin:0 0 10px 0;
-  font-size:22px;
+  font-size:24px;
+  margin:0 0 8px 0;
 }
 
 .meta{
-  color:rgba(255,255,255,.6);
   font-size:15px;
-  margin-bottom:15px;
+  color:rgba(255,255,255,.6);
+  margin-bottom:14px;
+}
+
+.smalllink{
+  font-size:15px;
+  margin:0 0 16px 0;
 }
 
 ul{
-  padding-left:22px;
-  margin:15px 0;
+  padding-left:24px;
+  margin-top:15px;
 }
 
 li{
-  margin-bottom:12px;
+  margin-bottom:14px;
   font-size:18px;
-  line-height:1.7;
+  line-height:1.8;
   color:var(--muted);
 }
 
 .tags{
-  margin-top:15px;
+  margin-top:20px;
   font-size:15px;
   color:rgba(255,255,255,.6);
 }
@@ -139,7 +143,7 @@ li{
 .skill-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:30px;
+  gap:35px;
 }
 
 .contact{
@@ -148,7 +152,7 @@ li{
 }
 
 .contact h3{
-  font-size:26px;
+  font-size:28px;
   margin-bottom:25px;
 }
 
@@ -158,7 +162,7 @@ li{
 }
 
 .contact-list li{
-  margin:15px 0;
+  margin:18px 0;
   font-size:18px;
 }
 
@@ -167,9 +171,7 @@ a{
   text-decoration:none;
 }
 
-a:hover{
-  text-decoration:underline;
-}
+a:hover{ text-decoration:underline; }
 
 @media(max-width:900px){
   .wrapper{ width:calc(100vw - 40px); }
@@ -182,7 +184,10 @@ a:hover{
 <div class="wrapper">
 
 <!-- HERO -->
-
+<div class="section">
+  <h1>Sarayu Sivakumar Dhaya</h1>
+  <p>MS in Artificial Intelligence (Dec 2025) · 5+ Years Software Engineering Experience</p>
+</div>
 
 <!-- SUMMARY -->
 <div class="section">
@@ -191,25 +196,25 @@ a:hover{
   <div class="rule"></div>
 
   <p>
-  I am a Master’s graduate in Artificial Intelligence at the University at Buffalo with 5+ years of professional software engineering experience across backend systems and distributed architectures. My industry background shaped how I approach systems — with a focus on reliability, scalability, and thoughtful design.
+  I am a Master’s graduate in Artificial Intelligence at the University at Buffalo with 5+ years of professional software engineering experience across backend systems and distributed architectures. My industry background shaped how I approach systems — focusing on reliability, scalability, and thoughtful design.
   </p>
 
   <p>
-  During my graduate studies, I collaborated with Machinery Monitoring Systems LLC on a predictive maintenance project involving real motor hardware, vibration data collection, and iterative deep learning model refinement under real-world constraints.
+  During my graduate studies, I collaborated with Machinery Monitoring Systems LLC on a predictive maintenance project involving real motor hardware, vibration data acquisition, structured experimentation, and iterative deep learning refinement under real-world constraints.
   </p>
 
   <p>
-  Through coursework and personal projects, I built LLM-powered systems including a Retrieval-Augmented Generation (RAG) conversational assistant and an agentic multimodal retrieval system combining vector embeddings, hybrid retrieval, and agent-based reasoning.
+  Through coursework and personal projects, I built LLM-powered systems including a Retrieval-Augmented Generation (RAG) conversational assistant and an agentic multimodal retrieval system combining semantic search, vector embeddings, hybrid retrieval, and agent-based reasoning.
   </p>
 
   <p>
-  I am focused on building practical deep learning and LLM-based systems, particularly in Generative AI, RAG, and agent architectures designed for real-world deployment.
+  I am focused on building practical deep learning and Generative AI systems, particularly RAG and agent-based architectures designed for measurable, reliable real-world deployment.
   </p>
 </div>
 
 <!-- SKILLS -->
 <div class="section">
-  <div class="section-title">Skills</div>
+  <div class="section-title">Technical Skills</div>
   <h2 class="accent">Tooling & Frameworks</h2>
   <div class="rule"></div>
 
@@ -226,7 +231,12 @@ a:hover{
 
     <div class="card">
       <h3>LLMs & Generative AI</h3>
-      <p>RAG · ReAct Agents · OpenCLIP · LangChain · ChromaDB · OpenAI API</p>
+      <p>RAG · ReAct Agents · Prompt Engineering · OpenCLIP · LangChain · ChromaDB · OpenAI API</p>
+    </div>
+
+    <div class="card">
+      <h3>Data & Systems</h3>
+      <p>Pandas · NumPy · OpenCV · PySpark · Hadoop</p>
     </div>
 
     <div class="card">
@@ -243,25 +253,64 @@ a:hover{
   <div class="rule"></div>
 
   <div class="card">
-    <h3>Deep Learning-Based Predictive Maintenance</h3>
+    <h3>Deep Learning-Based Predictive Maintenance of Rotating Machinery</h3>
     <div class="meta">(University – Industry Collaboration)</div>
     <ul>
-      <li>Engineered a triaxial vibration data pipeline generating 100K+ signals across multiple fault conditions.</li>
-      <li>Developed a dual-encoder 1D CNN combining time-domain and FFT features with attention mechanisms.</li>
-      <li>Applied contrastive self-supervised pretraining achieving 91% downstream accuracy.</li>
+      <li>Engineered a triaxial vibration data acquisition pipeline on a custom rotor test rig, generating 100K+ vibration signals across multiple fault conditions.</li>
+      <li>Developed a custom dual-encoder 1D CNN combining time-domain waveforms with FFT-based frequency features using channel-wise attention mechanisms.</li>
+      <li>Implemented multi-window signal processing to capture fault progression trends and reduce sensitivity to transient noise.</li>
+      <li>Applied contrastive self-supervised pretraining, achieving 91% downstream classification accuracy while reducing labeled data dependence.</li>
     </ul>
-    <div class="tags">PyTorch · Signal Processing · Self-Supervised Learning</div>
+    <div class="tags">PyTorch · Signal Processing · Self-Supervised Learning · CNN Architectures · Attention</div>
   </div>
 
   <div class="card">
     <h3>Agentic Multimodal RAG with Hybrid Retrieval</h3>
+    <div class="smalllink"><a href="https://github.com/abc/Agentic-Multimodal-RAG-with-Hybrid-Retrieval.git">View Source Code</a></div>
     <ul>
-      <li>Built an agentic RAG system indexing 8K+ image-text pairs.</li>
-      <li>Achieved 84.5% Recall@5 and 0.81 MRR in retrieval evaluation.</li>
-      <li>Designed hybrid ranking and evaluation frameworks for grounded LLM reasoning.</li>
+      <li>Developed an agentic multimodal RAG system using OpenCLIP, LangChain, ChromaDB, and OpenAI API, indexing 8K+ image-text pairs.</li>
+      <li>Achieved 84.5% Recall@5 and 0.81 MRR on text-to-image retrieval evaluation.</li>
+      <li>Architected a ReAct-based LLM agent with tool-driven retrieval and grounded reasoning, achieving 9.06/10 faithfulness and 3.3% refusal rate.</li>
+      <li>Designed a hybrid ranking pipeline combining dense embeddings with lexical re-scoring to reduce semantic drift and improve grounding robustness.</li>
+      <li>Implemented CUDA-accelerated embedding and batch indexing workflow for scalable high-dimensional vector storage.</li>
+      <li>Developed an evaluation framework measuring retrieval accuracy and LLM generation quality to ensure grounding and reliability.</li>
     </ul>
-    <div class="tags">OpenCLIP · LangChain · ChromaDB · LLM Agents</div>
+    <div class="tags">OpenCLIP · LangChain · ChromaDB · LLM Agents · Hybrid Retrieval</div>
   </div>
+
+  <div class="card">
+    <h3>LLM-Powered RAG Conversational Assistant (Wikipedia)</h3>
+    <ul>
+      <li>Built an LLM-powered conversational assistant using Retrieval-Augmented Generation (RAG) over Wikipedia content.</li>
+      <li>Combined semantic search, vector embeddings, and retrieval evaluation to generate grounded, reliable responses.</li>
+      <li>Integrated tool-based reasoning patterns to reduce hallucinations and improve answer traceability.</li>
+    </ul>
+    <div class="tags">RAG · Semantic Search · Vector Embeddings · Grounded Generation</div>
+  </div>
+
+  <div class="card">
+    <h3>Scene Recognition with Deep CNNs (MIT Indoor67)</h3>
+    <div class="smalllink"><a href="https://github.com/abc/Scene-Recognition-with-Deep-CNNs">View Source Code</a></div>
+    <ul>
+      <li>Implemented a custom DenseNet-like teacher model from scratch and improved representation quality using SE blocks.</li>
+      <li>Built a lighter Hybrid CNN + SE student model and applied knowledge distillation to learn richer decision boundaries.</li>
+      <li>Ensembled predictions across models (teacher + distilled student + additional CNN variants) to improve robustness.</li>
+      <li>Achieved a project-high 76% F1-score with soft and weighted ensemble voting.</li>
+    </ul>
+    <div class="tags">PyTorch · CNN · SE Blocks · Knowledge Distillation · Ensemble Learning</div>
+  </div>
+
+  <div class="card">
+    <h3>Sustainable Energy Management in Smart Homes (CityLearn RL)</h3>
+    <div class="smalllink"><a href="https://github.com/abc/Sustainable-Energy-Management-with-Reinforcement-Learning.git">View Source Code</a></div>
+    <ul>
+      <li>Explored intelligent battery storage control in CityLearn environment to minimize energy cost and carbon emissions.</li>
+      <li>Implemented and compared Rule Based Control, PPO, and SAC agents.</li>
+      <li>SAC achieved best energy efficiency and lowest peak demand across experiments.</li>
+    </ul>
+    <div class="tags">PyTorch · CityLearn · Reinforcement Learning · PPO · SAC</div>
+  </div>
+
 </div>
 
 <!-- PROFESSIONAL -->
@@ -271,20 +320,21 @@ a:hover{
   <div class="rule"></div>
 
   <div class="card">
-    <h3>Tata Consultancy Services | IT Analyst</h3>
+    <h3>Tata Consultancy Services, India | IT Analyst</h3>
     <div class="meta">Apr 2018 – Dec 2019</div>
     <ul>
-      <li>Developed Java backend systems for trade management and settlement workflows.</li>
-      <li>Optimized SQL queries and stored procedures for high-volume databases.</li>
+      <li>Developed and maintained Java-based backend systems supporting trade management and settlement workflows.</li>
+      <li>Optimized SQL queries and stored procedures for large relational databases, improving execution efficiency and reliability in production environments.</li>
+      <li>Collaborated in an Agile environment to meet project objectives and deliver results within tight deadlines.</li>
     </ul>
   </div>
 
   <div class="card">
-    <h3>Capgemini | Associate Consultant</h3>
+    <h3>Capgemini, India | Associate Consultant</h3>
     <div class="meta">Nov 2013 – Mar 2018</div>
     <ul>
-      <li>Designed RESTful Java microservices for operational dashboards.</li>
-      <li>Provided production support and resolved distributed system issues.</li>
+      <li>Designed and implemented RESTful Java microservices for operational dashboards and support workflows.</li>
+      <li>Provided production support and debugging for distributed systems, resolving performance bottlenecks and integration issues.</li>
     </ul>
   </div>
 </div>
@@ -292,11 +342,12 @@ a:hover{
 <!-- CONTACT -->
 <div class="contact">
   <h3>Contact</h3>
-  <ul class="contact-list">
-    <li><strong>Email:</strong> sarayusd31@gmail.com</li>
-    <li><strong>GitHub:</strong> <a href="https://github.com/sarayusd">https://github.com/sarayusd</a></li>
-    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sarayusd/">https://www.linkedin.com/in/sarayusd/</a></li>
-  </ul>
+  <p>
+    Email: sarayusd31@gmail.com &nbsp;&nbsp;|&nbsp;&nbsp;
+    GitHub: <a href="https://github.com/sarayusd">https://github.com/sarayusd</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+    LinkedIn: <a href="https://www.linkedin.com/in/sarayusd/">https://www.linkedin.com/in/sarayusd/</a>
+  </p>
 </div>
+
 
 
