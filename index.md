@@ -180,11 +180,6 @@ a:hover{ text-decoration:underline; }
 <div class="wrapper">
 
 <!-- HERO -->
-<div class="section">
-  <h1>Sarayu Sivakumar Dhaya</h1>
-  <p>MS in Artificial Intelligence (Dec 2025) · 5+ Years Software Engineering Experience</p>
-</div>
-
 <!-- SUMMARY -->
 <div class="section">
   <div class="section-title">Summary</div>
@@ -245,7 +240,6 @@ a:hover{ text-decoration:underline; }
 <!-- PROJECTS -->
 <div class="section">
   <div class="section-title">Project Experience</div>
-  <h2 class="accent">Selected Work</h2>
   <div class="rule"></div>
 
   <div class="card">
@@ -311,7 +305,7 @@ a:hover{ text-decoration:underline; }
 
 <!-- PROFESSIONAL -->
 <div class="section">
-  <div class="section-title">Professional Experience</div>
+  <div class="section-title"></div>
   <h2 class="accent">Industry Background</h2>
   <div class="rule"></div>
 
