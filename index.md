@@ -5,11 +5,6 @@ title: Sarayu Sivakumar Dhaya
 
 ---
 
-### MS in Artificial Intelligence (Dec 2025) | 5+ Years Software Engineering Experience  
-
-AI/ML Engineer building **Deep Learning and Generative AI systems**, with expertise in Reinforcement Learning, Multimodal Retrieval (RAG), and end-to-end AI model development.
-
----
 
 ## About Me
 
