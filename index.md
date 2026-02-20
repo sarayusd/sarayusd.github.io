@@ -149,23 +149,19 @@ li{
 .contact{
   text-align:center;
   margin-top:120px;
+  padding-bottom:40px;
 }
 
 .contact h3{
   font-size:28px;
-  margin-bottom:25px;
+  margin-bottom:18px;
 }
 
-.contact-list{
-  list-style:none;
-  padding:0;
-}
-
-.contact-list li{
-  margin:18px 0;
+.contact p{
   font-size:18px;
+  color:var(--muted);
+  margin:0;
 }
-
 a{
   color:var(--accent2);
   text-decoration:none;
