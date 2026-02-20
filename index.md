@@ -341,7 +341,7 @@ h2{
 
       <div class="card">
         <h3>Agentic Multimodal RAG with Hybrid Retrieval</h3>
-        <div class="meta"><a href="https://github.com/abc/Agentic-Multimodal-RAG-with-Hybrid-Retrieval.git" target="_blank">View Source Code</a></div>
+        <div class="meta"><a href="https://github.com/sarayusd/Agentic-Multimodal-RAG-with-Hybrid-Retrieval.git" target="_blank">View Source Code</a></div>
         <ul>
           <li>Built an agentic multimodal Retrieval-Augmented Generation system using OpenCLIP, LangChain, ChromaDB, and OpenAI API, indexing <strong>8K+ image-text pairs</strong>.</li>
           <li>Achieved <strong>84.5% Recall@5</strong> and <strong>0.81 MRR</strong> in text-to-image retrieval evaluation.</li>
@@ -355,7 +355,7 @@ h2{
 
       <div class="card">
         <h3>Sustainable Energy Management in Smart Homes with Reinforcement Learning</h3>
-        <div class="meta"><a href="https://github.com/abc/Sustainable-Energy-Management-with-Reinforcement-Learning.git" target="_blank">View Source Code</a></div>
+        <div class="meta"><a href="https://github.com/sarayusd/Sustainable-Energy-Management-with-Reinforcement-Learning.git" target="_blank">View Source Code</a></div>
         <ul>
           <li>Explored intelligent battery storage control in CityLearn environment to minimize energy cost and carbon emissions.</li>
           <li>Implemented and compared <strong>Rule Based Control</strong>, <strong>PPO</strong>, and <strong>SAC</strong> agents.</li>
@@ -366,7 +366,7 @@ h2{
 
       <div class="card">
         <h3>Scene Recognition with Deep CNNs (MIT Indoor67)</h3>
-        <div class="meta"><a href="https://github.com/abc/Scene-Recognition-with-Deep-CNNs" target="_blank">View Source Code</a></div>
+        <div class="meta"><a href="https://github.com/sarayusd/Scene-Recognition-with-Deep-CNNs.git" target="_blank">View Source Code</a></div>
 
         <p><strong>1. Dense like Teacher (Strong Backbone)</strong></p>
         <ul>
