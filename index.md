@@ -182,10 +182,7 @@ a:hover{
 <div class="wrapper">
 
 <!-- HERO -->
-<div class="section">
-  <h1>Sarayu Sivakumar Dhaya</h1>
-  <p>MS in Artificial Intelligence (Dec 2025) · 5+ Years Software Engineering Experience</p>
-</div>
+
 
 <!-- SUMMARY -->
 <div class="section">
