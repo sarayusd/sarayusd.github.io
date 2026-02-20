@@ -8,7 +8,7 @@ title: Sarayu Sivakumar Dhaya
 
 ## About Me
 
-I am a Master’s graduate in Artificial Intelligence at the University at Buffalo with 5+ years of professional software engineering experience across backend systems and distributed architectures.My industry background shaped how I approach systems — with a focus on reliability, scalability and thoughtful design.
+I am a Master’s graduate in Artificial Intelligence at the University at Buffalo with 5+ years of professional software engineering experience across backend systems and distributed architectures.My industry background shaped how I approach systems, with a focus on reliability, scalability and thoughtful design.
 
 During my coursework I led an industry partnered project with Machinery Monitoring Systems LLC involving real motor hardware, including fault simulation, vibration data collection, data pipelinedevelopment and iterative model refinement for robustness under real-world noise and constraints.
 
