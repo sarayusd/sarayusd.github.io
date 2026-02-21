@@ -1,16 +1,33 @@
 # ------------------------------------------------------------------
-# 1. Site Metadata (Crucial for SEO and professional appearance)
+# 1. Site Metadata (SEO + Professional Branding)
 # ------------------------------------------------------------------
-title: "Sarayu Sivakumar Dhaya"
+title: "Sarayu Sivakumar Dhaya | AI Engineer"
 email: sarayusd31@gmail.com
-description: "MS in Artificial Intelligence (Dec 2025) with 5+ years of software engineering experience.
-Specializing in Deep Learning, Large Language Models and Generative AI Systems."
-baseurl: "" # Do not change this for a user site (username.github.io)
+description: >
+  AI Engineer specializing in Deep Learning, Large Language Models (LLMs),
+  Multimodal Retrieval-Augmented Generation (RAG), and Generative AI systems.
+  5+ years of software engineering experience building scalable,
+  production-ready AI architectures and agentic LLM pipelines.
+
+baseurl: ""  # Keep empty for username.github.io
+url: "https://sarayusd.github.io"
+
 github_username: sarayusd
+linkedin_username: sarayusd
 
 # ------------------------------------------------------------------
-# 2. Theme Selection (The easiest way to get a professional look)
+# 2. Theme (Professional + Clean)
 # ------------------------------------------------------------------
 remote_theme: pages-themes/cayman@v0.2.0
+
 plugins:
-  - jekyll-remote-theme give me nice git ppages creation
+  - jekyll-remote-theme
+
+# ------------------------------------------------------------------
+# 3. Cayman Theme Customization (Color Styling)
+# ------------------------------------------------------------------
+show_downloads: false
+
+# Primary theme colors
+theme_color: "#0f172a"     # Deep navy
+accent_color: "#22c55e"    # AI green
