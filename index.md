@@ -9,7 +9,7 @@ title: Sarayu Sivakumar Dhaya
 :root{
   --bg:#070b18;
   --panel:#111a2f;
-  --border:rgba(255,255,255,.08);
+  --border:rgba(255,255,255,.10);
   --text:#e6edf7;
   --muted:#b3c0d4;
   --accent:#22c55e;
@@ -24,9 +24,10 @@ html, body{
   font-family:'Inter',sans-serif;
   color:var(--text);
   background:
-    radial-gradient(1200px 600px at 20% 10%, rgba(56,189,248,.15), transparent 60%),
-    radial-gradient(1000px 600px at 80% 20%, rgba(34,197,94,.12), transparent 60%),
+    radial-gradient(1200px 600px at 20% 10%, rgba(56,189,248,.20), transparent 60%),
+    radial-gradient(1000px 600px at 80% 20%, rgba(34,197,94,.15), transparent 60%),
     linear-gradient(180deg,#060913 0%,#070b18 100%);
+  overflow-x:hidden;
 }
 
 .main-content,
@@ -39,204 +40,250 @@ article{
   margin:0 !important;
 }
 
-footer{ display:none !important; }
+footer,
+.site-footer,
+.page-footer{
+  display:none !important;
+}
 
 .wrapper{
   width:min(1150px, calc(100vw - 80px));
   margin:0 auto;
-  padding:100px 0;
+  padding:80px 0;
 }
 
-.section{ margin:120px 0; }
+.section{
+  margin:120px 0;
+}
+
+.section-title{
+  font-size:14px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.6);
+  margin-bottom:10px;
+}
 
 h1{
-  font-size:58px;
+  font-size:56px;
   font-weight:800;
-  margin:0;
+  margin:0 0 15px 0;
 }
 
 h2{
-  font-size:40px;
+  font-size:42px;
   font-weight:700;
-  margin:0 0 25px 0;
+  margin:0 0 20px 0;
 }
 
 .accent{ color:var(--accent); }
 
-.subtitle{
-  font-size:22px;
-  margin-top:25px;
-  color:var(--muted);
-  line-height:1.8;
-}
-
 .rule{
-  width:90px;
+  width:80px;
   height:3px;
   background:linear-gradient(90deg,var(--accent2),var(--accent));
   border-radius:999px;
-  margin:30px 0 40px 0;
+  margin:20px 0 35px 0;
+}
+
+p{
+  font-size:19px;
+  line-height:1.9;
+  color:var(--muted);
+  margin-bottom:22px;
 }
 
 .card{
   background:linear-gradient(180deg,rgba(17,26,47,.95),rgba(15,23,42,.9));
   border:1px solid var(--border);
   border-radius:18px;
-  padding:50px;
-  margin-bottom:50px;
+  padding:45px;
+  margin-bottom:40px;
   box-shadow:0 20px 60px rgba(0,0,0,.35);
 }
 
 .card h3{
-  font-size:26px;
-  margin-bottom:10px;
+  font-size:24px;
+  margin:0 0 8px 0;
 }
 
 .meta{
   font-size:15px;
   color:rgba(255,255,255,.6);
-  margin-bottom:18px;
+  margin-bottom:14px;
+}
+
+.smalllink{
+  font-size:15px;
+  margin:0 0 16px 0;
 }
 
 ul{
-  padding-left:25px;
+  padding-left:24px;
+  margin-top:15px;
 }
 
 li{
-  margin-bottom:15px;
+  margin-bottom:14px;
   font-size:18px;
-  color:var(--muted);
   line-height:1.8;
+  color:var(--muted);
 }
 
-.metrics{
-  display:flex;
-  gap:30px;
-  flex-wrap:wrap;
+.results-box{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.1);
+  padding:20px;
+  border-radius:12px;
   margin-top:25px;
 }
 
-.metric{
-  background:rgba(255,255,255,.03);
-  border:1px solid var(--border);
-  padding:18px 24px;
-  border-radius:12px;
-  font-size:16px;
+.arch-box{
+  margin-top:30px;
 }
 
-.button{
-  display:inline-block;
-  padding:14px 26px;
-  border-radius:12px;
-  background:linear-gradient(90deg,var(--accent2),var(--accent));
-  color:#000;
-  font-weight:600;
-  text-decoration:none;
-  margin-top:25px;
+.demo-box{
+  margin-top:35px;
+}
+
+.tags{
+  margin-top:20px;
+  font-size:15px;
+  color:rgba(255,255,255,.6);
 }
 
 .contact{
   text-align:center;
   margin-top:120px;
+  padding-bottom:40px;
+}
+
+.contact h3{
+  font-size:28px;
+  margin-bottom:18px;
 }
 
 .contact p{
-  color:var(--muted);
   font-size:18px;
+  color:var(--muted);
+  margin:0;
+}
+
+a{
+  color:var(--accent2);
+  text-decoration:none;
+}
+a:hover{ text-decoration:underline; }
+
+@media(max-width:900px){
+  .wrapper{ width:calc(100vw - 40px); }
+  h1{ font-size:40px; }
+  h2{ font-size:30px; }
 }
 </style>
 
 <div class="wrapper">
 
-<!-- HERO -->
-<div class="section">
-  <h1>Sarayu <span class="accent">Sivakumar Dhaya</span></h1>
-  <div class="subtitle">
-    AI Engineer specializing in Multimodal RAG Systems, Agentic LLM Architectures, and Production-Grade Deep Learning Systems.
-  </div>
-</div>
-
 <!-- SUMMARY -->
 <div class="section">
-  <h2 class="accent">About</h2>
+  <div class="section-title">Summary</div>
+  <h2 class="accent">Applied AI · Deep Learning · LLM Systems</h2>
   <div class="rule"></div>
 
-  <p class="subtitle">
-  Master’s graduate in Artificial Intelligence with 5+ years of backend and distributed systems experience. I design and build applied AI systems that combine deep learning, multimodal retrieval, and LLM-based reasoning with measurable evaluation and deployment focus.
+  <p>
+  I am a Master’s graduate in Artificial Intelligence with 5+ years of backend engineering experience across distributed systems. I design production-style AI systems combining multimodal embeddings, hybrid retrieval pipelines, agent-based reasoning, and measurable evaluation for reliable deployment.
   </p>
 </div>
 
-<!-- FEATURED PROJECT -->
+<!-- PROJECTS -->
 <div class="section">
-  <h2 class="accent">Featured Project — Agentic Multimodal RAG</h2>
+  <div class="section-title">Project Experience</div>
   <div class="rule"></div>
 
+  <!-- RAG PROJECT -->
   <div class="card">
     <h3>Agentic Multimodal RAG with Hybrid Retrieval</h3>
-    <div class="meta">OpenCLIP · ChromaDB · ReAct Agents · GPT-4o</div>
+    <div class="smalllink">
+      <a href="https://github.com/abc/Agentic-Multimodal-RAG-with-Hybrid-Retrieval.git">
+        View Source Code
+      </a>
+    </div>
 
     <ul>
-      <li>Architected a production-style multimodal RAG system combining shared embedding space alignment with hybrid retrieval and agent-based reasoning.</li>
+      <li>Architected a production-style multimodal RAG system using OpenCLIP shared embedding space, ChromaDB vector search, hybrid semantic + lexical reranking, and ReAct-based tool reasoning.</li>
       <li>Indexed 8K+ multimodal documents using CUDA-accelerated embedding pipelines.</li>
-      <li>Designed hybrid reranking (cosine similarity + lexical overlap) to improve grounding robustness.</li>
-      <li>Implemented ReAct tool-calling loop for evidence-first reasoning and controlled refusal behavior.</li>
-      <li>Built quantitative evaluation framework for retrieval and generation reliability.</li>
+      <li>Designed hybrid ranking pipeline (cosine similarity + keyword overlap) to reduce semantic drift and improve grounding robustness.</li>
+      <li>Implemented agentic tool-calling loop enabling evidence-first reasoning and controlled refusal behavior.</li>
+      <li>Built quantitative evaluation framework for retrieval accuracy and LLM grounding reliability.</li>
     </ul>
 
-    <div class="metrics">
-      <div class="metric"><strong>Recall@5</strong><br>84.5%</div>
-      <div class="metric"><strong>MRR</strong><br>0.81</div>
-      <div class="metric"><strong>Faithfulness</strong><br>9.06 / 10</div>
-      <div class="metric"><strong>Refusal Rate</strong><br>3.3%</div>
+    <div class="results-box">
+      <strong>Results</strong>
+      <ul>
+        <li><strong>Recall@5:</strong> 84.5%</li>
+        <li><strong>MRR:</strong> 0.81</li>
+        <li><strong>Faithfulness:</strong> 9.06 / 10</li>
+        <li><strong>Refusal Rate:</strong> 3.3%</li>
+      </ul>
     </div>
 
-    <a href="https://github.com/abc/Agentic-Multimodal-RAG-with-Hybrid-Retrieval.git" class="button">
-      View Full Repository
-    </a>
+    <div class="arch-box">
+      <strong>System Architecture</strong>
+      <img src="assets/rag_architecture.png"
+           style="width:100%; margin-top:15px; border-radius:12px; border:1px solid rgba(255,255,255,.1);">
+    </div>
 
-    <div style="margin-top:40px;">
-      <h3>System Architecture</h3>
-      <img src="assets/rag_architecture.png" style="width:100%; border-radius:12px; border:1px solid rgba(255,255,255,.1);">
+    <div class="demo-box">
+      <strong>Live Demo</strong>
+      <iframe width="100%" height="420"
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+        frameborder="0"
+        allowfullscreen
+        style="margin-top:15px; border-radius:12px; border:1px solid rgba(255,255,255,.1);">
+      </iframe>
+    </div>
+
+    <div class="tags">
+      OpenCLIP · ChromaDB · Hybrid Retrieval · ReAct Agents · GPT-4o · CUDA
     </div>
   </div>
+
+  <!-- Predictive Maintenance -->
+  <div class="card">
+    <h3>Deep Learning-Based Predictive Maintenance of Rotating Machinery</h3>
+    <div class="meta">(University – Industry Collaboration)</div>
+    <ul>
+      <li>Engineered triaxial vibration acquisition pipeline generating 100K+ signals across fault conditions.</li>
+      <li>Developed dual-encoder 1D CNN combining time-domain and FFT frequency features.</li>
+      <li>Applied contrastive self-supervised pretraining achieving 91% classification accuracy.</li>
+    </ul>
+    <div class="tags">PyTorch · Signal Processing · Self-Supervised Learning</div>
+  </div>
+
 </div>
 
-<!-- OTHER PROJECTS -->
+<!-- INDUSTRY -->
 <div class="section">
-  <h2 class="accent">Selected Projects</h2>
+  <div class="section-title">Industry Background</div>
+  <h2 class="accent">Software Engineering Experience</h2>
   <div class="rule"></div>
 
   <div class="card">
-    <h3>Deep Learning-Based Predictive Maintenance</h3>
-    <div class="meta">Industry Collaboration · 100K+ Vibration Signals</div>
+    <h3>Tata Consultancy Services | IT Analyst</h3>
+    <div class="meta">2018 – 2019</div>
     <ul>
-      <li>Engineered triaxial vibration data pipeline for rotating machinery fault detection.</li>
-      <li>Built dual-encoder CNN combining time-domain and FFT frequency representations.</li>
-      <li>Applied contrastive self-supervised learning achieving 91% classification accuracy.</li>
+      <li>Developed and maintained high-volume Java backend systems for financial trade workflows.</li>
+      <li>Optimized SQL procedures improving system performance and production reliability.</li>
+      <li>Delivered production-grade systems within Agile environments.</li>
     </ul>
   </div>
 
   <div class="card">
-    <h3>LLM-Powered Wikipedia RAG Assistant</h3>
+    <h3>Capgemini | Associate Consultant</h3>
+    <div class="meta">2013 – 2018</div>
     <ul>
-      <li>Built retrieval-augmented conversational assistant with grounded answer generation.</li>
-      <li>Integrated semantic search, vector indexing, and tool-based reasoning safeguards.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>MIT Indoor Scene Classification</h3>
-    <ul>
-      <li>Implemented DenseNet-like teacher model with SE attention blocks.</li>
-      <li>Applied knowledge distillation and ensemble voting achieving 76% F1-score.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Reinforcement Learning for Smart Energy Systems</h3>
-    <ul>
-      <li>Implemented PPO and SAC agents in CityLearn environment.</li>
-      <li>SAC achieved best performance on energy efficiency and peak load reduction.</li>
+      <li>Designed RESTful Java microservices for enterprise dashboards.</li>
+      <li>Resolved distributed system performance bottlenecks and integration issues.</li>
     </ul>
   </div>
 </div>
@@ -252,6 +299,7 @@ li{
 </div>
 
 </div>
+
 
 
 
