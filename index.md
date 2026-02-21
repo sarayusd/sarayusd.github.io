@@ -239,7 +239,7 @@ a:hover{ text-decoration:underline; }
      <div class="arch-box">
       
     <div class="smalllink">
-      <a href="https://github.com/abc/Agentic-Multimodal-RAG-with-Hybrid-Retrieval.git">
+      <a href="https://github.com/sarayusd/Agentic-Multimodal-RAG-with-Hybrid-Retrieval.git">
         View Source Code
       </a>
     </div>
@@ -303,6 +303,11 @@ a:hover{ text-decoration:underline; }
   <!-- WIKIPEDIA RAG -->
   <div class="card">
     <h3>LLM-Powered RAG Conversational Assistant (Wikipedia)</h3>
+    <div class="smalllink">
+      <a href="https://github.com/sarayusd/LLM-powered-Chatbot-with-RAG-using-LlamaIndex.git">
+        View Source Code
+      </a>
+    </div>
     <ul>
       <li>Built a conversational assistant using Retrieval-Augmented Generation over Wikipedia corpus.</li>
       <li>Integrated semantic vector search and grounded prompting to reduce hallucination risk.</li>
@@ -316,7 +321,7 @@ a:hover{ text-decoration:underline; }
   <div class="card">
     <h3>Scene Recognition with Deep CNNs (MIT Indoor67)</h3>
     <div class="smalllink">
-      <a href="https://github.com/abc/Scene-Recognition-with-Deep-CNNs">
+      <a href="https://github.com/sarayusd/Scene-Recognition-with-Deep-CNNs.git">
         View Source Code
       </a>
     </div>
@@ -333,7 +338,7 @@ a:hover{ text-decoration:underline; }
   <div class="card">
     <h3>Sustainable Energy Management in Smart Homes (CityLearn RL)</h3>
     <div class="smalllink">
-      <a href="https://github.com/abc/Sustainable-Energy-Management-with-Reinforcement-Learning.git">
+      <a href="https://github.com/sarayusd/Sustainable-Energy-Management-with-Reinforcement-Learning.git">
         View Source Code
       </a>
     </div>
