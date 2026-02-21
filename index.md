@@ -17,8 +17,8 @@ title: Sarayu Sivakumar Dhaya
   --text:#f5f4fa;
   --muted:#b8b4cc;
 
-  --accent:#c6a84f;
-  --accent2:#7b3fe4;
+  --accent:#c6a84f;   /* gold */
+  --accent2:#7b3fe4;  /* purple */
 }
 
 /* ============================= */
@@ -101,8 +101,6 @@ footer,
 /* ============================= */
 /* UNIFIED SECTION HEADINGS */
 /* ============================= */
-
-/* All section titles now identical */
 .section-title,
 .section h2{
   font-size:42px;
@@ -117,10 +115,8 @@ footer,
   text-shadow: 0 0 25px rgba(198,168,79,.15);
 }
 
-/* Remove old small uppercase look */
 .section-title{
   text-transform:none;
-  letter-spacing:-0.5px;
 }
 
 /* Section underline */
@@ -144,7 +140,7 @@ p{
 
 ul{
   padding-left:24px;
-  margin-top:15px;
+  margin-top:14px;
 }
 
 li{
@@ -155,7 +151,7 @@ li{
 }
 
 /* ============================= */
-/* CARDS */
+/* CARD LAYOUT */
 /* ============================= */
 .card{
   background:linear-gradient(180deg,var(--panel),var(--panel-2));
@@ -172,12 +168,52 @@ li{
   border-color:rgba(198,168,79,.35);
 }
 
-.card h3{
-  font-size:24px;
-  margin:0 0 8px 0;
+/* ===== Card Header Layout ===== */
+.card-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:20px;
+  margin-bottom:6px;
+}
+
+.card-header h3{
+  margin:0;
+  font-size:26px;
+  font-weight:600;
+  line-height:1.3;
+  flex:1;
   color:#ffffff;
 }
 
+/* ===== Repo Link ===== */
+.repo-link{
+  font-size:14px;
+  font-weight:600;
+  color:var(--accent);
+  text-decoration:none;
+  white-space:nowrap;
+  margin-top:6px;
+  transition:.25s ease;
+}
+
+.repo-link:hover{
+  color:var(--accent2);
+}
+
+/* ===== Project Stack (Skills line) ===== */
+.project-stack{
+  font-size:14px;
+  font-weight:500;
+  margin-bottom:20px;
+  margin-top:8px;
+  color:#d4b35a;
+  letter-spacing:.4px;
+  padding-bottom:6px;
+  border-bottom:1px solid rgba(198,168,79,.15);
+}
+
+/* Meta */
 .meta{
   font-size:15px;
   color:rgba(255,255,255,.5);
@@ -213,15 +249,6 @@ li{
 }
 
 /* ============================= */
-/* TAGS */
-/* ============================= */
-.tags{
-  margin-top:20px;
-  font-size:15px;
-  color:rgba(255,255,255,.5);
-}
-
-/* ============================= */
 /* LINKS */
 /* ============================= */
 a{
@@ -232,7 +259,6 @@ a{
 
 a:hover{
   color:var(--accent2);
-  text-decoration:none;
 }
 
 /* ============================= */
