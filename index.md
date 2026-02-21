@@ -5,7 +5,17 @@ title: Sarayu Sivakumar Dhaya
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+.page-header {
+  background: linear-gradient(135deg, #0b0c1a, #16172a) !important;
+}
 
+.project-name {
+  color: #fbbf24 !important;  /* Gold */
+}
+
+.project-tagline {
+  color: #a78bfa !important;  /* Purple */
+}
 :root{
   --bg:#070b18;
   --panel:#111a2f;
