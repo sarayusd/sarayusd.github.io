@@ -188,25 +188,29 @@ a:hover{ text-decoration:underline; }
 
 <!-- SUMMARY -->
 <div class="section">
-  <div class="section-title">Summary</div>
-  <h2 class="accent">Applied AI · LLM Systems · Intelligent Infrastructure</h2>
+  <div class="section-title">About Me</div>
+  <h2 class="accent">AI Engineer · Deep Learning · Agentic Systems</h2>
   <div class="rule"></div>
 
-  <p>
-    I am a Master’s graduate in Artificial Intelligence from the University at Buffalo with 5+ years of professional software engineering experience building backend systems and distributed architectures. My industry foundation shapes how I design AI systems — prioritizing scalability, robustness, and production readiness.
-  </p>
+  <div class="summary-grid">
+    <div>
+      <p>
+        I am a Master’s graduate in Artificial Intelligence from the University at Buffalo with 5+ years of professional software engineering experience building scalable backend systems and distributed architectures. My industry foundation shapes how I design AI systems — prioritizing robustness, performance, and production readiness.
+      </p>
 
-  <p>
-    During my graduate studies, I partnered with Machinery Monitoring Systems LLC on a real-world predictive maintenance initiative involving triaxial vibration acquisition, hardware-level experimentation, and iterative deep learning optimization under operational constraints.
-  </p>
+      <p>
+        During my graduate studies, I partnered with Machinery Monitoring Systems LLC on a real-world predictive maintenance initiative involving triaxial vibration acquisition, hardware-level experimentation, and iterative deep learning refinement under operational constraints.
+      </p>
 
-  <p>
-    I have architected LLM-powered systems including Retrieval-Augmented Generation (RAG) assistants and agentic multimodal retrieval pipelines integrating shared embedding spaces, hybrid reranking, and evidence-first reasoning frameworks.
-  </p>
+      <p>
+        I have architected LLM-powered systems including Retrieval-Augmented Generation (RAG) assistants and agentic multimodal retrieval pipelines integrating shared embedding spaces, hybrid reranking, and evidence-first reasoning workflows.
+      </p>
 
-  <p>
-    My focus lies in building practical deep learning and LLM-based systems — particularly in Generative AI, multimodal RAG, and agent architectures engineered for measurable performance and reliable real-world deployment.
-  </p>
+      <p>
+        My focus lies in building practical deep learning and LLM-based systems — particularly in Generative AI, multimodal RAG, and agent architectures engineered for measurable performance and reliable real-world deployment.
+      </p>
+    </div>
+  </div>
 </div>
 
 <!-- PROJECTS -->
