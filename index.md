@@ -196,9 +196,34 @@ a:hover{ text-decoration:underline; }
 </div>
 
 <!-- PROJECTS -->
+<!-- PROJECTS -->
 <div class="section">
   <div class="section-title">Project Experience</div>
   <div class="rule"></div>
+
+  <!-- PREDICTIVE MAINTENANCE (Moved to Top) -->
+  <div class="card">
+    <h3>Deep Learning-Based Predictive Maintenance of Rotating Machinery</h3>
+    <div class="meta">University – Industry Collaboration (Machinery Monitoring Systems LLC)</div>
+
+    <ul>
+      <li>Engineered a triaxial vibration acquisition pipeline on a custom rotor test rig, generating 100K+ vibration signals across multiple fault conditions.</li>
+      <li>Developed a dual-encoder 1D CNN combining time-domain waveforms with FFT-based frequency representations using channel-wise attention.</li>
+      <li>Implemented multi-window signal segmentation to capture progressive fault behavior and reduce transient noise sensitivity.</li>
+      <li>Applied contrastive self-supervised pretraining achieving <strong>91% downstream classification accuracy</strong> with reduced labeled data dependence.</li>
+    </ul>
+
+    <div class="arch-box">
+      <strong>System Architecture</strong>
+      <img src="assets/predictive_maintenance_architecture.png"
+           style="width:100%; margin-top:15px; border-radius:12px; border:1px solid rgba(255,255,255,.1);">
+    </div>
+
+    <div class="tags">
+      PyTorch · Signal Processing · Self-Supervised Learning · CNN Architectures · Attention
+    </div>
+  </div>
+
 
   <!-- RAG PROJECT -->
   <div class="card">
@@ -211,10 +236,10 @@ a:hover{ text-decoration:underline; }
 
     <ul>
       <li>Architected a production-style multimodal RAG system using OpenCLIP shared embedding space, ChromaDB vector search, hybrid semantic + lexical reranking, and ReAct-based tool reasoning.</li>
-      <li>Indexed 8K+ multimodal documents using CUDA-accelerated embedding pipelines.</li>
+      <li>Indexed 8K+ multimodal image-text pairs using CUDA-accelerated embedding pipelines.</li>
       <li>Designed hybrid ranking pipeline (cosine similarity + keyword overlap) to reduce semantic drift and improve grounding robustness.</li>
       <li>Implemented agentic tool-calling loop enabling evidence-first reasoning and controlled refusal behavior.</li>
-      <li>Built quantitative evaluation framework for retrieval accuracy and LLM grounding reliability.</li>
+      <li>Built a quantitative evaluation framework measuring retrieval accuracy and LLM grounding reliability.</li>
     </ul>
 
     <div class="results-box">
@@ -244,20 +269,54 @@ a:hover{ text-decoration:underline; }
     </div>
 
     <div class="tags">
-      OpenCLIP · ChromaDB · Hybrid Retrieval · ReAct Agents · GPT-4o · CUDA
+      OpenCLIP · LangChain · ChromaDB · Hybrid Retrieval · ReAct Agents · GPT-4o · CUDA
     </div>
   </div>
 
-  <!-- Predictive Maintenance -->
+
+  <!-- WIKIPEDIA RAG -->
   <div class="card">
-    <h3>Deep Learning-Based Predictive Maintenance of Rotating Machinery</h3>
-    <div class="meta">(University – Industry Collaboration)</div>
+    <h3>LLM-Powered RAG Conversational Assistant (Wikipedia)</h3>
     <ul>
-      <li>Engineered triaxial vibration acquisition pipeline generating 100K+ signals across fault conditions.</li>
-      <li>Developed dual-encoder 1D CNN combining time-domain and FFT frequency features.</li>
-      <li>Applied contrastive self-supervised pretraining achieving 91% classification accuracy.</li>
+      <li>Built a conversational assistant using Retrieval-Augmented Generation over Wikipedia corpus.</li>
+      <li>Integrated semantic vector search and grounded prompting to reduce hallucination risk.</li>
+      <li>Implemented context-aware answer generation with evidence traceability.</li>
     </ul>
-    <div class="tags">PyTorch · Signal Processing · Self-Supervised Learning</div>
+    <div class="tags">RAG · Semantic Search · Vector Embeddings · Grounded Generation</div>
+  </div>
+
+
+  <!-- MIT SCENE RECOGNITION -->
+  <div class="card">
+    <h3>Scene Recognition with Deep CNNs (MIT Indoor67)</h3>
+    <div class="smalllink">
+      <a href="https://github.com/abc/Scene-Recognition-with-Deep-CNNs">
+        View Source Code
+      </a>
+    </div>
+    <ul>
+      <li>Implemented DenseNet-like teacher architecture with SE attention blocks.</li>
+      <li>Applied knowledge distillation to train compact student model.</li>
+      <li>Ensembled teacher + distilled models achieving <strong>76% F1-score</strong>.</li>
+    </ul>
+    <div class="tags">PyTorch · CNN · SE Blocks · Knowledge Distillation · Ensemble Learning</div>
+  </div>
+
+
+  <!-- CITYLEARN RL -->
+  <div class="card">
+    <h3>Sustainable Energy Management in Smart Homes (CityLearn RL)</h3>
+    <div class="smalllink">
+      <a href="https://github.com/abc/Sustainable-Energy-Management-with-Reinforcement-Learning.git">
+        View Source Code
+      </a>
+    </div>
+    <ul>
+      <li>Implemented PPO and SAC reinforcement learning agents in CityLearn environment.</li>
+      <li>Designed reward functions balancing energy cost, carbon emissions, and peak demand.</li>
+      <li>SAC achieved highest efficiency and lowest peak demand across experiments.</li>
+    </ul>
+    <div class="tags">Reinforcement Learning · PPO · SAC · Energy Optimization</div>
   </div>
 
 </div>
