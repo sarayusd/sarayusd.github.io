@@ -64,12 +64,6 @@ footer,
   margin-bottom:10px;
 }
 
-h1{
-  font-size:56px;
-  font-weight:800;
-  margin:0 0 15px 0;
-}
-
 h2{
   font-size:42px;
   font-weight:700;
@@ -139,11 +133,20 @@ li{
 }
 
 .arch-box{
+  background:#ffffff;
+  padding:30px;
+  border-radius:16px;
   margin-top:30px;
+  box-shadow:0 20px 60px rgba(0,0,0,.35);
 }
 
 .demo-box{
-  margin-top:35px;
+  background:#ffffff;
+  padding:30px;
+  border-radius:16px;
+  margin-top:40px;
+  box-shadow:0 20px 60px rgba(0,0,0,.35);
+  text-align:center;
 }
 
 .tags{
@@ -177,7 +180,6 @@ a:hover{ text-decoration:underline; }
 
 @media(max-width:900px){
   .wrapper{ width:calc(100vw - 40px); }
-  h1{ font-size:40px; }
   h2{ font-size:30px; }
 }
 </style>
@@ -186,24 +188,25 @@ a:hover{ text-decoration:underline; }
 
 <!-- SUMMARY -->
 <div class="section">
-  <div class="summary-grid">
-  <div>
-    <p>
-      I am a Master’s graduate in Artificial Intelligence from the University at Buffalo with 5+ years of professional software engineering experience building backend systems and distributed architectures. My industry foundation shapes how I design AI systems — prioritizing scalability, robustness, and production readiness.
-    </p>
+  <div class="section-title">Summary</div>
+  <h2 class="accent">Applied AI · LLM Systems · Intelligent Infrastructure</h2>
+  <div class="rule"></div>
 
-    <p>
-      During my graduate studies, I partnered with Machinery Monitoring Systems LLC on a real-world predictive maintenance initiative involving triaxial vibration acquisition, hardware-level experimentation, and iterative deep learning optimization under operational constraints.
-    </p>
+  <p>
+    I am a Master’s graduate in Artificial Intelligence from the University at Buffalo with 5+ years of professional software engineering experience building backend systems and distributed architectures. My industry foundation shapes how I design AI systems — prioritizing scalability, robustness, and production readiness.
+  </p>
 
-    <p>
-      I have architected LLM-powered systems including Retrieval-Augmented Generation (RAG) assistants and agentic multimodal retrieval pipelines integrating shared embedding spaces, hybrid reranking, and evidence-first reasoning frameworks.
-    </p>
+  <p>
+    During my graduate studies, I partnered with Machinery Monitoring Systems LLC on a real-world predictive maintenance initiative involving triaxial vibration acquisition, hardware-level experimentation, and iterative deep learning optimization under operational constraints.
+  </p>
 
-    <p>
-      My focus lies in building practical deep learning and LLM-based systems — particularly in Generative AI, multimodal RAG, and agent architectures engineered for measurable performance and reliable real-world deployment.
-    </p>
-  </div>
+  <p>
+    I have architected LLM-powered systems including Retrieval-Augmented Generation (RAG) assistants and agentic multimodal retrieval pipelines integrating shared embedding spaces, hybrid reranking, and evidence-first reasoning frameworks.
+  </p>
+
+  <p>
+    My focus lies in building practical deep learning and LLM-based systems — particularly in Generative AI, multimodal RAG, and agent architectures engineered for measurable performance and reliable real-world deployment.
+  </p>
 </div>
 
 <!-- PROJECTS -->
@@ -211,30 +214,21 @@ a:hover{ text-decoration:underline; }
   <div class="section-title">Project Experience</div>
   <div class="rule"></div>
 
-  <!-- PREDICTIVE MAINTENANCE (Moved to Top) -->
+  <!-- Predictive Maintenance -->
   <div class="card">
     <h3>Deep Learning-Based Predictive Maintenance of Rotating Machinery</h3>
     <div class="meta">University – Industry Collaboration (Machinery Monitoring Systems LLC)</div>
-   
+
     <ul>
-      <li>Engineered a triaxial vibration acquisition pipeline on a custom rotor test rig, generating 100K+ vibration signals across multiple fault conditions.</li>
-      <li>Developed a dual-encoder 1D CNN combining time-domain waveforms with FFT-based frequency representations using channel-wise attention.</li>
-      <li>Implemented multi-window signal segmentation to capture progressive fault behavior and reduce transient noise sensitivity.</li>
-      <li>Applied contrastive self-supervised pretraining achieving <strong>91% downstream classification accuracy</strong> with reduced labeled data dependence.</li>
+      <li>Engineered a triaxial vibration acquisition pipeline generating 100K+ signals across multiple fault conditions.</li>
+      <li>Developed dual-encoder 1D CNN combining time-domain + FFT features with channel-wise attention.</li>
+      <li>Applied contrastive self-supervised learning achieving <strong>91% classification accuracy</strong>.</li>
     </ul>
 
-    <div class="arch-box" style="
-    background:#ffffff;
-    padding:30px;
-    border-radius:16px;
-    margin-top:30px;
-    box-shadow:0 20px 60px rgba(0,0,0,.35);
-      ">
-  
-    <strong style="color:#111;">System Architecture</strong>
-  
-    <img src="{{ '/images/mmsp.png' | relative_url }}"
-         style="width:100%; margin-top:20px; border-radius:12px;">
+    <div class="arch-box">
+      <strong style="color:#111;">System Architecture</strong>
+      <img src="{{ '/images/mmsp.png' | relative_url }}"
+           style="width:100%; margin-top:20px; border-radius:12px;">
     </div>
 
     <div class="tags">
@@ -242,12 +236,10 @@ a:hover{ text-decoration:underline; }
     </div>
   </div>
 
-
-  <!-- RAG PROJECT -->
+  <!-- RAG -->
   <div class="card">
     <h3>Agentic Multimodal RAG with Hybrid Retrieval</h3>
-     <div class="arch-box">
-      
+
     <div class="smalllink">
       <a href="https://github.com/sarayusd/Agentic-Multimodal-RAG-with-Hybrid-Retrieval.git">
         View Source Code
@@ -255,11 +247,9 @@ a:hover{ text-decoration:underline; }
     </div>
 
     <ul>
-      <li>Architected a production-style multimodal RAG system using OpenCLIP shared embedding space, ChromaDB vector search, hybrid semantic + lexical reranking, and ReAct-based tool reasoning.</li>
-      <li>Indexed 8K+ multimodal image-text pairs using CUDA-accelerated embedding pipelines.</li>
-      <li>Designed hybrid ranking pipeline (cosine similarity + keyword overlap) to reduce semantic drift and improve grounding robustness.</li>
-      <li>Implemented agentic tool-calling loop enabling evidence-first reasoning and controlled refusal behavior.</li>
-      <li>Built a quantitative evaluation framework measuring retrieval accuracy and LLM grounding reliability.</li>
+      <li>Architected multimodal RAG using OpenCLIP embeddings, ChromaDB vector search, hybrid reranking, and ReAct reasoning loop.</li>
+      <li>Indexed 8K+ image-text pairs with CUDA-accelerated embedding pipelines.</li>
+      <li>Built evaluation framework measuring retrieval and LLM grounding reliability.</li>
     </ul>
 
     <div class="results-box">
@@ -272,44 +262,16 @@ a:hover{ text-decoration:underline; }
       </ul>
     </div>
 
-    <div class="demo-box"
-         style="
-           margin-top:40px;
-           background:#ffffff;
-           padding:30px;
-           border-radius:16px;
-           box-shadow:0 20px 60px rgba(0,0,0,.35);
-           text-align:center;
-         ">
-    
-      <strong style="color:#111;">System Demo</strong>
-    
-      <video controls
-             style="width:75%;
-                    max-width:800px;
-                    margin-top:20px;
-                    border-radius:12px;">
-    
-        <source src="{{ '/images/rag.mp4' | relative_url }}" type="video/mp4">
-    
-      </video>
+    <div class="arch-box">
+      <strong style="color:#111;">System Architecture</strong>
+      <img src="{{ '/images/rag_architecture.png' | relative_url }}"
+           style="width:100%; margin-top:20px; border-radius:12px;">
     </div>
 
-    
-    <div class="demo-box" style="margin-top:30px; text-align:center;">
-      <strong>System Demo</strong>
-    
-      <video controls
-             style="width:65%;
-                    max-width:700px;
-                    margin-top:15px;
-                    border-radius:12px;
-                    border:1px solid rgba(255,255,255,.15);
-                    box-shadow:0 15px 40px rgba(0,0,0,.35);">
-    
+    <div class="demo-box">
+      <strong style="color:#111;">System Demo</strong>
+      <video controls style="width:70%; max-width:800px; margin-top:20px; border-radius:12px;">
         <source src="{{ '/images/rag.mp4' | relative_url }}" type="video/mp4">
-    
-        Your browser does not support the video tag.
       </video>
     </div>
 
@@ -318,99 +280,16 @@ a:hover{ text-decoration:underline; }
     </div>
   </div>
 
-
-  <!-- WIKIPEDIA RAG -->
-  <div class="card">
-    <h3>LLM-Powered RAG Conversational Assistant (Wikipedia)</h3>
-    <div class="smalllink">
-      <a href="https://github.com/sarayusd/LLM-powered-Chatbot-with-RAG-using-LlamaIndex.git">
-        View Source Code
-      </a>
-    </div>
-    <ul>
-      <li>Built a conversational assistant using Retrieval-Augmented Generation over Wikipedia corpus.</li>
-      <li>Integrated semantic vector search and grounded prompting to reduce hallucination risk.</li>
-      <li>Implemented context-aware answer generation with evidence traceability.</li>
-    </ul>
-    <div class="tags">RAG · Semantic Search · Vector Embeddings · Grounded Generation</div>
-  </div>
-
-
-  <!-- MIT SCENE RECOGNITION -->
-  <div class="card">
-    <h3>Scene Recognition with Deep CNNs (MIT Indoor67)</h3>
-    <div class="smalllink">
-      <a href="https://github.com/sarayusd/Scene-Recognition-with-Deep-CNNs.git">
-        View Source Code
-      </a>
-    </div>
-    <ul>
-      <li>Implemented DenseNet-like teacher architecture with SE attention blocks.</li>
-      <li>Applied knowledge distillation to train compact student model.</li>
-      <li>Ensembled teacher + distilled models achieving <strong>76% F1-score</strong>.</li>
-    </ul>
-    <div class="tags">PyTorch · CNN · SE Blocks · Knowledge Distillation · Ensemble Learning</div>
-  </div>
-
-
-  <!-- CITYLEARN RL -->
-  <div class="card">
-    <h3>Sustainable Energy Management in Smart Homes (CityLearn RL)</h3>
-    <div class="smalllink">
-      <a href="https://github.com/sarayusd/Sustainable-Energy-Management-with-Reinforcement-Learning.git">
-        View Source Code
-      </a>
-    </div>
-    <ul>
-      <li>Implemented PPO and SAC reinforcement learning agents in CityLearn environment.</li>
-      <li>Designed reward functions balancing energy cost, carbon emissions, and peak demand.</li>
-      <li>SAC achieved highest efficiency and lowest peak demand across experiments.</li>
-    </ul>
-    <div class="tags">Reinforcement Learning · PPO · SAC · Energy Optimization</div>
-  </div>
-
-</div>
-
-<!-- INDUSTRY -->
-<div class="section">
-  <div class="section-title">Industry Background</div>
-  <h2 class="accent">Software Engineering Experience</h2>
-  <div class="rule"></div>
-
-  <div class="card">
-    <h3>Tata Consultancy Services | IT Analyst</h3>
-    <div class="meta">2018 – 2019</div>
-    <ul>
-      <li>Developed and maintained high-volume Java backend systems for financial trade workflows.</li>
-      <li>Optimized SQL procedures improving system performance and production reliability.</li>
-      <li>Delivered production-grade systems within Agile environments.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Capgemini | Associate Consultant</h3>
-    <div class="meta">2013 – 2018</div>
-    <ul>
-      <li>Designed RESTful Java microservices for enterprise dashboards.</li>
-      <li>Resolved distributed system performance bottlenecks and integration issues.</li>
-    </ul>
-  </div>
 </div>
 
 <!-- CONTACT -->
 <div class="contact">
   <h3>Contact</h3>
   <p>
-    Email: <a href="mailto:sarayusd31@gmail.com">sarayusd31@gmail.com</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-    GitHub: <a href="https://github.com/sarayusd">https://github.com/sarayusd</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-    LinkedIn: <a href="https://www.linkedin.com/in/sarayusd/">https://www.linkedin.com/in/sarayusd/</a>
+    Email: <a href="mailto:sarayusd31@gmail.com">sarayusd31@gmail.com</a> |
+    GitHub: <a href="https://github.com/sarayusd">github.com/sarayus</a> |
+    LinkedIn: <a href="https://linkedin.com/in/sarayusd">linkedin.com/in/sarayusd</a>
   </p>
 </div>
 
 </div>
-
-
-
-
-
-
