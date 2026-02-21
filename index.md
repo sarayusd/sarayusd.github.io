@@ -5,17 +5,25 @@ title: Sarayu Sivakumar Dhaya
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-.page-header {
-  background: linear-gradient(135deg, #0b0c1a, #16172a) !important;
-}
+html, body{
+  margin:0;
+  padding:0;
+  font-family:'Inter',sans-serif;
+  color:var(--text);
 
-.project-name {
-  color: #fbbf24 !important;  /* Gold */
-}
+  background:
+    radial-gradient(800px 400px at 15% 10%, rgba(167,139,250,0.25), transparent 60%),
+    radial-gradient(600px 300px at 85% 15%, rgba(251,191,36,0.15), transparent 60%),
+    linear-gradient(180deg,
+      #1a132b 0%,      /* Deep Purple Top */
+      #0f0a1a 40%,     /* Dark Plum */
+      #07070d 75%,     /* Almost Black */
+      #000000 100%     /* Pure Black Bottom */
+    );
 
-.project-tagline {
-  color: #a78bfa !important;  /* Purple */
+  overflow-x:hidden;
 }
+  
 :root{
   --bg:#070b18;
   --panel:#111a2f;
