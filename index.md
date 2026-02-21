@@ -188,8 +188,9 @@ a:hover{ text-decoration:underline; }
 
 <!-- SUMMARY -->
 <div class="section">
+    <h2 class="accent">AI Engineer · Deep Learning · Agentic Systems</h2>
   <div class="section-title">About Me</div>
-  <h2 class="accent">AI Engineer · Deep Learning · Agentic Systems</h2>
+
   <div class="rule"></div>
 
   <div class="summary-grid">
