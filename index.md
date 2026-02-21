@@ -278,13 +278,17 @@ a:hover{ text-decoration:underline; }
 
     
     <div class="demo-box">
-      <strong>Live Demo</strong>
-      <iframe width="100%" height="420"
-        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-        frameborder="0"
-        allowfullscreen
-        style="margin-top:15px; border-radius:12px; border:1px solid rgba(255,255,255,.1);">
-      </iframe>
+      <strong>System Demo</strong>
+    
+      <video autoplay loop muted playsinline
+             style="width:100%; margin-top:15px;
+                    border-radius:12px;
+                    border:1px solid rgba(255,255,255,.1);
+                    box-shadow:0 15px 40px rgba(0,0,0,.35);">
+    
+        <source src="{{ '/images/rag.mp4' | relative_url }}" type="video/mp4">
+    
+      </video>
     </div>
 
     <div class="tags">
