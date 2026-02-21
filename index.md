@@ -109,17 +109,25 @@ footer,
 /* ============================= */
 /* HEADINGS */
 /* ============================= */
-h2{
-  font-size:42px;
-  font-weight:700;
-  margin:0 0 20px 0;
-}
 
-/* Gradient accent heading */
-.accent{
+
+.section h2,
+.section-title{
   background: linear-gradient(90deg, var(--accent2), var(--accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight:700;
+}
+
+/* Keep size consistent */
+h2{
+  font-size:42px;
+  margin:0 0 20px 0;
+}
+
+/* Optional: stronger glow for main section headers */
+.section h2{
+  text-shadow: 0 0 25px rgba(198,168,79,.15);
 }
 
 /* Section underline */
@@ -424,8 +432,8 @@ a:hover{
 <!-- INDUSTRY -->
 <!-- INDUSTRY -->
 <div class="section">
-  <div class="section-title">Industry Background</div>
-  <h2 class="accent">Software Engineering Experience</h2>
+  <div class="section-title"></div>
+  <h2 class="accent">Professional Experience</h2>
   <div class="rule"></div>
 
   <div class="card">
