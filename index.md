@@ -186,115 +186,152 @@ a:hover{ text-decoration:underline; }
 
 <div class="wrapper">
 
-<!-- SUMMARY -->
+<!-- ABOUT ME -->
 <div class="section">
-    <h2 class="accent">AI Engineer · Deep Learning · Agentic Systems</h2>
+  <h2 class="accent">AI Engineer · Deep Learning · Agentic Systems</h2>
   <div class="section-title">About Me</div>
-
   <div class="rule"></div>
 
-  <div class="summary-grid">
-    <div>
-      <p>
-        I am a Master’s graduate in Artificial Intelligence from the University at Buffalo with 5+ years of professional software engineering experience building scalable backend systems and distributed architectures. My industry foundation shapes how I design AI systems prioritizing robustness, performance, and production readiness.
-      </p>
+  <p>
+    I am a Master’s graduate in Artificial Intelligence from the University at Buffalo with 5+ years of professional software engineering experience building scalable backend systems and distributed architectures. My industry background shapes how I design AI systems — prioritizing robustness, performance, and production readiness.
+  </p>
 
-      <p>
-        During my graduate studies, I partnered with Machinery Monitoring Systems LLC on a real-world predictive maintenance initiative involving triaxial vibration acquisition, hardware-level experimentation, and iterative deep learning refinement under operational constraints.
-      </p>
+  <p>
+    I have built industry-collaborative predictive maintenance systems, multimodal Retrieval-Augmented Generation (RAG) architectures, hybrid semantic + lexical retrieval engines, reinforcement learning agents, and deep CNN models with knowledge distillation.
+  </p>
 
-      <p>
-        I have architected LLM-powered systems including Retrieval-Augmented Generation (RAG) assistants and agentic multimodal retrieval pipelines integrating shared embedding spaces, hybrid reranking, and evidence-first reasoning workflows.
-      </p>
-
-      <p>
-        My focus lies in building practical deep learning and LLM-based systems particularly in Generative AI, multimodal RAG, and agent architectures engineered for measurable performance and reliable real-world deployment.
-      </p>
-    </div>
-  </div>
+  <p>
+    My focus lies in building measurable, grounded, and scalable AI systems — particularly in Generative AI, multimodal retrieval, deep learning, and agent-based reasoning frameworks.
+  </p>
 </div>
 
 <!-- PROJECTS -->
 <div class="section">
-  <div class="section-title">Project Experience</div>
-  <div class="rule"></div>
+<div class="section-title">Project Experience</div>
+<div class="rule"></div>
 
-  <!-- Predictive Maintenance -->
-  <div class="card">
-    <h3>Deep Learning-Based Predictive Maintenance of Rotating Machinery</h3>
-    <div class="meta">University – Industry Collaboration (Machinery Monitoring Systems LLC)</div>
+<!-- Predictive Maintenance -->
+<div class="card">
+<h3>Deep Learning-Based Predictive Maintenance of Rotating Machinery</h3>
+<div class="meta">University – Industry Collaboration (Machinery Monitoring Systems LLC)</div>
 
-    <ul>
-      <li>Engineered a triaxial vibration acquisition pipeline generating 100K+ signals across multiple fault conditions.</li>
-      <li>Developed dual-encoder 1D CNN combining time-domain + FFT features with channel-wise attention.</li>
-      <li>Applied contrastive self-supervised learning achieving <strong>91% classification accuracy</strong>.</li>
-    </ul>
+<ul>
+<li>Engineered triaxial vibration pipeline generating 100K+ fault signals.</li>
+<li>Built dual-encoder 1D CNN (time-domain + FFT features) with attention.</li>
+<li>Applied contrastive SSL achieving <strong>91% classification accuracy</strong>.</li>
+</ul>
 
-    <div class="arch-box">
-      <strong style="color:#111;">System Architecture</strong>
-      <img src="{{ '/images/mmsp.png' | relative_url }}"
-           style="width:100%; margin-top:20px; border-radius:12px;">
-    </div>
+<div class="arch-box">
+<strong style="color:#111;">System Architecture</strong>
+<img src="{{ '/images/mmsp.png' | relative_url }}" style="width:100%; margin-top:20px; border-radius:12px;">
+</div>
 
-    <div class="tags">
-      PyTorch · Signal Processing · Self-Supervised Learning · CNN Architectures · Attention
-    </div>
-  </div>
+<div class="tags">PyTorch · Signal Processing · Self-Supervised Learning · CNN</div>
+</div>
 
-  <!-- RAG -->
-  <div class="card">
-    <h3>Agentic Multimodal RAG with Hybrid Retrieval</h3>
+<!-- Agentic RAG -->
+<div class="card">
+<h3>Agentic Multimodal RAG with Hybrid Retrieval</h3>
 
-    <div class="smalllink">
-      <a href="https://github.com/sarayusd/Agentic-Multimodal-RAG-with-Hybrid-Retrieval.git">
-        View Source Code
-      </a>
-    </div>
+<div class="smalllink">
+<a href="https://github.com/sarayusd/Agentic-Multimodal-RAG-with-Hybrid-Retrieval.git">View Source Code</a>
+</div>
 
-    <ul>
-      <li>Architected multimodal RAG using OpenCLIP embeddings, ChromaDB vector search, hybrid reranking, and ReAct reasoning loop.</li>
-      <li>Indexed 8K+ image-text pairs with CUDA-accelerated embedding pipelines.</li>
-      <li>Built evaluation framework measuring retrieval and LLM grounding reliability.</li>
-    </ul>
+<ul>
+<li>Architected multimodal RAG using OpenCLIP embeddings, ChromaDB, hybrid reranking, and ReAct tool loop.</li>
+<li>Indexed 8K+ multimodal pairs using CUDA-accelerated embedding pipelines.</li>
+<li>Designed evaluation framework for retrieval and grounding metrics.</li>
+</ul>
 
-    <div class="results-box">
-      <strong>Results</strong>
-      <ul>
-        <li><strong>Recall@5:</strong> 84.5%</li>
-        <li><strong>MRR:</strong> 0.81</li>
-        <li><strong>Faithfulness:</strong> 9.06 / 10</li>
-        <li><strong>Refusal Rate:</strong> 3.3%</li>
-      </ul>
-    </div>
+<div class="results-box">
+<strong>Results</strong>
+<ul>
+<li><strong>Recall@5:</strong> 84.5%</li>
+<li><strong>MRR:</strong> 0.81</li>
+<li><strong>Faithfulness:</strong> 9.06 / 10</li>
+<li><strong>Refusal Rate:</strong> 3.3%</li>
+</ul>
+</div>
 
-    <div class="arch-box">
-      <strong style="color:#111;">System Architecture</strong>
-      <img src="{{ '/images/ragAgent.png' | relative_url }}"
-           style="width:100%; margin-top:20px; border-radius:12px;">
-    </div>
+<div class="arch-box">
+<strong style="color:#111;">System Architecture</strong>
+<img src="{{ '/images/ragAgent.png' | relative_url }}" style="width:100%; margin-top:20px; border-radius:12px;">
+</div>
 
-    <div class="demo-box">
-      <strong style="color:#111;">System Demo</strong>
-      <video controls style="width:70%; max-width:800px; margin-top:20px; border-radius:12px;">
-        <source src="{{ '/images/rag.mp4' | relative_url }}" type="video/mp4">
-      </video>
-    </div>
+<div class="demo-box">
+<strong style="color:#111;">System Demo</strong>
+<video controls style="width:70%; max-width:800px; margin-top:20px; border-radius:12px;">
+<source src="{{ '/images/rag.mp4' | relative_url }}" type="video/mp4">
+</video>
+</div>
 
-    <div class="tags">
-      OpenCLIP · LangChain · ChromaDB · Hybrid Retrieval · ReAct Agents · GPT-4o · CUDA
-    </div>
-  </div>
+<div class="tags">OpenCLIP · LangChain · ChromaDB · Hybrid Retrieval · ReAct</div>
+</div>
+
+<!-- Wikipedia RAG -->
+<div class="card">
+<h3>LLM-Powered RAG Conversational Assistant (Wikipedia)</h3>
+<ul>
+<li>Built conversational RAG over Wikipedia corpus.</li>
+<li>Integrated semantic search and grounding strategies.</li>
+</ul>
+<div class="tags">RAG · LlamaIndex · Vector Search</div>
+</div>
+
+<!-- MIT Scene Recognition -->
+<div class="card">
+<h3>Scene Recognition with Deep CNNs (MIT Indoor67)</h3>
+<ul>
+<li>Implemented DenseNet-like teacher + SE attention.</li>
+<li>Applied knowledge distillation achieving <strong>76% F1-score</strong>.</li>
+</ul>
+<div class="tags">PyTorch · CNN · Knowledge Distillation</div>
+</div>
+
+<!-- CityLearn RL -->
+<div class="card">
+<h3>Sustainable Energy Management (CityLearn RL)</h3>
+<ul>
+<li>Implemented PPO and SAC agents for energy optimization.</li>
+<li>SAC achieved best peak demand reduction.</li>
+</ul>
+<div class="tags">Reinforcement Learning · PPO · SAC</div>
+</div>
+
+</div>
+
+<!-- INDUSTRY -->
+<div class="section">
+<div class="section-title">Industry Experience</div>
+<div class="rule"></div>
+
+<div class="card">
+<h3>Tata Consultancy Services | IT Analyst</h3>
+<div class="meta">2018 – 2019</div>
+<ul>
+<li>Developed high-volume Java backend systems.</li>
+<li>Optimized SQL pipelines for performance and reliability.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Capgemini | Associate Consultant</h3>
+<div class="meta">2013 – 2018</div>
+<ul>
+<li>Designed RESTful microservices and resolved distributed bottlenecks.</li>
+</ul>
+</div>
 
 </div>
 
 <!-- CONTACT -->
 <div class="contact">
-  <h3>Contact</h3>
-  <p>
-    Email: <a href="mailto:sarayusd31@gmail.com">sarayusd31@gmail.com</a> |
-    GitHub: <a href="https://github.com/sarayusd">github.com/sarayus</a> |
-    LinkedIn: <a href="https://linkedin.com/in/sarayusd">linkedin.com/in/sarayusd</a>
-  </p>
+<h3>Contact</h3>
+<p>
+Email: <a href="mailto:sarayusd31@gmail.com">sarayusd31@gmail.com</a> |
+GitHub: <a href="https://github.com/sarayusd">github.com/sarayusd</a> |
+LinkedIn: <a href="https://linkedin.com/in/sarayusd">linkedin.com/in/sarayusd</a>
+</p>
 </div>
 
 </div>
