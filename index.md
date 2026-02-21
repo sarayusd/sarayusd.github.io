@@ -9,16 +9,16 @@ title: Sarayu Sivakumar Dhaya
 /* COLOR SYSTEM — PURPLE + GOLD */
 /* ============================= */
 :root{
-  --bg:#08060f;                 /* deep matte black-purple */
-  --panel:#121022;              /* card background */
+  --bg:#08060f;
+  --panel:#121022;
   --panel-2:#0e0b18;
   --border:rgba(255,255,255,.08);
 
   --text:#f5f4fa;
   --muted:#b8b4cc;
 
-  --accent:#c6a84f;             /* elegant gold */
-  --accent2:#7b3fe4;            /* royal purple */
+  --accent:#c6a84f;
+  --accent2:#7b3fe4;
 }
 
 /* ============================= */
@@ -58,7 +58,7 @@ footer,
 }
 
 /* ============================= */
-/* HEADER OVERRIDE */
+/* HEADER */
 /* ============================= */
 .page-header{
   background: linear-gradient(
@@ -98,36 +98,29 @@ footer,
   margin:120px 0;
 }
 
-.section-title{
-  font-size:14px;
-  letter-spacing:.25em;
-  text-transform:uppercase;
-  color:rgba(255,255,255,.55);
-  margin-bottom:10px;
-}
-
 /* ============================= */
-/* HEADINGS */
+/* UNIFIED SECTION HEADINGS */
 /* ============================= */
 
+/* All section titles now identical */
+.section-title,
+.section h2{
+  font-size:42px;
+  font-weight:700;
+  margin:0 0 20px 0;
 
-.section h2,
-.section-title{
   background: linear-gradient(90deg, var(--accent2), var(--accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight:700;
-}
 
-/* Keep size consistent */
-h2{
-  font-size:42px;
-  margin:0 0 20px 0;
-}
-
-/* Optional: stronger glow for main section headers */
-.section h2{
+  letter-spacing:-0.5px;
   text-shadow: 0 0 25px rgba(198,168,79,.15);
+}
+
+/* Remove old small uppercase look */
+.section-title{
+  text-transform:none;
+  letter-spacing:-0.5px;
 }
 
 /* Section underline */
@@ -267,7 +260,10 @@ a:hover{
 /* ============================= */
 @media(max-width:900px){
   .wrapper{ width:calc(100vw - 40px); }
-  h2{ font-size:30px; }
+  .section-title,
+  .section h2{
+    font-size:30px;
+  }
   .project-name{ font-size:40px !important; }
 }
 </style>
