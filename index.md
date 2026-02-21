@@ -186,16 +186,26 @@ a:hover{ text-decoration:underline; }
 
 <!-- SUMMARY -->
 <div class="section">
-  <div class="section-title">Summary</div>
-  <h2 class="accent">Applied AI · Deep Learning · LLM Systems</h2>
-  <div class="rule"></div>
+  <div class="summary-grid">
+  <div>
+    <p>
+      I am a Master’s graduate in Artificial Intelligence from the University at Buffalo with 5+ years of professional software engineering experience building backend systems and distributed architectures. My industry foundation shapes how I design AI systems — prioritizing scalability, robustness, and production readiness.
+    </p>
 
-  <p>
-  I am a Master’s graduate in Artificial Intelligence with 5+ years of backend engineering experience across distributed systems. I design production-style AI systems combining multimodal embeddings, hybrid retrieval pipelines, agent-based reasoning, and measurable evaluation for reliable deployment.
-  </p>
+    <p>
+      During my graduate studies, I partnered with Machinery Monitoring Systems LLC on a real-world predictive maintenance initiative involving triaxial vibration acquisition, hardware-level experimentation, and iterative deep learning optimization under operational constraints.
+    </p>
+
+    <p>
+      I have architected LLM-powered systems including Retrieval-Augmented Generation (RAG) assistants and agentic multimodal retrieval pipelines integrating shared embedding spaces, hybrid reranking, and evidence-first reasoning frameworks.
+    </p>
+
+    <p>
+      My focus lies in building practical deep learning and LLM-based systems — particularly in Generative AI, multimodal RAG, and agent architectures engineered for measurable performance and reliable real-world deployment.
+    </p>
+  </div>
 </div>
 
-<!-- PROJECTS -->
 <!-- PROJECTS -->
 <div class="section">
   <div class="section-title">Project Experience</div>
