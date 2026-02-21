@@ -262,18 +262,27 @@ a:hover{ text-decoration:underline; }
       </ul>
     </div>
 
-    <div class="arch-box" style="
-    background:#ffffff;
-    padding:30px;
-    border-radius:16px;
-    margin-top:30px;
-    box-shadow:0 20px 60px rgba(0,0,0,.35);
-      ">
-  
-    <strong style="color:#111;">System Architecture</strong>
-  
-    <img src="{{ '/images/ragAgent.png' | relative_url }}"
-         style="width:100%; margin-top:20px; border-radius:12px;">
+    <div class="demo-box"
+         style="
+           margin-top:40px;
+           background:#ffffff;
+           padding:30px;
+           border-radius:16px;
+           box-shadow:0 20px 60px rgba(0,0,0,.35);
+           text-align:center;
+         ">
+    
+      <strong style="color:#111;">System Demo</strong>
+    
+      <video controls
+             style="width:75%;
+                    max-width:800px;
+                    margin-top:20px;
+                    border-radius:12px;">
+    
+        <source src="{{ '/images/rag.mp4' | relative_url }}" type="video/mp4">
+    
+      </video>
     </div>
 
     
@@ -382,7 +391,7 @@ a:hover{ text-decoration:underline; }
 <div class="contact">
   <h3>Contact</h3>
   <p>
-    Email: sarayusd31@gmail.com &nbsp;&nbsp;|&nbsp;&nbsp;
+    Email: <a href="mailto:sarayusd31@gmail.com">sabv@gmail.com</a> &nbsp;&nbsp;|&nbsp;&nbsp;
     GitHub: <a href="https://github.com/sarayusd">https://github.com/sarayusd</a> &nbsp;&nbsp;|&nbsp;&nbsp;
     LinkedIn: <a href="https://www.linkedin.com/in/sarayusd/">https://www.linkedin.com/in/sarayusd/</a>
   </p>
