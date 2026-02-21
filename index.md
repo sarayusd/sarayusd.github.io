@@ -269,7 +269,7 @@ a:hover{ text-decoration:underline; }
 
     <div class="arch-box">
       <strong style="color:#111;">System Architecture</strong>
-      <img src="{{ '/images/rag_architecture.png' | relative_url }}"
+      <img src="{{ '/images/argAgent.png' | relative_url }}"
            style="width:100%; margin-top:20px; border-radius:12px;">
     </div>
 
