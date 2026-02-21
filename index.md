@@ -207,96 +207,146 @@ a:hover{ text-decoration:underline; }
 
 <!-- PROJECTS -->
 <div class="section">
-<div class="section-title">Project Experience</div>
-<div class="rule"></div>
+  <div class="section-title">Project Experience</div>
+  <div class="rule"></div>
 
-<!-- Predictive Maintenance -->
-<div class="card">
-<h3>Deep Learning-Based Predictive Maintenance of Rotating Machinery</h3>
-<div class="meta">University – Industry Collaboration (Machinery Monitoring Systems LLC)</div>
+  <!-- PREDICTIVE MAINTENANCE -->
+  <div class="card">
+    <h3>Deep Learning-Based Predictive Maintenance of Rotating Machinery</h3>
+    <div class="meta">University – Industry Collaboration (Machinery Monitoring Systems LLC)</div>
 
-<ul>
-<li>Engineered triaxial vibration pipeline generating 100K+ fault signals.</li>
-<li>Built dual-encoder 1D CNN (time-domain + FFT features) with attention.</li>
-<li>Applied contrastive SSL achieving <strong>91% classification accuracy</strong>.</li>
-</ul>
+    <ul>
+      <li>Engineered a triaxial vibration acquisition pipeline on a custom rotor test rig, generating 100K+ vibration signals across multiple fault conditions.</li>
+      <li>Developed a dual-encoder 1D CNN combining time-domain waveforms with FFT-based frequency representations using channel-wise attention.</li>
+      <li>Implemented multi-window signal segmentation to capture progressive fault behavior and reduce transient noise sensitivity.</li>
+      <li>Applied contrastive self-supervised pretraining achieving <strong>91% downstream classification accuracy</strong> with reduced labeled data dependence.</li>
+    </ul>
 
-<div class="arch-box">
-<strong style="color:#111;">System Architecture</strong>
-<img src="{{ '/images/mmsp.png' | relative_url }}" style="width:100%; margin-top:20px; border-radius:12px;">
-</div>
+    <div class="arch-box">
+      <strong style="color:#111;">System Architecture</strong>
+      <img src="{{ '/images/mmsp.png' | relative_url }}"
+           style="width:100%; margin-top:20px; border-radius:12px;">
+    </div>
 
-<div class="tags">PyTorch · Signal Processing · Self-Supervised Learning · CNN</div>
-</div>
+    <div class="tags">
+      PyTorch · Signal Processing · Self-Supervised Learning · CNN Architectures · Attention
+    </div>
+  </div>
 
-<!-- Agentic RAG -->
-<div class="card">
-<h3>Agentic Multimodal RAG with Hybrid Retrieval</h3>
 
-<div class="smalllink">
-<a href="https://github.com/sarayusd/Agentic-Multimodal-RAG-with-Hybrid-Retrieval.git">View Source Code</a>
-</div>
+  <!-- RAG PROJECT -->
+  <div class="card">
+    <h3>Agentic Multimodal RAG with Hybrid Retrieval</h3>
 
-<ul>
-<li>Architected multimodal RAG using OpenCLIP embeddings, ChromaDB, hybrid reranking, and ReAct tool loop.</li>
-<li>Indexed 8K+ multimodal pairs using CUDA-accelerated embedding pipelines.</li>
-<li>Designed evaluation framework for retrieval and grounding metrics.</li>
-</ul>
+    <div class="smalllink">
+      <a href="https://github.com/sarayusd/Agentic-Multimodal-RAG-with-Hybrid-Retrieval.git">
+        View Source Code
+      </a>
+    </div>
 
-<div class="results-box">
-<strong>Results</strong>
-<ul>
-<li><strong>Recall@5:</strong> 84.5%</li>
-<li><strong>MRR:</strong> 0.81</li>
-<li><strong>Faithfulness:</strong> 9.06 / 10</li>
-<li><strong>Refusal Rate:</strong> 3.3%</li>
-</ul>
-</div>
+    <ul>
+      <li>Architected a production-style multimodal RAG system using OpenCLIP shared embedding space, ChromaDB vector search, hybrid semantic + lexical reranking, and ReAct-based tool reasoning.</li>
+      <li>Indexed 8K+ multimodal image-text pairs using CUDA-accelerated embedding pipelines.</li>
+      <li>Designed hybrid ranking pipeline (cosine similarity + keyword overlap) to reduce semantic drift and improve grounding robustness.</li>
+      <li>Implemented agentic tool-calling loop enabling evidence-first reasoning and controlled refusal behavior.</li>
+      <li>Built a quantitative evaluation framework measuring retrieval accuracy and LLM grounding reliability.</li>
+    </ul>
 
-<div class="arch-box">
-<strong style="color:#111;">System Architecture</strong>
-<img src="{{ '/images/ragAgent.png' | relative_url }}" style="width:100%; margin-top:20px; border-radius:12px;">
-</div>
+    <div class="results-box">
+      <strong>Results</strong>
+      <ul>
+        <li><strong>Recall@5:</strong> 84.5%</li>
+        <li><strong>MRR:</strong> 0.81</li>
+        <li><strong>Faithfulness:</strong> 9.06 / 10</li>
+        <li><strong>Refusal Rate:</strong> 3.3%</li>
+      </ul>
+    </div>
 
-<div class="demo-box">
-<strong style="color:#111;">System Demo</strong>
-<video controls style="width:70%; max-width:800px; margin-top:20px; border-radius:12px;">
-<source src="{{ '/images/rag.mp4' | relative_url }}" type="video/mp4">
-</video>
-</div>
+    <div class="arch-box">
+      <strong style="color:#111;">System Architecture</strong>
+      <img src="{{ '/images/ragAgent.png' | relative_url }}"
+           style="width:100%; margin-top:20px; border-radius:12px;">
+    </div>
 
-<div class="tags">OpenCLIP · LangChain · ChromaDB · Hybrid Retrieval · ReAct</div>
-</div>
+    <div class="demo-box">
+      <strong style="color:#111;">System Demo</strong>
+      <video controls
+             style="width:70%; max-width:800px; margin-top:20px; border-radius:12px;">
+        <source src="{{ '/images/rag.mp4' | relative_url }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
-<!-- Wikipedia RAG -->
-<div class="card">
-<h3>LLM-Powered RAG Conversational Assistant (Wikipedia)</h3>
-<ul>
-<li>Built conversational RAG over Wikipedia corpus.</li>
-<li>Integrated semantic search and grounding strategies.</li>
-</ul>
-<div class="tags">RAG · LlamaIndex · Vector Search</div>
-</div>
+    <div class="tags">
+      OpenCLIP · LangChain · ChromaDB · Hybrid Retrieval · ReAct Agents · GPT-4o · CUDA
+    </div>
+  </div>
 
-<!-- MIT Scene Recognition -->
-<div class="card">
-<h3>Scene Recognition with Deep CNNs (MIT Indoor67)</h3>
-<ul>
-<li>Implemented DenseNet-like teacher + SE attention.</li>
-<li>Applied knowledge distillation achieving <strong>76% F1-score</strong>.</li>
-</ul>
-<div class="tags">PyTorch · CNN · Knowledge Distillation</div>
-</div>
 
-<!-- CityLearn RL -->
-<div class="card">
-<h3>Sustainable Energy Management (CityLearn RL)</h3>
-<ul>
-<li>Implemented PPO and SAC agents for energy optimization.</li>
-<li>SAC achieved best peak demand reduction.</li>
-</ul>
-<div class="tags">Reinforcement Learning · PPO · SAC</div>
-</div>
+  <!-- WIKIPEDIA RAG -->
+  <div class="card">
+    <h3>LLM-Powered RAG Conversational Assistant (Wikipedia)</h3>
+
+    <div class="smalllink">
+      <a href="https://github.com/sarayusd/LLM-powered-Chatbot-with-RAG-using-LlamaIndex.git">
+        View Source Code
+      </a>
+    </div>
+
+    <ul>
+      <li>Built a conversational assistant using Retrieval-Augmented Generation over Wikipedia corpus.</li>
+      <li>Integrated semantic vector search and grounded prompting to reduce hallucination risk.</li>
+      <li>Implemented context-aware answer generation with evidence traceability.</li>
+    </ul>
+
+    <div class="tags">
+      RAG · Semantic Search · Vector Embeddings · Grounded Generation
+    </div>
+  </div>
+
+
+  <!-- MIT SCENE RECOGNITION -->
+  <div class="card">
+    <h3>Scene Recognition with Deep CNNs (MIT Indoor67)</h3>
+
+    <div class="smalllink">
+      <a href="https://github.com/sarayusd/Scene-Recognition-with-Deep-CNNs.git">
+        View Source Code
+      </a>
+    </div>
+
+    <ul>
+      <li>Implemented DenseNet-like teacher architecture with SE attention blocks.</li>
+      <li>Applied knowledge distillation to train compact student model.</li>
+      <li>Ensembled teacher + distilled models achieving <strong>76% F1-score</strong>.</li>
+    </ul>
+
+    <div class="tags">
+      PyTorch · CNN · SE Blocks · Knowledge Distillation · Ensemble Learning
+    </div>
+  </div>
+
+
+  <!-- CITYLEARN RL -->
+  <div class="card">
+    <h3>Sustainable Energy Management in Smart Homes (CityLearn RL)</h3>
+
+    <div class="smalllink">
+      <a href="https://github.com/sarayusd/Sustainable-Energy-Management-with-Reinforcement-Learning.git">
+        View Source Code
+      </a>
+    </div>
+
+    <ul>
+      <li>Implemented PPO and SAC reinforcement learning agents in CityLearn environment.</li>
+      <li>Designed reward functions balancing energy cost, carbon emissions, and peak demand.</li>
+      <li>SAC achieved highest efficiency and lowest peak demand across experiments.</li>
+    </ul>
+
+    <div class="tags">
+      Reinforcement Learning · PPO · SAC · Energy Optimization
+    </div>
+  </div>
 
 </div>
 
