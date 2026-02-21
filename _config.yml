@@ -3,11 +3,7 @@
 # ------------------------------------------------------------------
 title: "Sarayu Sivakumar Dhaya | AI Engineer"
 email: sarayusd31@gmail.com
-description: >
-  AI Engineer specializing in Deep Learning, Large Language Models (LLMs),
-  Multimodal Retrieval-Augmented Generation (RAG), and Generative AI systems.
-  5+ years of software engineering experience building scalable,
-  production-ready AI architectures and agentic LLM pipelines.
+description: "AI Engineer focused on Deep Learning, LLMs, and Generative AI systems."
 
 baseurl: ""  # Keep empty for username.github.io
 url: "https://sarayusd.github.io"
