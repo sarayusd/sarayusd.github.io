@@ -296,7 +296,15 @@ a:hover{
 
   <!-- PREDICTIVE MAINTENANCE -->
   <div class="card">
-    <h3>Deep Learning-Based Predictive Maintenance of Rotating Machinery</h3>
+
+    <div class="card-header">
+      <h3>Deep Learning-Based Predictive Maintenance of Rotating Machinery</h3>
+    </div>
+
+    <div class="project-stack">
+      PyTorch · Signal Processing · Self-Supervised Learning · CNN Architectures · Attention
+    </div>
+
     <div class="meta">University – Industry Collaboration (Machinery Monitoring Systems LLC)</div>
 
     <ul>
@@ -312,20 +320,21 @@ a:hover{
            style="width:100%; margin-top:20px; border-radius:12px;">
     </div>
 
-    <div class="tags">
-      PyTorch · Signal Processing · Self-Supervised Learning · CNN Architectures · Attention
-    </div>
   </div>
 
 
   <!-- RAG PROJECT -->
   <div class="card">
-    <h3>Agentic Multimodal RAG with Hybrid Retrieval</h3>
 
-    <div class="smalllink">
-      <a href="https://github.com/sarayusd/Agentic-Multimodal-RAG-with-Hybrid-Retrieval.git">
-        View Source Code
+    <div class="card-header">
+      <h3>Agentic Multimodal RAG with Hybrid Retrieval</h3>
+      <a class="repo-link" href="https://github.com/sarayusd/Agentic-Multimodal-RAG-with-Hybrid-Retrieval.git">
+        Source Code →
       </a>
+    </div>
+
+    <div class="project-stack">
+      OpenCLIP · LangChain · ChromaDB · Hybrid Retrieval · ReAct Agents · GPT-4o · CUDA
     </div>
 
     <ul>
@@ -335,7 +344,6 @@ a:hover{
       <li>Implemented agentic tool-calling loop enabling evidence-first reasoning and controlled refusal behavior.</li>
       <li>Built a quantitative evaluation framework measuring retrieval accuracy and LLM grounding reliability.</li>
     </ul>
-
 
     <div class="arch-box">
       <strong style="color:#111;">System Architecture</strong>
@@ -352,20 +360,21 @@ a:hover{
       </video>
     </div>
 
-    <div class="tags">
-      OpenCLIP · LangChain · ChromaDB · Hybrid Retrieval · ReAct Agents · GPT-4o · CUDA
-    </div>
   </div>
 
 
   <!-- WIKIPEDIA RAG -->
   <div class="card">
-    <h3>LLM-Powered RAG Conversational Assistant (Wikipedia)</h3>
 
-    <div class="smalllink">
-      <a href="https://github.com/sarayusd/LLM-powered-Chatbot-with-RAG-using-LlamaIndex.git">
-        View Source Code
+    <div class="card-header">
+      <h3>LLM-Powered RAG Conversational Assistant (Wikipedia)</h3>
+      <a class="repo-link" href="https://github.com/sarayusd/LLM-powered-Chatbot-with-RAG-using-LlamaIndex.git">
+        Source Code →
       </a>
+    </div>
+
+    <div class="project-stack">
+      RAG · Semantic Search · Vector Embeddings · Grounded Generation
     </div>
 
     <ul>
@@ -374,20 +383,21 @@ a:hover{
       <li>Implemented context-aware answer generation with evidence traceability.</li>
     </ul>
 
-    <div class="tags">
-      RAG · Semantic Search · Vector Embeddings · Grounded Generation
-    </div>
   </div>
 
 
   <!-- MIT SCENE RECOGNITION -->
   <div class="card">
-    <h3>Scene Recognition with Deep CNNs (MIT Indoor67)</h3>
 
-    <div class="smalllink">
-      <a href="https://github.com/sarayusd/Scene-Recognition-with-Deep-CNNs.git">
-        View Source Code
+    <div class="card-header">
+      <h3>Scene Recognition with Deep CNNs (MIT Indoor67)</h3>
+      <a class="repo-link" href="https://github.com/sarayusd/Scene-Recognition-with-Deep-CNNs.git">
+        Source Code →
       </a>
+    </div>
+
+    <div class="project-stack">
+      PyTorch · CNN · SE Blocks · Knowledge Distillation · Ensemble Learning
     </div>
 
     <ul>
@@ -396,20 +406,21 @@ a:hover{
       <li>Ensembled teacher + distilled models achieving <strong>76% F1-score</strong>.</li>
     </ul>
 
-    <div class="tags">
-      PyTorch · CNN · SE Blocks · Knowledge Distillation · Ensemble Learning
-    </div>
   </div>
 
 
   <!-- CITYLEARN RL -->
   <div class="card">
-    <h3>Sustainable Energy Management in Smart Homes (CityLearn RL)</h3>
 
-    <div class="smalllink">
-      <a href="https://github.com/sarayusd/Sustainable-Energy-Management-with-Reinforcement-Learning.git">
-        View Source Code
+    <div class="card-header">
+      <h3>Sustainable Energy Management in Smart Homes (CityLearn RL)</h3>
+      <a class="repo-link" href="https://github.com/sarayusd/Sustainable-Energy-Management-with-Reinforcement-Learning.git">
+        Source Code →
       </a>
+    </div>
+
+    <div class="project-stack">
+      Reinforcement Learning · PPO · SAC · Energy Optimization
     </div>
 
     <ul>
@@ -418,13 +429,9 @@ a:hover{
       <li>SAC achieved highest efficiency and lowest peak demand across experiments.</li>
     </ul>
 
-    <div class="tags">
-      Reinforcement Learning · PPO · SAC · Energy Optimization
-    </div>
   </div>
 
 </div>
-
 <!-- INDUSTRY -->
 <!-- INDUSTRY -->
 <div class="section">
