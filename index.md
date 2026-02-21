@@ -188,7 +188,7 @@ a:hover{ text-decoration:underline; }
 
 <!-- ABOUT ME -->
 <div class="section">
-  <h2 class="accent">AI Engineer · Deep Learning · Agentic Systems</h2>
+  
   <div class="section-title">About Me</div>
   <div class="rule"></div>
 
