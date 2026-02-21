@@ -277,17 +277,20 @@ a:hover{ text-decoration:underline; }
     </div>
 
     
-    <div class="demo-box">
+    <div class="demo-box" style="margin-top:30px; text-align:center;">
       <strong>System Demo</strong>
     
-      <video autoplay loop muted playsinline
-             style="width:100%; margin-top:15px;
+      <video controls
+             style="width:65%;
+                    max-width:700px;
+                    margin-top:15px;
                     border-radius:12px;
-                    border:1px solid rgba(255,255,255,.1);
+                    border:1px solid rgba(255,255,255,.15);
                     box-shadow:0 15px 40px rgba(0,0,0,.35);">
     
         <source src="{{ '/images/rag.mp4' | relative_url }}" type="video/mp4">
     
+        Your browser does not support the video tag.
       </video>
     </div>
 
