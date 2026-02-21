@@ -213,10 +213,18 @@ a:hover{ text-decoration:underline; }
       <li>Applied contrastive self-supervised pretraining achieving <strong>91% downstream classification accuracy</strong> with reduced labeled data dependence.</li>
     </ul>
 
-    <div class="arch-box">
-      <strong>System Architecture</strong>
-      <img src="images/mmsp.png"
-           style="width:100%; margin-top:15px; border-radius:12px; border:1px solid rgba(255,255,255,.1);">
+    <div class="arch-box" style="
+    background:#ffffff;
+    padding:30px;
+    border-radius:16px;
+    margin-top:30px;
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+      ">
+  
+    <strong style="color:#111;">System Architecture</strong>
+  
+    <img src="{{ '/images/mmsp.png' | relative_url }}"
+         style="width:100%; margin-top:20px; border-radius:12px;">
     </div>
 
     <div class="tags">
@@ -254,12 +262,21 @@ a:hover{ text-decoration:underline; }
       </ul>
     </div>
 
-    <div class="arch-box">
-      <strong>System Architecture</strong>
-      <img src="images/ragAgent.png"
-           style="width:100%; margin-top:15px; border-radius:12px; border:1px solid rgba(255,255,255,.1);">
+    <div class="arch-box" style="
+    background:#ffffff;
+    padding:30px;
+    border-radius:16px;
+    margin-top:30px;
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+      ">
+  
+    <strong style="color:#111;">System Architecture</strong>
+  
+    <img src="{{ '/images/ragAgent.png' | relative_url }}"
+         style="width:100%; margin-top:20px; border-radius:12px;">
     </div>
 
+    
     <div class="demo-box">
       <strong>Live Demo</strong>
       <iframe width="100%" height="420"
