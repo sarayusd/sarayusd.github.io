@@ -193,7 +193,7 @@ a:hover{ text-decoration:underline; }
   <div class="rule"></div>
 
   <p>
-    I am a Master’s graduate in Artificial Intelligence from the University at Buffalo with 5+ years of professional software engineering experience building scalable backend systems and distributed architectures. My industry background shapes how I design AI systems prioritizing robustness, performance, and production readiness.
+    I am a Master’s graduate in Artificial Intelligence from the University at Buffalo with 5+ years of professional software engineering experience building scalable backend systems and distributed architectures. My industry background shaped how I design AI systems prioritizing robustness, performance, and production readiness.
   </p>
 
   <p>
