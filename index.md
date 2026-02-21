@@ -391,7 +391,7 @@ a:hover{ text-decoration:underline; }
 <div class="contact">
   <h3>Contact</h3>
   <p>
-    Email: <a href="mailto:sarayusd31@gmail.com">sabv@gmail.com</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+    Email: <a href="mailto:sarayusd31@gmail.com">sarayusd31@gmail.com</a> &nbsp;&nbsp;|&nbsp;&nbsp;
     GitHub: <a href="https://github.com/sarayusd">https://github.com/sarayusd</a> &nbsp;&nbsp;|&nbsp;&nbsp;
     LinkedIn: <a href="https://www.linkedin.com/in/sarayusd/">https://www.linkedin.com/in/sarayusd/</a>
   </p>
