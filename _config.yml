@@ -1,18 +1,18 @@
 # ------------------------------------------------------------------
 # 1. Site Metadata (SEO + Professional Branding)
 # ------------------------------------------------------------------
-title: "Sarayu Sivakumar Dhaya | AI Engineer"
+title: "Sarayu Sivakumar Dhaya"
 email: sarayusd31@gmail.com
-description: "Deep Learning · LLMs · Generative AI · 5+ Years Software Engineering"
+description: "AI Engineer · Deep Learning · LLMs · Generative AI · 5+ Years Software Engineering"
 
-baseurl: ""  # Keep empty for username.github.io
+baseurl: ""
 url: "https://sarayusd.github.io"
 
 github_username: sarayusd
 linkedin_username: sarayusd
 
 # ------------------------------------------------------------------
-# 2. Theme (Professional + Clean)
+# 2. Theme
 # ------------------------------------------------------------------
 remote_theme: pages-themes/cayman@v0.2.0
 
@@ -20,10 +20,10 @@ plugins:
   - jekyll-remote-theme
 
 # ------------------------------------------------------------------
-# 3. Cayman Theme Customization (Color Styling)
+# 3. Theme Customization
 # ------------------------------------------------------------------
 show_downloads: false
 
-# Primary theme colors
-theme_color: "#0f172a"     # Deep navy
-accent_color: "#22c55e"    # AI green
+# Premium Purple + Gold Branding
+theme_color: "#0b0c1a"     # Deep dark purple background
+accent_color: "#a78bfa"    # Soft purple accent
