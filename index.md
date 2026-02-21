@@ -205,11 +205,7 @@ a:hover{ text-decoration:underline; }
   <div class="card">
     <h3>Deep Learning-Based Predictive Maintenance of Rotating Machinery</h3>
     <div class="meta">University – Industry Collaboration (Machinery Monitoring Systems LLC)</div>
-    <div class="arch-box">
-      <strong>System Architecture</strong>
-      <img src="images/mmsp.png"
-           style="width:100%; margin-top:15px; border-radius:12px; border:1px solid rgba(255,255,255,.1);">
-    </div>
+   
     <ul>
       <li>Engineered a triaxial vibration acquisition pipeline on a custom rotor test rig, generating 100K+ vibration signals across multiple fault conditions.</li>
       <li>Developed a dual-encoder 1D CNN combining time-domain waveforms with FFT-based frequency representations using channel-wise attention.</li>
@@ -219,7 +215,7 @@ a:hover{ text-decoration:underline; }
 
     <div class="arch-box">
       <strong>System Architecture</strong>
-      <img src="assets/predictive_maintenance_architecture.png"
+      <img src="images/mmsp.png"
            style="width:100%; margin-top:15px; border-radius:12px; border:1px solid rgba(255,255,255,.1);">
     </div>
 
@@ -233,10 +229,7 @@ a:hover{ text-decoration:underline; }
   <div class="card">
     <h3>Agentic Multimodal RAG with Hybrid Retrieval</h3>
      <div class="arch-box">
-      <strong>System Architecture</strong>
-      <img src="images/ragAgent.png"
-           style="width:100%; margin-top:15px; border-radius:12px; border:1px solid rgba(255,255,255,.1);">
-    </div>
+      
     <div class="smalllink">
       <a href="https://github.com/abc/Agentic-Multimodal-RAG-with-Hybrid-Retrieval.git">
         View Source Code
@@ -263,7 +256,7 @@ a:hover{ text-decoration:underline; }
 
     <div class="arch-box">
       <strong>System Architecture</strong>
-      <img src="assets/rag_architecture.png"
+      <img src="images/ragAgent.png"
            style="width:100%; margin-top:15px; border-radius:12px; border:1px solid rgba(255,255,255,.1);">
     </div>
 
