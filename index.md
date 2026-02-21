@@ -252,15 +252,6 @@ a:hover{ text-decoration:underline; }
       <li>Built a quantitative evaluation framework measuring retrieval accuracy and LLM grounding reliability.</li>
     </ul>
 
-    <div class="results-box">
-      <strong>Results</strong>
-      <ul>
-        <li><strong>Recall@5:</strong> 84.5%</li>
-        <li><strong>MRR:</strong> 0.81</li>
-        <li><strong>Faithfulness:</strong> 9.06 / 10</li>
-        <li><strong>Refusal Rate:</strong> 3.3%</li>
-      </ul>
-    </div>
 
     <div class="arch-box">
       <strong style="color:#111;">System Architecture</strong>
@@ -351,27 +342,35 @@ a:hover{ text-decoration:underline; }
 </div>
 
 <!-- INDUSTRY -->
+<!-- INDUSTRY -->
 <div class="section">
-<div class="section-title">Industry Experience</div>
-<div class="rule"></div>
+  <div class="section-title">Industry Background</div>
+  <h2 class="accent">Software Engineering Experience</h2>
+  <div class="rule"></div>
 
-<div class="card">
-<h3>Tata Consultancy Services | IT Analyst</h3>
-<div class="meta">2018 – 2019</div>
-<ul>
-<li>Developed high-volume Java backend systems.</li>
-<li>Optimized SQL pipelines for performance and reliability.</li>
-</ul>
-</div>
+  <div class="card">
+    <h3>Tata Consultancy Services | IT Analyst</h3>
+    <div class="meta">2018 – 2019</div>
 
-<div class="card">
-<h3>Capgemini | Associate Consultant</h3>
-<div class="meta">2013 – 2018</div>
-<ul>
-<li>Designed RESTful microservices and resolved distributed bottlenecks.</li>
-</ul>
-</div>
+    <ul>
+      <li>Developed and maintained high-volume Java backend systems supporting mission-critical financial trade and settlement workflows.</li>
+      <li>Designed optimized SQL stored procedures and query pipelines, improving execution efficiency and reducing latency in production environments.</li>
+      <li>Collaborated within Agile teams to deliver scalable distributed services with strong emphasis on reliability and fault tolerance.</li>
+      <li>Performed production debugging, log analysis, and performance tuning across multi-tier enterprise systems.</li>
+    </ul>
+  </div>
 
+  <div class="card">
+    <h3>Capgemini | Associate Consultant</h3>
+    <div class="meta">2013 – 2018</div>
+
+    <ul>
+      <li>Designed and implemented RESTful Java microservices powering enterprise dashboards and operational reporting systems.</li>
+      <li>Built modular backend components enabling secure API integrations and structured data pipelines.</li>
+      <li>Resolved distributed system bottlenecks through performance profiling and code optimization.</li>
+      <li>Provided production support across large-scale client systems ensuring uptime, stability, and SLA compliance.</li>
+    </ul>
+  </div>
 </div>
 
 <!-- CONTACT -->
