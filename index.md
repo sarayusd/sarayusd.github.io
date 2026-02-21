@@ -2,48 +2,28 @@
 layout: default
 title: Sarayu Sivakumar Dhaya
 ---
-
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-  /* Override Cayman header */
-.page-header {
-  background: linear-gradient(
-    135deg,
-    #2a1244 0%,     /* Deep purple */
-    #3b1e5c 40%,    /* Rich violet */
-    #b8860b 75%,    /* Subtle gold blend */
-    #000000 100%    /* Fade into black */
-  ) !important;
-
-  padding: 100px 20px 120px 20px !important;
-  border-bottom: none !important;
-}
-
-/* Title styling */
-.project-name {
-  font-size: 56px !important;
-  font-weight: 800 !important;
-  color: #ffffff !important;
-  letter-spacing: -1px;
-}
-
-/* Tagline styling */
-.project-tagline {
-  font-size: 20px !important;
-  color: rgba(255,255,255,0.85) !important;
-}
-  
+/* ============================= */
+/* COLOR SYSTEM — PURPLE + GOLD */
+/* ============================= */
 :root{
-  --bg:#070b18;
-  --panel:#111a2f;
-  --border:rgba(255,255,255,.10);
-  --text:#e6edf7;
-  --muted:#b3c0d4;
-  --accent:#22c55e;
-  --accent2:#38bdf8;
+  --bg:#08060f;                 /* deep matte black-purple */
+  --panel:#121022;              /* card background */
+  --panel-2:#0e0b18;
+  --border:rgba(255,255,255,.08);
+
+  --text:#f5f4fa;
+  --muted:#b8b4cc;
+
+  --accent:#c6a84f;             /* elegant gold */
+  --accent2:#7b3fe4;            /* royal purple */
 }
 
+/* ============================= */
+/* GLOBAL RESET */
+/* ============================= */
 *{ box-sizing:border-box; }
 
 html, body{
@@ -51,13 +31,16 @@ html, body{
   padding:0;
   font-family:'Inter',sans-serif;
   color:var(--text);
+
   background:
-    radial-gradient(1200px 600px at 20% 10%, rgba(56,189,248,.20), transparent 60%),
-    radial-gradient(1000px 600px at 80% 20%, rgba(34,197,94,.15), transparent 60%),
-    linear-gradient(180deg,#060913 0%,#070b18 100%);
+    radial-gradient(900px 400px at 70% 0%, rgba(123,63,228,.25), transparent 60%),
+    radial-gradient(700px 300px at 20% 20%, rgba(198,168,79,.12), transparent 60%),
+    linear-gradient(180deg,#120c1f 0%, #08060f 70%, #000000 100%);
+
   overflow-x:hidden;
 }
 
+/* Remove Cayman layout constraints */
 .main-content,
 .container,
 .container-lg,
@@ -74,6 +57,37 @@ footer,
   display:none !important;
 }
 
+/* ============================= */
+/* HEADER OVERRIDE */
+/* ============================= */
+.page-header{
+  background: linear-gradient(
+    135deg,
+    #2a1244 0%,
+    #3b1e5c 40%,
+    #b8860b 75%,
+    #000000 100%
+  ) !important;
+
+  padding:100px 20px 120px 20px !important;
+  border-bottom:none !important;
+}
+
+.project-name{
+  font-size:56px !important;
+  font-weight:800 !important;
+  color:#ffffff !important;
+  letter-spacing:-1px;
+}
+
+.project-tagline{
+  font-size:20px !important;
+  color:rgba(255,255,255,0.85) !important;
+}
+
+/* ============================= */
+/* LAYOUT */
+/* ============================= */
 .wrapper{
   width:min(1150px, calc(100vw - 80px));
   margin:0 auto;
@@ -86,20 +100,29 @@ footer,
 
 .section-title{
   font-size:14px;
-  letter-spacing:.2em;
+  letter-spacing:.25em;
   text-transform:uppercase;
-  color:rgba(255,255,255,.6);
+  color:rgba(255,255,255,.55);
   margin-bottom:10px;
 }
 
+/* ============================= */
+/* HEADINGS */
+/* ============================= */
 h2{
   font-size:42px;
   font-weight:700;
   margin:0 0 20px 0;
 }
 
-.accent{ color:var(--accent); }
+/* Gradient accent heading */
+.accent{
+  background: linear-gradient(90deg, var(--accent2), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+/* Section underline */
 .rule{
   width:80px;
   height:3px;
@@ -108,36 +131,14 @@ h2{
   margin:20px 0 35px 0;
 }
 
+/* ============================= */
+/* TEXT */
+/* ============================= */
 p{
   font-size:19px;
   line-height:1.9;
   color:var(--muted);
   margin-bottom:22px;
-}
-
-.card{
-  background:linear-gradient(180deg,rgba(17,26,47,.95),rgba(15,23,42,.9));
-  border:1px solid var(--border);
-  border-radius:18px;
-  padding:45px;
-  margin-bottom:40px;
-  box-shadow:0 20px 60px rgba(0,0,0,.35);
-}
-
-.card h3{
-  font-size:24px;
-  margin:0 0 8px 0;
-}
-
-.meta{
-  font-size:15px;
-  color:rgba(255,255,255,.6);
-  margin-bottom:14px;
-}
-
-.smalllink{
-  font-size:15px;
-  margin:0 0 16px 0;
 }
 
 ul{
@@ -152,9 +153,42 @@ li{
   color:var(--muted);
 }
 
+/* ============================= */
+/* CARDS */
+/* ============================= */
+.card{
+  background:linear-gradient(180deg,var(--panel),var(--panel-2));
+  border:1px solid rgba(198,168,79,.15);
+  border-radius:18px;
+  padding:45px;
+  margin-bottom:40px;
+  box-shadow:0 20px 60px rgba(0,0,0,.55);
+  transition: all .25s ease;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(198,168,79,.35);
+}
+
+.card h3{
+  font-size:24px;
+  margin:0 0 8px 0;
+  color:#ffffff;
+}
+
+.meta{
+  font-size:15px;
+  color:rgba(255,255,255,.5);
+  margin-bottom:14px;
+}
+
+/* ============================= */
+/* RESULT + ARCH BOXES */
+/* ============================= */
 .results-box{
-  background:rgba(255,255,255,.04);
-  border:1px solid rgba(255,255,255,.1);
+  background:rgba(198,168,79,.05);
+  border:1px solid rgba(198,168,79,.2);
   padding:20px;
   border-radius:12px;
   margin-top:25px;
@@ -165,7 +199,7 @@ li{
   padding:30px;
   border-radius:16px;
   margin-top:30px;
-  box-shadow:0 20px 60px rgba(0,0,0,.35);
+  box-shadow:0 20px 60px rgba(0,0,0,.55);
 }
 
 .demo-box{
@@ -173,16 +207,36 @@ li{
   padding:30px;
   border-radius:16px;
   margin-top:40px;
-  box-shadow:0 20px 60px rgba(0,0,0,.35);
+  box-shadow:0 20px 60px rgba(0,0,0,.55);
   text-align:center;
 }
 
+/* ============================= */
+/* TAGS */
+/* ============================= */
 .tags{
   margin-top:20px;
   font-size:15px;
-  color:rgba(255,255,255,.6);
+  color:rgba(255,255,255,.5);
 }
 
+/* ============================= */
+/* LINKS */
+/* ============================= */
+a{
+  color:var(--accent);
+  text-decoration:none;
+  transition:.2s ease;
+}
+
+a:hover{
+  color:var(--accent2);
+  text-decoration:none;
+}
+
+/* ============================= */
+/* CONTACT */
+/* ============================= */
 .contact{
   text-align:center;
   margin-top:120px;
@@ -200,15 +254,13 @@ li{
   margin:0;
 }
 
-a{
-  color:var(--accent2);
-  text-decoration:none;
-}
-a:hover{ text-decoration:underline; }
-
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
 @media(max-width:900px){
   .wrapper{ width:calc(100vw - 40px); }
   h2{ font-size:30px; }
+  .project-name{ font-size:40px !important; }
 }
 </style>
 
