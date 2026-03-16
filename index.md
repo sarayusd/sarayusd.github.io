@@ -359,38 +359,30 @@ a:hover{
     </a>
   </div>
 
-  <div class="project-stack">
-    OpenCLIP · LangChain · ChromaDB · BM25 · SentenceTransformers · GPT-4o · PyTorch
-  </div>
+<div class="project-stack">
+  OpenCLIP · LangChain · ChromaDB · BM25 · SentenceTransformers · GPT-4o · PyTorch
+</div>
 
-  <ul>
-    <li>Built a multimodal retrieval system supporting text→image, image→image, and image→caption search using OpenCLIP embeddings on the COCO captions dataset.</li>
+<ul>
+  <li>Built a multimodal retrieval system supporting text→image, image→image, and image→caption search using OpenCLIP embeddings on the COCO captions dataset.</li>
 
-    <li>Implemented a multi-stage retrieval pipeline combining dense CLIP vector search, BM25 lexical hybrid retrieval, and SentenceTransformers cross-encoder reranking.</li>
+  <li>Implemented a multi-stage retrieval pipeline combining dense CLIP vector search, BM25 lexical hybrid retrieval, and SentenceTransformers cross-encoder reranking.</li>
 
-    <li>Indexed image and caption embeddings in ChromaDB and implemented a fallback retrieval cascade (reranked → hybrid → dense → BM25) for robust query handling.</li>
+  <li>Indexed image and caption embeddings in ChromaDB and implemented a fallback retrieval cascade (reranked → hybrid → dense → BM25) for robust query handling.</li>
 
-    <li>Added an LLM-based verification step where GPT-4o audits retrieved images against the query before explanation generation.</li>
+  <li>Added an LLM-based verification step where GPT-4o audits retrieved images against the query before explanation generation.</li>
 
-    <li>Developed a LangChain few-shot RAG prompting pipeline that formats retrieved captions as evidence to generate grounded scene explanations using GPT-4o-mini.</li>
+  <li>Developed a LangChain few-shot RAG prompting pipeline that formats retrieved captions as evidence to generate grounded scene explanations using GPT-4o-mini.</li>
 
-    <li>Built an evaluation framework measuring retrieval performance using Recall@1, Recall@5, Precision@5, MRR, nDCG, and latency.</li>
-  </ul>
+  <li>Built an evaluation framework measuring retrieval performance using Recall@1, Recall@5, Precision@5, MRR, nDCG, and latency.</li>
+</ul>
 
-  <div class="arch-box">
-    <strong style="color:#111;">System Architecture</strong>
-    <img src="{{ '/images/agent.png' | relative_url }}"
-         style="width:100%; margin-top:20px; border-radius:12px;">
-  </div>
+<div class="arch-box" style="text-align:center;">
+  <strong style="color:#111;">System Architecture</strong>
 
-  <!-- <div class="demo-box">
-    <strong style="color:#111;">System Demo</strong>
-    <video controls
-           style="width:70%; max-width:800px; margin-top:20px; border-radius:12px;">
-      <source src="{{ '/images/rag.mp4' | relative_url }}" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div> -->
+  <img src="{{ '/images/agent.png' | relative_url }}"
+       style="width:70%; max-width:850px; margin-top:20px; border-radius:12px;">
+</div>
 
 </div>
 
