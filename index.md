@@ -381,7 +381,7 @@ a:hover{
   <strong style="color:#111;">System Architecture</strong>
 
   <img src="{{ '/images/agent.png' | relative_url }}"
-       style="width:70%; max-width:850px; margin-top:20px; border-radius:12px;">
+       style="width:50%; max-width:500px; margin-top:20px; border-radius:12px;">
 </div>
 
 </div>
