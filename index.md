@@ -350,44 +350,49 @@ a:hover{
 
 
   <!-- RAG PROJECT -->
-  <div class="card">
+<div class="card">
 
-    <div class="card-header">
-      <h3>Agentic Multimodal RAG with Hybrid Retrieval</h3>
-      <a class="repo-link" href="https://github.com/sarayusd/Agentic-Multimodal-RAG-with-Hybrid-Retrieval.git">
-        Source Code →
-      </a>
-    </div>
-
-    <div class="project-stack">
-      OpenCLIP · LangChain · ChromaDB · Hybrid Retrieval · ReAct Agents · GPT-4o · CUDA
-    </div>
-
-    <ul>
-      <li>Architected a production-style multimodal RAG system using OpenCLIP shared embedding space, ChromaDB vector search, hybrid semantic + lexical reranking, and ReAct-based tool reasoning.</li>
-      <li>Indexed 8K+ multimodal image-text pairs using CUDA-accelerated embedding pipelines.</li>
-      <li>Designed hybrid ranking pipeline (cosine similarity + keyword overlap) to reduce semantic drift and improve grounding robustness.</li>
-      <li>Implemented agentic tool-calling loop enabling evidence-first reasoning and controlled refusal behavior.</li>
-      <li>Built a quantitative evaluation framework measuring retrieval accuracy and LLM grounding reliability.</li>
-    </ul>
-
-    <div class="arch-box">
-      <strong style="color:#111;">System Architecture</strong>
-      <img src="{{ '/images/ragAgent.png' | relative_url }}"
-           style="width:100%; margin-top:20px; border-radius:12px;">
-    </div>
-
-    <div class="demo-box">
-      <strong style="color:#111;">System Demo</strong>
-      <video controls
-             style="width:70%; max-width:800px; margin-top:20px; border-radius:12px;">
-        <source src="{{ '/images/rag.mp4' | relative_url }}" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-
+  <div class="card-header">
+    <h3>Multimodal Scene Retrieval System with Hybrid Search and RAG</h3>
+    <a class="repo-link" href="https://github.com/sarayusd/Multimodal-Scene-Retrieval-System-with-Hybrid-Search-and-RAG.git">
+      Source Code →
+    </a>
   </div>
 
+  <div class="project-stack">
+    OpenCLIP · LangChain · ChromaDB · BM25 · SentenceTransformers · GPT-4o · PyTorch
+  </div>
+
+  <ul>
+    <li>Built a multimodal retrieval system supporting text→image, image→image, and image→caption search using OpenCLIP embeddings on the COCO captions dataset.</li>
+
+    <li>Implemented a multi-stage retrieval pipeline combining dense CLIP vector search, BM25 lexical hybrid retrieval, and SentenceTransformers cross-encoder reranking.</li>
+
+    <li>Indexed image and caption embeddings in ChromaDB and implemented a fallback retrieval cascade (reranked → hybrid → dense → BM25) for robust query handling.</li>
+
+    <li>Added an LLM-based verification step where GPT-4o audits retrieved images against the query before explanation generation.</li>
+
+    <li>Developed a LangChain few-shot RAG prompting pipeline that formats retrieved captions as evidence to generate grounded scene explanations using GPT-4o-mini.</li>
+
+    <li>Built an evaluation framework measuring retrieval performance using Recall@1, Recall@5, Precision@5, MRR, nDCG, and latency.</li>
+  </ul>
+
+  <div class="arch-box">
+    <strong style="color:#111;">System Architecture</strong>
+    <img src="{{ '/images/ragAgent.png' | relative_url }}"
+         style="width:100%; margin-top:20px; border-radius:12px;">
+  </div>
+
+  <div class="demo-box">
+    <strong style="color:#111;">System Demo</strong>
+    <video controls
+           style="width:70%; max-width:800px; margin-top:20px; border-radius:12px;">
+      <source src="{{ '/images/rag.mp4' | relative_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</div>
 
   <!-- WIKIPEDIA RAG -->
   <div class="card">
