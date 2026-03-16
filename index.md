@@ -379,18 +379,18 @@ a:hover{
 
   <div class="arch-box">
     <strong style="color:#111;">System Architecture</strong>
-    <img src="{{ '/images/ragAgent.png' | relative_url }}"
+    <img src="{{ '/images/agent.png' | relative_url }}"
          style="width:100%; margin-top:20px; border-radius:12px;">
   </div>
 
-  <div class="demo-box">
+  <!-- <div class="demo-box">
     <strong style="color:#111;">System Demo</strong>
     <video controls
            style="width:70%; max-width:800px; margin-top:20px; border-radius:12px;">
       <source src="{{ '/images/rag.mp4' | relative_url }}" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-  </div>
+  </div> -->
 
 </div>
 
