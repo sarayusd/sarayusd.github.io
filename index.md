@@ -362,7 +362,14 @@ a:hover{
 <div class="project-stack">
   OpenCLIP · LangChain · ChromaDB · BM25 · SentenceTransformers · GPT-4o · PyTorch
 </div>
+<div class="demo-box" style="text-align:center; margin: 30px 0;">
+  <strong style="color:#111;">🎥 Demo</strong>
 
+  <video width="70%" controls style="margin-top:15px; border-radius:12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <source src="{{ '/images/test.mp4' | relative_url }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 <ul>
   <li>Built a multimodal retrieval system supporting text→image, image→image, and image→caption search using OpenCLIP embeddings on the COCO captions dataset.</li>
 
