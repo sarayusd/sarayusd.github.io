@@ -413,7 +413,27 @@ a:hover{
 
   </div>
 
+  <div class="card">
 
+  <div class="card-header">
+    <h3>LinkedIn Job Market Analysis - Big Data Pipeline</h3>
+    <a class="repo-link" href="https://github.com/sarayusd/Job-Market-Analysis-.git">
+      Source Code →
+    </a>
+  </div>
+
+  <div class="project-stack">
+    PySpark · Hadoop (HDFS) · Spark MLlib · Python · Docker · Data Analysis
+  </div>
+
+  <ul>
+    <li>Built an end-to-end big data pipeline to process ~1.3M LinkedIn job postings using Hadoop (HDFS) and PySpark, including cluster setup and data ingestion.</li>
+    <li>Performed large-scale data cleaning and preprocessing, handling missing values, standardizing job titles/locations, and structuring unstructured skill data.</li>
+    <li>Conducted EDA and feature engineering (TF-IDF, skill extraction) to analyze job trends, in-demand skills, and company hiring patterns.</li>
+    <li>Developed ML models for classification, regression, and clustering using Spark MLlib and evaluated performance using standard metrics.</li>
+  </ul>
+
+</div>
   <!-- MIT SCENE RECOGNITION -->
   <div class="card">
 
