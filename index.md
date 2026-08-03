@@ -297,22 +297,24 @@ a:hover{
 <div class="wrapper">
 
 <!-- ABOUT ME -->
+
 <div class="section">
-  
+
   <div class="section-title">About Me</div>
   <div class="rule"></div>
 
   <p>
-    I am a Master’s graduate in Artificial Intelligence from the University at Buffalo with 5+ years of professional software engineering experience building scalable backend systems and distributed architectures. My industry background shaped how I design AI systems prioritizing robustness, performance, and production readiness.
+    I am a AI software Developer with more than five years of backend development experience and a Master’s degree in Artificial Intelligence from the University at Buffalo.
   </p>
 
   <p>
-    I have built industry-collaborative predictive maintenance systems, multimodal Retrieval-Augmented Generation (RAG) architectures, hybrid semantic + lexical retrieval engines, reinforcement learning agents, and deep CNN models with knowledge distillation.
+    My recent work focuses on PyTorch-based deep learning, computer vision, vibration-based fault diagnosis, multimodal retrieval, and reinforcement learning. I have worked on projects involving rotating-machinery faults, indoor scene recognition, image retrieval, and building-energy control.
   </p>
 
   <p>
-    My focus lies in building measurable, grounded, and scalable AI systems particularly in Generative AI, multimodal retrieval, deep learning, and agent-based reasoning frameworks.
+    I prefer to compare models, inspect failure cases, and measure what each design choice contributes. My goal is to build ML systems that are clear enough to explain, reproduce, and improve.
   </p>
+
 </div>
 
 <!-- PROJECTS -->
@@ -321,77 +323,223 @@ a:hover{
   <div class="rule"></div>
 
   <!-- PREDICTIVE MAINTENANCE -->
-  <div class="card">
-
-    <div class="card-header">
-      <h3>Deep Learning-Based Predictive Maintenance of Rotating Machinery</h3>
-    </div>
-
-    <div class="project-stack">
-      PyTorch · Signal Processing · Self-Supervised Learning · CNN Architectures · Attention
-    </div>
-
-    <div class="meta">University – Industry Collaboration (Machinery Monitoring Systems LLC)</div>
-
-    <ul>
-      <li>Engineered a triaxial vibration acquisition pipeline on a custom rotor test rig, generating 100K+ vibration signals across multiple fault conditions.</li>
-      <li>Developed a dual-encoder 1D CNN combining time-domain waveforms with FFT-based frequency representations using channel-wise attention.</li>
-      <li>Implemented multi-window signal segmentation to capture progressive fault behavior and reduce transient noise sensitivity.</li>
-      <li>Applied contrastive self-supervised pretraining achieving <strong>91% downstream classification accuracy</strong> with reduced labeled data dependence.</li>
-    </ul>
-
-    <div class="arch-box">
-      <strong style="color:#111;">System Architecture</strong>
-      <img src="{{ '/images/mmsp.png' | relative_url }}"
-           style="width:100%; margin-top:20px; border-radius:12px;">
-    </div>
-
-  </div>
-
-
-  <!-- RAG PROJECT -->
 <div class="card">
 
   <div class="card-header">
-    <h3>Multimodal Scene Retrieval System with Hybrid Search and RAG</h3>
-    <a class="repo-link" href="https://github.com/sarayusd/Multimodal-Scene-Retrieval-System-with-Hybrid-Search-and-RAG.git">
+    <h3>Industrial Fault Diagnosis using Deep Learning</h3>
+
+    <a class="repo-link"
+       href="https://github.com/sarayusd/predictive-maintenance-rotor-ai.git">
       Source Code →
+    </a>
+
+  </div>
+
+  <div class="project-stack">
+    PyTorch · Deep Learning · Self-Supervised Learning · Time-Series · Signal Processing
+  </div>
+
+  <div class="meta">
+    Machinery Monitoring Systems LLC · University Collaboration
+  </div>
+
+  <p>
+
+    This project explores how deep representation learning can improve vibration-based
+    fault diagnosis for rotating machinery. I implemented both supervised and
+    self-supervised training pipelines around the same multiscale PyTorch model to
+    measure how representation learning influences downstream classification.
+
+  </p>
+
+  <h4>Highlights</h4>
+
+  <ul>
+
+    <li>
+
+      Developed a multiscale PyTorch architecture that jointly learns from raw
+      vibration signals and their frequency spectra, combining complementary
+      temporal and spectral information within a single model.
+
+    </li>
+
+    <li>
+
+      Implemented supervised and contrastive self-supervised learning pipelines,
+      using encoder pretraining to improve downstream fault classification without
+      requiring additional labeled fault data.
+
+    </li>
+
+    <li>
+
+      Designed a complete deep learning workflow including data preparation,
+      augmentation, model training, hyperparameter tuning, evaluation, and
+      comparative benchmarking against established baselines.
+
+    </li>
+
+    <li>
+
+      Built an interactive Streamlit application for real-time vibration analysis
+      and fault prediction using the trained PyTorch model.
+
+    </li>
+
+  </ul>
+
+  <div class="results-box">
+
+    <strong>Key Results</strong>
+
+    <ul>
+
+      <li>89.6K vibration windows across five industrial fault classes</li>
+
+      <li>Supervised learning: <strong>96.9%</strong> Accuracy · <strong>0.966</strong> Macro F1</li>
+
+      <li>Self-supervised pretraining: <strong>98.9%</strong> Accuracy · <strong>0.989</strong> Macro F1</li>
+
+      <li>143K parameter PyTorch model</li>
+
+    </ul>
+
+  </div>
+
+  <div class="arch-box">
+
+      <strong style="color:#111;">
+        Multiscale Time-Frequency Architecture
+      </strong>
+
+      <img
+        src="{{ '/images/mmsp.png' | relative_url }}"
+        alt="Industrial fault diagnosis architecture"
+        style="width:100%; margin-top:20px; border-radius:12px;"
+      >
+
+  </div>
+
+</div>
+
+ <!-- MULTIMODAL RETRIEVAL PROJECT -->
+
+<div class="card">
+
+  <div class="card-header">
+    <h3>Multimodal Image Retrieval with OpenCLIP and Hybrid Search</h3>
+
+```
+<a
+  class="repo-link"
+  href="https://github.com/sarayusd/Multimodal-Scene-Retrieval-System-with-Hybrid-Search-and-RAG"
+  target="_blank"
+>
+  Source Code →
+</a>
+```
+
+  </div>
+
+  <div class="project-stack">
+    PyTorch · OpenCLIP · Vision-Language Models · ChromaDB · BM25 · Cross-Encoder Reranking · LangChain
+  </div>
+
+  <p>
+    I built this project to study how retrieval quality changes when a PyTorch-based
+    vision-language baseline is extended with lexical search and reranking. The system
+    supports text-to-image, image-to-image, and image-to-caption retrieval over COCO
+    images, with an optional grounded explanation generated from the retrieved evidence.
+  </p>
+
+  <h4>Technical Contributions</h4>
+
+  <ul>
+
+```
+<li>
+  Built the initial retrieval model with OpenCLIP, encoding images and text into
+  a shared embedding space and ranking candidates through cosine similarity.
+</li>
+
+<li>
+  Combined dense OpenCLIP scores with BM25 caption scores to recover results that
+  were semantically related but poorly ranked by vector similarity alone, or that
+  contained important exact objects and actions.
+</li>
+
+<li>
+  Added cross-encoder reranking over the top hybrid candidates, improving final
+  ordering without applying the more expensive relevance model to the full image
+  collection.
+</li>
+
+<li>
+  Cached image and caption embeddings and stored them in a persistent ChromaDB
+  collection, avoiding repeated feature extraction when the notebook or application
+  restarts.
+</li>
+
+<li>
+  Implemented a fallback sequence—reranked, hybrid, dense, then BM25-only—so a
+  query can still return results when an optional retrieval component is unavailable.
+</li>
+
+<li>
+  Added visual verification and a LangChain explanation stage that uses retrieved
+  captions as evidence rather than asking the language model to describe a scene
+  without context.
+</li>
+```
+
+  </ul>
+
+  <div class="results-box">
+
+```
+<strong>Evaluation</strong>
+
+<ul>
+  <li>Compared five retrieval configurations on 300 caption-to-image queries</li>
+  <li>Measured Recall@1, Recall@5, MRR, Precision@5, nDCG@5, and query latency</li>
+  <li>Tracked the quality and latency added by hybrid retrieval and reranking separately</li>
+  <li>Supported text-to-image, image-to-image, and image-to-caption search</li>
+</ul>
+```
+
+  </div>
+
+  <div style="text-align:center; margin:25px 0;">
+    <a
+      class="project-action"
+      href="{{ '/images/test.mp4' | relative_url }}"
+      target="_blank"
+    >
+      ▶ Watch Retrieval Demo
     </a>
   </div>
 
-<div class="project-stack">
-  OpenCLIP · LangChain · ChromaDB · BM25 · SentenceTransformers · GPT-4o · PyTorch
-</div>
-<div style="text-align:center; margin: 20px 0;">
-  <a href="{{ '/images/test.mp4' | relative_url }}" target="_blank"
-     style="text-decoration:none; font-size:18px;">
-    ▶️ Watch Demo
-  </a>
-</div>
-<ul>
-  <li>Built a multimodal retrieval system supporting text→image, image→image, and image→caption search using OpenCLIP embeddings on the COCO captions dataset.</li>
+  <div class="arch-box" style="text-align:center;">
 
-  <li>Implemented a multi-stage retrieval pipeline combining dense CLIP vector search, BM25 lexical hybrid retrieval, and SentenceTransformers cross-encoder reranking.</li>
+```
+<strong style="color:#111;">
+  Retrieval and Grounded Explanation Pipeline
+</strong>
 
-  <li>Indexed image and caption embeddings in ChromaDB and implemented a fallback retrieval cascade (reranked → hybrid → dense → BM25) for robust query handling.</li>
+<img
+  src="{{ '/images/multimodal.png' | relative_url }}"
+  alt="Architecture of the OpenCLIP hybrid image retrieval and explanation pipeline"
+  style="width:70%; max-width:750px; margin-top:20px; border-radius:12px;"
+>
+```
 
-  <li>Added an LLM-based verification step where GPT-4o audits retrieved images against the query before explanation generation.</li>
-
-  <li>Developed a LangChain few-shot RAG prompting pipeline that formats retrieved captions as evidence to generate grounded scene explanations using GPT-4o-mini.</li>
-
-  <li>Built an evaluation framework measuring retrieval performance using Recall@1, Recall@5, Precision@5, MRR, nDCG, and latency.</li>
-</ul>
-
-<div class="arch-box" style="text-align:center;">
-  <strong style="color:#111;">System Architecture</strong>
-
-  <img src="{{ '/images/agent.png' | relative_url }}"
-       style="width:50%; max-width:500px; margin-top:20px; border-radius:12px;">
-</div>
+  </div>
 
 </div>
 
-  <!-- WIKIPEDIA RAG -->
+
+  <!-- WIKIPEDIA RAG 
   <div class="card">
 
     <div class="card-header">
@@ -433,29 +581,96 @@ a:hover{
     <li>Developed ML models for classification, regression, and clustering using Spark MLlib and evaluated performance using standard metrics.</li>
   </ul>
 
-</div>
-  <!-- MIT SCENE RECOGNITION -->
-  <div class="card">
+</div>-->
+ <!-- MIT INDOOR SCENE RECOGNITION -->
+<div class="card">
 
-    <div class="card-header">
-      <h3>Scene Recognition with Deep CNNs (MIT Indoor67)</h3>
-      <a class="repo-link" href="https://github.com/sarayusd/Scene-Recognition-with-Deep-CNNs.git">
-        Source Code →
-      </a>
-    </div>
+  <div class="card-header">
+    <h3>Indoor Scene Recognition with PyTorch</h3>
 
-    <div class="project-stack">
-      PyTorch · CNN · SE Blocks · Knowledge Distillation · Ensemble Learning
-    </div>
-
-    <ul>
-      <li>Implemented DenseNet-like teacher architecture with SE attention blocks.</li>
-      <li>Applied knowledge distillation to train compact student model.</li>
-      <li>Ensembled teacher + distilled models achieving <strong>76% F1-score</strong>.</li>
-    </ul>
-
+    <a
+      class="repo-link"
+      href="https://github.com/sarayusd/Scene-Recognition-with-Deep-CNNs"
+      target="_blank"
+    >
+      Source Code →
+    </a>
   </div>
 
+  <div class="project-stack">
+    PyTorch · DenseNet · ConvNeXt · Transfer Learning · Knowledge Distillation · Model Compression
+  </div>
+
+  <p>
+    This project compares four approaches to classifying the 67 indoor scene
+    categories in MIT Indoor67: a DenseNet-style network built from scratch,
+    linear probing, full ConvNeXt-Tiny fine-tuning, and teacher–student
+    knowledge distillation.
+  </p>
+
+  <h4>Technical Contributions</h4>
+
+  <ul>
+    <li>
+      Implemented a 3.98M-parameter DenseNet-style model from scratch using
+      dense feature reuse, bottleneck layers, transition blocks, and global
+      average pooling.
+    </li>
+
+    <li>
+      Evaluated transfer learning in two stages: first freezing the ConvNeXt-Tiny
+      backbone for linear probing, then fine-tuning the complete model with
+      separate learning rates for the pretrained backbone and classification head.
+    </li>
+
+    <li>
+      Built a 1.30M-parameter student network with depthwise-separable
+      convolutions, residual connections, and squeeze-and-excitation blocks,
+      trained from the fine-tuned ConvNeXt teacher using softened predictions
+      and ground-truth labels.
+    </li>
+
+    <li>
+      Compared model quality, parameter count and
+      batch-size-one inference latency, then inspected per-class metrics,
+      confusion matrices, and misclassified examples.
+    </li>
+
+    
+  </ul>
+
+  <div class="results-box">
+    <strong>Key Results</strong>
+
+    <ul>
+      <li>
+        Fine-tuned ConvNeXt-Tiny:
+        <strong>84.25%</strong> test accuracy ·
+        <strong>0.825</strong> macro F1
+      </li>
+
+      <li>
+        Linear probe:
+        <strong>79.45%</strong> test accuracy ·
+        <strong>0.767</strong> macro F1
+      </li>
+
+      <li>
+        Distilled student:
+        <strong>1.30M parameters</strong> ·
+        <strong>5.08 MB checkpoint</strong> ·
+        <strong>3.57 ms</strong> batch-size-one latency
+      </li>
+
+      <li>
+        Teacher-to-student compression:
+        approximately <strong>21× fewer parameters</strong> and
+        <strong>21× smaller checkpoint</strong>
+      </li>
+    </ul>
+  </div>
+
+</div>
 
   <!-- CITYLEARN RL -->
   <div class="card">
