@@ -430,7 +430,7 @@ a:hover{
   <div class="card-header">
     <h3>Multimodal Image Retrieval with OpenCLIP and Hybrid Search</h3>
 
-```
+
 <a
   class="repo-link"
   href="https://github.com/sarayusd/Multimodal-Scene-Retrieval-System-with-Hybrid-Search-and-RAG"
@@ -438,7 +438,7 @@ a:hover{
 >
   Source Code →
 </a>
-```
+
 
   </div>
 
@@ -457,7 +457,7 @@ a:hover{
 
   <ul>
 
-```
+
 <li>
   Built the initial retrieval model with OpenCLIP, encoding images and text into
   a shared embedding space and ranking candidates through cosine similarity.
@@ -491,13 +491,13 @@ a:hover{
   captions as evidence rather than asking the language model to describe a scene
   without context.
 </li>
-```
+
 
   </ul>
 
   <div class="results-box">
 
-```
+
 <strong>Evaluation</strong>
 
 <ul>
@@ -506,7 +506,7 @@ a:hover{
   <li>Tracked the quality and latency added by hybrid retrieval and reranking separately</li>
   <li>Supported text-to-image, image-to-image, and image-to-caption search</li>
 </ul>
-```
+
 
   </div>
 
@@ -522,7 +522,7 @@ a:hover{
 
   <div class="arch-box" style="text-align:center;">
 
-```
+
 <strong style="color:#111;">
   Retrieval and Grounded Explanation Pipeline
 </strong>
@@ -532,7 +532,7 @@ a:hover{
   alt="Architecture of the OpenCLIP hybrid image retrieval and explanation pipeline"
   style="width:70%; max-width:750px; margin-top:20px; border-radius:12px;"
 >
-```
+
 
   </div>
 
