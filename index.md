@@ -695,36 +695,96 @@ a:hover{
   </div>
 
 </div>
-<!-- INDUSTRY -->
-<!-- INDUSTRY -->
+<!-- PROFESSIONAL EXPERIENCE -->
 <div class="section">
-  <div class="section-title"></div>
+
   <h2 class="accent">Professional Experience</h2>
   <div class="rule"></div>
 
   <div class="card">
-    <h3>Tata Consultancy Services | IT Analyst</h3>
-    <div class="meta">2018 – 2019</div>
+
+    <h3>AI Software Developer | MatchingDonors.com</h3>
+
+    <div class="meta">
+      Remote · May 2026 – Present
+    </div>
 
     <ul>
-      <li>Developed and maintained high-volume Java backend systems supporting mission-critical financial trade and settlement workflows.</li>
-      <li>Designed optimized SQL stored procedures and query pipelines, improving execution efficiency and reducing latency in production environments.</li>
-      <li>Collaborated within Agile teams to deliver scalable distributed services with strong emphasis on reliability and fault tolerance.</li>
-      <li>Performed production debugging, log analysis, and performance tuning across multi-tier enterprise systems.</li>
+
+      <li>
+        Developed analytics prototypes using Google Analytics 4 (GA4) to transform
+        user behavior into page-level engagement and conversion insights for a
+        nonprofit platform.
+      </li>
+
+      <li>
+        Built reporting pipelines that established baseline engagement metrics and
+        supported future AI-driven donor outreach and recommendation workflows.
+      </li>
+
     </ul>
+
   </div>
 
   <div class="card">
-    <h3>Capgemini | Associate Consultant</h3>
-    <div class="meta">2013 – 2018</div>
+
+    <h3>IT Analyst | Tata Consultancy Services</h3>
+
+    <div class="meta">
+      India · Apr 2018 – Dec 2019
+    </div>
 
     <ul>
-      <li>Designed and implemented RESTful Java microservices powering enterprise dashboards and operational reporting systems.</li>
-      <li>Built modular backend components enabling secure API integrations and structured data pipelines.</li>
-      <li>Resolved distributed system bottlenecks through performance profiling and code optimization.</li>
-      <li>Provided production support across large-scale client systems ensuring uptime, stability, and SLA compliance.</li>
+
+      <li>
+        Developed Java, Spring, JMS, and Oracle-based backend services for Citi's
+        global iGSR platform supporting trade processing, clearing, and settlement.
+      </li>
+
+      <li>
+        Designed Oracle SQL procedures and reconciliation workflows to investigate
+        production issues and automate trade rollover and settlement processing.
+      </li>
+
+      <li>
+        Worked within Agile teams to deliver backend enhancements, troubleshoot
+        production incidents, and improve application reliability.
+      </li>
+
     </ul>
+
   </div>
+
+  <div class="card">
+
+    <h3>Associate Consultant | Capgemini</h3>
+
+    <div class="meta">
+      India · Nov 2013 – Mar 2018
+    </div>
+
+    <ul>
+
+      <li>
+        Developed Java REST services and Spring applications on GE Predix (AWS)
+        for turbine outage monitoring and operational analytics.
+      </li>
+
+      <li>
+        Built customer support and Grid Solutions web applications using
+        JavaScript, jQuery, and HTML5, improving responsiveness through
+        asynchronous data loading and JSON optimization.
+      </li>
+
+      <li>
+        Automated regression testing using JUnit and SAHI to improve release
+        quality and reduce manual validation across multiple application releases.
+      </li>
+
+    </ul>
+
+  </div>
+
 </div>
 
 <!-- CONTACT -->
