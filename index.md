@@ -634,7 +634,7 @@ a:hover{
 </li>
 
 <li>
-  Implemented a fallback sequence—reranked, hybrid, dense, then BM25-only—so a
+  Implemented a fallback sequence - reranked, hybrid, dense, then BM25-only - so a
   query can still return results when an optional retrieval component is unavailable.
 </li>
 
