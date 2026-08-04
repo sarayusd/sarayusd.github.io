@@ -89,13 +89,13 @@ footer,
 /* LAYOUT */
 /* ============================= */
 .wrapper{
-  width:min(1150px, calc(100vw - 80px));
+  width:min(1120px, calc(100vw - 64px));
   margin:0 auto;
-  padding:80px 0;
+  padding:64px 0 88px;
 }
 
 .section{
-  margin:120px 0;
+  margin:88px 0;
 }
 
 /* ============================= */
@@ -132,21 +132,23 @@ footer,
 /* TEXT */
 /* ============================= */
 p{
-  font-size:19px;
-  line-height:1.9;
+  max-width:940px;
+  font-size:18px;
+  line-height:1.78;
   color:var(--muted);
-  margin-bottom:22px;
+  margin:0 0 22px;
 }
 
 ul{
-  padding-left:24px;
-  margin-top:14px;
+  max-width:960px;
+  padding-left:28px;
+  margin:16px 0 0;
 }
 
 li{
-  margin-bottom:14px;
-  font-size:18px;
-  line-height:1.8;
+  margin-bottom:13px;
+  font-size:17px;
+  line-height:1.72;
   color:var(--muted);
 }
 
@@ -157,15 +159,16 @@ li{
   background:linear-gradient(180deg,var(--panel),var(--panel-2));
   border:1px solid rgba(198,168,79,.15);
   border-radius:18px;
-  padding:45px;
-  margin-bottom:40px;
-  box-shadow:0 20px 60px rgba(0,0,0,.55);
-  transition: all .25s ease;
+  padding:38px 40px 42px;
+  margin-bottom:34px;
+  box-shadow:0 18px 50px rgba(0,0,0,.48);
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
 }
 
 .card:hover{
-  transform:translateY(-4px);
+  transform:translateY(-3px);
   border-color:rgba(198,168,79,.35);
+  box-shadow:0 24px 64px rgba(0,0,0,.56);
 }
 
 /* ===== Card Header Layout ===== */
@@ -173,15 +176,16 @@ li{
   display:flex;
   justify-content:space-between;
   align-items:flex-start;
-  gap:20px;
-  margin-bottom:6px;
+  gap:24px;
+  margin-bottom:8px;
 }
 
 .card-header h3{
   margin:0;
-  font-size:26px;
-  font-weight:600;
-  line-height:1.3;
+  max-width:820px;
+  font-size:25px;
+  font-weight:650;
+  line-height:1.34;
   flex:1;
   color:#ffffff;
 }
@@ -203,21 +207,22 @@ li{
 
 /* ===== Project Stack (Skills line) ===== */
 .project-stack{
-  font-size:14px;
-  font-weight:500;
-  margin-bottom:20px;
-  margin-top:8px;
+  font-size:13px;
+  font-weight:600;
+  line-height:1.65;
+  margin:10px 0 20px;
   color:#d4b35a;
-  letter-spacing:.4px;
-  padding-bottom:6px;
+  letter-spacing:.35px;
+  padding-bottom:10px;
   border-bottom:1px solid rgba(198,168,79,.15);
 }
 
 /* Meta */
 .meta{
-  font-size:15px;
-  color:rgba(255,255,255,.5);
-  margin-bottom:14px;
+  font-size:14px;
+  line-height:1.5;
+  color:rgba(255,255,255,.56);
+  margin-bottom:18px;
 }
 
 /* ============================= */
@@ -226,26 +231,94 @@ li{
 .results-box{
   background:rgba(198,168,79,.05);
   border:1px solid rgba(198,168,79,.2);
-  padding:20px;
+  padding:22px 24px;
   border-radius:12px;
-  margin-top:25px;
+  margin:30px 0 32px;
 }
 
 .arch-box{
   background:#ffffff;
-  padding:30px;
+  padding:28px;
   border-radius:16px;
-  margin-top:30px;
-  box-shadow:0 20px 60px rgba(0,0,0,.55);
+  margin-top:26px;
+  box-shadow:0 16px 44px rgba(0,0,0,.48);
+  overflow:hidden;
 }
 
 .demo-box{
   background:#ffffff;
-  padding:30px;
+  padding:28px;
   border-radius:16px;
-  margin-top:40px;
-  box-shadow:0 20px 60px rgba(0,0,0,.55);
+  margin-top:32px;
+  box-shadow:0 16px 44px rgba(0,0,0,.48);
   text-align:center;
+}
+
+
+/* ============================= */
+/* PROJECT CONTENT RHYTHM */
+/* ============================= */
+.card > p{
+  margin-top:20px;
+}
+
+.card h4{
+  margin:30px 0 12px;
+  font-size:18px;
+  font-weight:650;
+  color:#ffffff;
+  letter-spacing:.1px;
+}
+
+.results-box > strong,
+.arch-box > strong{
+  display:block;
+  margin-bottom:16px;
+  font-size:18px;
+  line-height:1.4;
+}
+
+.results-box ul{
+  margin-top:12px;
+  max-width:none;
+}
+
+.results-box li:last-child,
+.card li:last-child{
+  margin-bottom:0;
+}
+
+.arch-box img{
+  display:block;
+  width:min(92%, 900px) !important;
+  max-width:900px !important;
+  height:auto;
+  margin:22px auto 0 !important;
+  border-radius:12px;
+}
+
+.project-action{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:44px;
+  padding:11px 20px;
+  border:1px solid rgba(198,168,79,.34);
+  border-radius:999px;
+  background:rgba(198,168,79,.08);
+  color:var(--accent);
+  font-size:14px;
+  font-weight:650;
+  line-height:1;
+  text-decoration:none;
+  transition:transform .2s ease,background .2s ease,border-color .2s ease,color .2s ease;
+}
+
+.project-action:hover{
+  transform:translateY(-2px);
+  background:rgba(198,168,79,.14);
+  border-color:rgba(198,168,79,.55);
+  color:#ffffff;
 }
 
 /* ============================= */
@@ -266,8 +339,9 @@ a:hover{
 /* ============================= */
 .contact{
   text-align:center;
-  margin-top:120px;
-  padding-bottom:40px;
+  margin-top:88px;
+  padding:36px 0 18px;
+  border-top:1px solid rgba(255,255,255,.08);
 }
 
 .contact h3{
@@ -285,12 +359,90 @@ a:hover{
 /* RESPONSIVE */
 /* ============================= */
 @media(max-width:900px){
-  .wrapper{ width:calc(100vw - 40px); }
+  .wrapper{
+    width:calc(100vw - 36px);
+    padding:48px 0 70px;
+  }
+
+  .section{
+    margin:68px 0;
+  }
+
   .section-title,
   .section h2{
     font-size:30px;
   }
-  .project-name{ font-size:40px !important; }
+
+  .project-name{
+    font-size:40px !important;
+  }
+
+  .card{
+    padding:30px 26px 34px;
+  }
+
+  .card-header{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .repo-link{
+    margin-top:0;
+  }
+
+  .arch-box{
+    padding:20px 14px;
+  }
+
+  .arch-box img{
+    width:100% !important;
+    max-width:100% !important;
+  }
+}
+
+@media(max-width:560px){
+  .page-header{
+    padding:72px 18px 86px !important;
+  }
+
+  .project-name{
+    font-size:34px !important;
+  }
+
+  .project-tagline{
+    font-size:17px !important;
+  }
+
+  .wrapper{
+    width:calc(100vw - 24px);
+  }
+
+  .card{
+    padding:26px 20px 30px;
+    border-radius:15px;
+  }
+
+  .card-header h3{
+    font-size:22px;
+  }
+
+  p{
+    font-size:16px;
+    line-height:1.7;
+  }
+
+  li{
+    font-size:16px;
+    line-height:1.65;
+  }
+
+  ul{
+    padding-left:22px;
+  }
+
+  .contact p{
+    line-height:1.9;
+  }
 }
 </style>
 
