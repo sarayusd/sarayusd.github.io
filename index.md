@@ -672,21 +672,19 @@ a:hover{
     </a>
   </div>
 
-  <div class="arch-box" style="text-align:center;">
+  <div class="arch-box landscape-arch" style="text-align:center;">
 
+  <strong style="color:#111;">
+    Retrieval and Grounded Explanation Pipeline
+  </strong>
 
-<strong style="color:#111;">
-  Retrieval and Grounded Explanation Pipeline
-</strong>
+  <img
+    src="{{ '/images/multimodal.png' | relative_url }}"
+    alt="Architecture of the OpenCLIP hybrid image retrieval and explanation pipeline"
+    class="landscape-arch-image"
+  >
 
-<img
-  src="{{ '/images/multimodal.png' | relative_url }}"
-  alt="Architecture of the OpenCLIP hybrid image retrieval and explanation pipeline"
-  style="width:70%; max-width:750px; margin-top:20px; border-radius:12px;"
->
-
-
-  </div>
+</div>
 
 </div>
 
@@ -830,21 +828,19 @@ a:hover{
       ▶ Watch Demo
     </a>
   </div>
-    <div class="arch-box" style="text-align:center;">
+    <div class="arch-box landscape-arch" style="text-align:center;">
 
+  <strong style="color:#111;">
+    Scene Recognition Pipeline
+  </strong>
 
-<strong style="color:#111;">
-  Scene Recognition Pipeline
-</strong>
+  <img
+    src="{{ '/images/scene-recog-arch.png' | relative_url }}"
+    alt="Architecture of the Scene Recognition Pipeline pipeline"
+    class="landscape-arch-image"
+  >
 
-<img
-  src="{{ '/images/scene-recog-arch.png' | relative_url }}"
-  alt="Architecture of the  Scene Recognition Pipeline pipeline"
-  style="width:70%; max-width:750px; margin-top:20px; border-radius:12px;"
->
-
-
-  </div>
+</div>
 
 </div>
 
