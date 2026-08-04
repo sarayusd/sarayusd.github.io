@@ -669,6 +669,30 @@ a:hover{
       </li>
     </ul>
   </div>
+  <div style="text-align:center; margin:25px 0;">
+    <a
+      class="project-action"
+      href="{{ '/images/scene-demo.mp4' | relative_url }}"
+      target="_blank"
+    >
+      ▶ Watch Demo
+    </a>
+  </div>
+    <div class="arch-box" style="text-align:center;">
+
+
+<strong style="color:#111;">
+  Scene Recognition Pipeline
+</strong>
+
+<img
+  src="{{ '/images/scene-recog-arch.png' | relative_url }}"
+  alt="Architecture of the  Scene Recognition Pipeline pipeline"
+  style="width:70%; max-width:750px; margin-top:20px; border-radius:12px;"
+>
+
+
+  </div>
 
 </div>
 
