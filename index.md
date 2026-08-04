@@ -580,12 +580,12 @@ a:hover{
 <div class="card">
 
   <div class="card-header">
-    <h3>Multimodal Image Retrieval with OpenCLIP and Hybrid Search</h3>
+    <h3>Multimodal Image Retrieval System with Hybrid Search and Grounded Explanations</h3>
 
 
 <a
   class="repo-link"
-  href="https://github.com/sarayusd/Multimodal-Scene-Retrieval-System-with-Hybrid-Search-and-RAG"
+  href="https://github.com/sarayusd/Multimodal-Image-Retrieval-System-with-Hybrid-Search-and-Grounded-Explanations.git"
   target="_blank"
 >
   Source Code →
