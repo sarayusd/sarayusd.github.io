@@ -1,7 +1,3 @@
----
-layout: default
-title: Sarayu Sivakumar Dhaya
----
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
@@ -17,25 +13,41 @@ title: Sarayu Sivakumar Dhaya
   --text:#f5f4fa;
   --muted:#b8b4cc;
 
-  --accent:#c6a84f;   /* gold */
-  --accent2:#7b3fe4;  /* purple */
+  --accent:#c6a84f;
+  --accent2:#7b3fe4;
 }
 
 /* ============================= */
 /* GLOBAL RESET */
 /* ============================= */
-*{ box-sizing:border-box; }
+*{
+  box-sizing:border-box;
+}
 
-html, body{
+html,
+body{
   margin:0;
   padding:0;
   font-family:'Inter',sans-serif;
   color:var(--text);
 
   background:
-    radial-gradient(900px 400px at 70% 0%, rgba(123,63,228,.25), transparent 60%),
-    radial-gradient(700px 300px at 20% 20%, rgba(198,168,79,.12), transparent 60%),
-    linear-gradient(180deg,#120c1f 0%, #08060f 70%, #000000 100%);
+    radial-gradient(
+      900px 400px at 70% 0%,
+      rgba(123,63,228,.25),
+      transparent 60%
+    ),
+    radial-gradient(
+      700px 300px at 20% 20%,
+      rgba(198,168,79,.12),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      #120c1f 0%,
+      #08060f 70%,
+      #000000 100%
+    );
 
   overflow-x:hidden;
 }
@@ -61,7 +73,7 @@ footer,
 /* HEADER */
 /* ============================= */
 .page-header{
-  background: linear-gradient(
+  background:linear-gradient(
     135deg,
     #2a1244 0%,
     #3b1e5c 40%,
@@ -69,7 +81,7 @@ footer,
     #000000 100%
   ) !important;
 
-  padding:100px 20px 120px 20px !important;
+  padding:100px 20px 120px !important;
   border-bottom:none !important;
 }
 
@@ -82,7 +94,7 @@ footer,
 
 .project-tagline{
   font-size:20px !important;
-  color:rgba(255,255,255,0.85) !important;
+  color:rgba(255,255,255,.85) !important;
 }
 
 /* ============================= */
@@ -99,33 +111,43 @@ footer,
 }
 
 /* ============================= */
-/* UNIFIED SECTION HEADINGS */
+/* SECTION HEADINGS */
 /* ============================= */
 .section-title,
 .section h2{
+  margin:0 0 20px;
   font-size:42px;
   font-weight:700;
-  margin:0 0 20px 0;
+  letter-spacing:-.5px;
 
-  background: linear-gradient(90deg, var(--accent2), var(--accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background:linear-gradient(
+    90deg,
+    var(--accent2),
+    var(--accent)
+  );
 
-  letter-spacing:-0.5px;
-  text-shadow: 0 0 25px rgba(198,168,79,.15);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+
+  text-shadow:0 0 25px rgba(198,168,79,.15);
 }
 
 .section-title{
   text-transform:none;
 }
 
-/* Section underline */
 .rule{
   width:80px;
   height:3px;
-  background:linear-gradient(90deg,var(--accent2),var(--accent));
+  margin:20px 0 35px;
+
+  background:linear-gradient(
+    90deg,
+    var(--accent2),
+    var(--accent)
+  );
+
   border-radius:999px;
-  margin:20px 0 35px 0;
 }
 
 /* ============================= */
@@ -133,20 +155,22 @@ footer,
 /* ============================= */
 p{
   max-width:940px;
+  margin:0 0 22px;
+
   font-size:18px;
   line-height:1.78;
   color:var(--muted);
-  margin:0 0 22px;
 }
 
 ul{
   max-width:960px;
-  padding-left:28px;
   margin:16px 0 0;
+  padding-left:28px;
 }
 
 li{
   margin-bottom:13px;
+
   font-size:17px;
   line-height:1.72;
   color:var(--muted);
@@ -156,13 +180,24 @@ li{
 /* CARD LAYOUT */
 /* ============================= */
 .card{
-  background:linear-gradient(180deg,var(--panel),var(--panel-2));
+  margin-bottom:34px;
+  padding:38px 40px 42px;
+
+  background:linear-gradient(
+    180deg,
+    var(--panel),
+    var(--panel-2)
+  );
+
   border:1px solid rgba(198,168,79,.15);
   border-radius:18px;
-  padding:38px 40px 42px;
-  margin-bottom:34px;
+
   box-shadow:0 18px 50px rgba(0,0,0,.48);
-  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+
+  transition:
+    transform .25s ease,
+    border-color .25s ease,
+    box-shadow .25s ease;
 }
 
 .card:hover{
@@ -171,7 +206,9 @@ li{
   box-shadow:0 24px 64px rgba(0,0,0,.56);
 }
 
-/* ===== Card Header Layout ===== */
+/* ============================= */
+/* CARD HEADER */
+/* ============================= */
 .card-header{
   display:flex;
   justify-content:space-between;
@@ -181,79 +218,160 @@ li{
 }
 
 .card-header h3{
-  margin:0;
+  flex:1;
   max-width:820px;
+
+  margin:0;
+
   font-size:25px;
   font-weight:650;
   line-height:1.34;
-  flex:1;
   color:#ffffff;
 }
 
-/* ===== Repo Link ===== */
+/* ============================= */
+/* REPOSITORY LINK */
+/* ============================= */
 .repo-link{
+  margin-top:6px;
+
   font-size:14px;
   font-weight:600;
   color:var(--accent);
+
   text-decoration:none;
   white-space:nowrap;
-  margin-top:6px;
-  transition:.25s ease;
+
+  transition:color .25s ease;
 }
 
 .repo-link:hover{
   color:var(--accent2);
 }
 
-/* ===== Project Stack (Skills line) ===== */
+/* ============================= */
+/* PROJECT STACK */
+/* ============================= */
 .project-stack{
+  margin:10px 0 20px;
+  padding-bottom:10px;
+
+  border-bottom:1px solid rgba(198,168,79,.15);
+
   font-size:13px;
   font-weight:600;
   line-height:1.65;
-  margin:10px 0 20px;
-  color:#d4b35a;
   letter-spacing:.35px;
-  padding-bottom:10px;
-  border-bottom:1px solid rgba(198,168,79,.15);
+  color:#d4b35a;
 }
 
-/* Meta */
+/* ============================= */
+/* META */
+/* ============================= */
 .meta{
+  margin-bottom:18px;
+
   font-size:14px;
   line-height:1.5;
   color:rgba(255,255,255,.56);
-  margin-bottom:18px;
 }
 
 /* ============================= */
-/* RESULT + ARCH BOXES */
+/* RESULTS BOX */
 /* ============================= */
 .results-box{
+  margin:30px 0 32px;
+  padding:22px 24px;
+
   background:rgba(198,168,79,.05);
   border:1px solid rgba(198,168,79,.2);
-  padding:22px 24px;
   border-radius:12px;
-  margin:30px 0 32px;
 }
 
+.results-box > strong{
+  display:block;
+  margin-bottom:16px;
+
+  font-size:18px;
+  line-height:1.4;
+}
+
+.results-box ul{
+  max-width:none;
+  margin-top:12px;
+}
+
+/* ============================= */
+/* ARCHITECTURE BOX */
+/* ============================= */
 .arch-box{
-  background:#ffffff;
-  padding:28px;
-  border-radius:16px;
+  width:100%;
   margin-top:26px;
+  padding:26px 28px 30px;
+
+  background:#ffffff;
+  border-radius:16px;
+
   box-shadow:0 16px 44px rgba(0,0,0,.48);
+
   overflow:hidden;
 }
 
-.demo-box{
-  background:#ffffff;
-  padding:28px;
-  border-radius:16px;
-  margin-top:32px;
-  box-shadow:0 16px 44px rgba(0,0,0,.48);
-  text-align:center;
+.arch-box > strong{
+  display:block;
+  margin-bottom:16px;
+
+  font-size:18px;
+  line-height:1.4;
 }
 
+/* Default architecture image behavior */
+.arch-box img{
+  display:block;
+
+  width:min(92%, 900px) !important;
+  max-width:900px !important;
+  height:auto;
+
+  margin:22px auto 0 !important;
+
+  border-radius:12px;
+  object-fit:contain;
+}
+
+/* Keep portrait diagrams from making cards excessively tall */
+.arch-box img[src*="multimodal.png"],
+.arch-box img[src*="scene-recog-arch.png"]{
+  width:auto !important;
+  max-width:100% !important;
+  max-height:560px;
+
+  margin:22px auto 0 !important;
+
+  object-fit:contain;
+}
+
+/* Keep wide predictive-maintenance architecture large */
+.arch-box img[src*="mmsp.png"]{
+  width:100% !important;
+  max-width:1000px !important;
+  height:auto;
+}
+
+/* ============================= */
+/* DEMO BOX */
+/* ============================= */
+.demo-box{
+  margin-top:32px;
+  padding:28px;
+
+  background:#ffffff;
+  border-radius:16px;
+
+  box-shadow:0 16px 44px rgba(0,0,0,.48);
+
+  text-align:center;
+}
 
 /* ============================= */
 /* PROJECT CONTENT RHYTHM */
@@ -264,23 +382,11 @@ li{
 
 .card h4{
   margin:30px 0 12px;
+
   font-size:18px;
   font-weight:650;
-  color:#ffffff;
   letter-spacing:.1px;
-}
-
-.results-box > strong,
-.arch-box > strong{
-  display:block;
-  margin-bottom:16px;
-  font-size:18px;
-  line-height:1.4;
-}
-
-.results-box ul{
-  margin-top:12px;
-  max-width:none;
+  color:#ffffff;
 }
 
 .results-box li:last-child,
@@ -288,36 +394,41 @@ li{
   margin-bottom:0;
 }
 
-.arch-box img{
-  display:block;
-  width:min(92%, 900px) !important;
-  max-width:900px !important;
-  height:auto;
-  margin:22px auto 0 !important;
-  border-radius:12px;
-}
-
+/* ============================= */
+/* DEMO BUTTON */
+/* ============================= */
 .project-action{
   display:inline-flex;
   align-items:center;
   justify-content:center;
+
   min-height:44px;
   padding:11px 20px;
+
+  background:rgba(198,168,79,.08);
   border:1px solid rgba(198,168,79,.34);
   border-radius:999px;
-  background:rgba(198,168,79,.08);
+
   color:var(--accent);
   font-size:14px;
   font-weight:650;
   line-height:1;
+
   text-decoration:none;
-  transition:transform .2s ease,background .2s ease,border-color .2s ease,color .2s ease;
+
+  transition:
+    transform .2s ease,
+    background .2s ease,
+    border-color .2s ease,
+    color .2s ease;
 }
 
 .project-action:hover{
   transform:translateY(-2px);
+
   background:rgba(198,168,79,.14);
   border-color:rgba(198,168,79,.55);
+
   color:#ffffff;
 }
 
@@ -327,7 +438,8 @@ li{
 a{
   color:var(--accent);
   text-decoration:none;
-  transition:.2s ease;
+
+  transition:color .2s ease;
 }
 
 a:hover{
@@ -338,27 +450,32 @@ a:hover{
 /* CONTACT */
 /* ============================= */
 .contact{
-  text-align:center;
   margin-top:88px;
   padding:36px 0 18px;
+
   border-top:1px solid rgba(255,255,255,.08);
+
+  text-align:center;
 }
 
 .contact h3{
-  font-size:28px;
   margin-bottom:18px;
+
+  font-size:28px;
 }
 
 .contact p{
+  margin:0;
+
   font-size:18px;
   color:var(--muted);
-  margin:0;
 }
 
 /* ============================= */
-/* RESPONSIVE */
+/* TABLET RESPONSIVE */
 /* ============================= */
 @media(max-width:900px){
+
   .wrapper{
     width:calc(100vw - 36px);
     padding:48px 0 70px;
@@ -391,16 +508,28 @@ a:hover{
   }
 
   .arch-box{
-    padding:20px 14px;
+    padding:20px 14px 24px;
   }
 
   .arch-box img{
     width:100% !important;
     max-width:100% !important;
+    height:auto;
+  }
+
+  .arch-box img[src*="multimodal.png"],
+  .arch-box img[src*="scene-recog-arch.png"]{
+    width:auto !important;
+    max-width:100% !important;
+    max-height:500px;
   }
 }
 
+/* ============================= */
+/* MOBILE RESPONSIVE */
+/* ============================= */
 @media(max-width:560px){
+
   .page-header{
     padding:72px 18px 86px !important;
   }
@@ -440,12 +569,26 @@ a:hover{
     padding-left:22px;
   }
 
+  .arch-box{
+    padding:18px 10px 20px;
+  }
+
+  .arch-box > strong{
+    font-size:16px;
+  }
+
+  .arch-box img[src*="multimodal.png"],
+  .arch-box img[src*="scene-recog-arch.png"]{
+    width:auto !important;
+    max-width:100% !important;
+    max-height:440px;
+  }
+
   .contact p{
     line-height:1.9;
   }
 }
 </style>
-
 <div class="wrapper">
 
 <!-- ABOUT ME -->
