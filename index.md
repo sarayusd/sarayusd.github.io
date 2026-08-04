@@ -597,18 +597,18 @@ a:hover{
 
   <div class="section-title">About Me</div>
   <div class="rule"></div>
+<p>
+  I am a Software Engineer with 5+ years of industry experience and a Master’s degree in Artificial Intelligence from the University at Buffalo.
+</p>
 
-  <p>
-    I am a AI software Developer with more than five years of backend development experience and a Master’s degree in Artificial Intelligence from the University at Buffalo.
-  </p>
+<p>
+  My expertise includes PyTorch-based deep learning and multimodal retrieval, and I am currently building end-to-end AI systems that transform complex data into actionable insights, recommendations, and decision support.
+</p>
 
-  <p>
-    My recent work focuses on PyTorch-based deep learning, computer vision, vibration-based fault diagnosis, multimodal retrieval, and reinforcement learning. I have worked on projects involving rotating-machinery faults, indoor scene recognition, image retrieval, and building-energy control.
-  </p>
+<p>
+   I enjoy solving real-world engineering problems through experimentation, model optimization, and thoughtful system design, with a focus on building AI systems that are reliable, measurable, and easy to evolve.
 
-  <p>
-    I prefer to compare models, inspect failure cases, and measure what each design choice contributes. My goal is to build ML systems that are clear enough to explain, reproduce, and improve.
-  </p>
+</p>
 
 </div>
 
