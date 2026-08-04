@@ -891,7 +891,7 @@ a:hover{
   </div>
 
   <div class="project-stack">
-    PyTorch · DenseNet · ConvNeXt · Transfer Learning · Knowledge Distillation · Model Compression
+    PyTorch · DenseNet · ConvNeXt · Transfer Learning · Knowledge Distillation
   </div>
 
   <p>
